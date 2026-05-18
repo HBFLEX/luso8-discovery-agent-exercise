@@ -1,0 +1,353 @@
+[
+  {
+    "id": "zm-001",
+    "name": "Kasama Trade Partners",
+    "country": "ZM",
+    "category": "distributor",
+    "size_band": "medium",
+    "product_focus": "packaged snacks, dry groceries, beverages",
+    "profile": "Lusaka-based distributor serving 120+ retailers across Lusaka and Central Province. Specializes in fast-moving consumer goods with cold-chain capability for short-shelf-life snacks. Twelve-truck fleet, 8 sales reps."
+  },
+  {
+    "id": "zm-002",
+    "name": "Mosi Wholesale Hub",
+    "country": "ZM",
+    "category": "wholesaler",
+    "size_band": "large",
+    "product_focus": "dry goods, packaged foods, cooking oils",
+    "profile": "Largest independent wholesaler in the Copperbelt with three warehouses in Kitwe, Ndola, and Chingola. Stocks aflatoxin-tested groundnut products from regional processors. Serves both urban retailers and rural agents."
+  },
+  {
+    "id": "zm-003",
+    "name": "Tatu Markets Group",
+    "country": "ZM",
+    "category": "supermarket",
+    "size_band": "large",
+    "product_focus": "groceries, fresh produce, household goods",
+    "profile": "Chain of 22 supermarkets across Lusaka, Kitwe, and Livingstone. Private-label snack range launched in 2024. Sources from certified local processors and emphasizes Zambian-made products in marketing."
+  },
+  {
+    "id": "zm-004",
+    "name": "Chongwe Agri-Supply Co",
+    "country": "ZM",
+    "category": "wholesaler",
+    "size_band": "small",
+    "product_focus": "fresh produce, dried legumes, maize",
+    "profile": "Small wholesaler focused on raw agricultural commodities. Not typically a buyer of packaged retail goods. Operates from Chongwe market on three-day buying cycles."
+  },
+  {
+    "id": "zm-005",
+    "name": "Victoria Falls Hospitality Group",
+    "country": "ZM",
+    "category": "horeca",
+    "size_band": "medium",
+    "product_focus": "hotel supplies, packaged snacks, beverages",
+    "profile": "Operates four lodges in Livingstone tourism corridor. Mini-bar snacks and conference catering require shelf-stable packaged items with clear ingredient labelling for international guests."
+  },
+  {
+    "id": "zm-006",
+    "name": "Ndola Foods Distribution",
+    "country": "ZM",
+    "category": "distributor",
+    "size_band": "small",
+    "product_focus": "packaged foods, snacks, confectionery",
+    "profile": "Family-owned distributor in Ndola covering 40 retail outlets on the Copperbelt. Known for fast payment terms and willingness to stock new SME products."
+  },
+  {
+    "id": "zm-007",
+    "name": "Lusaka Catering Services",
+    "country": "ZM",
+    "category": "horeca",
+    "size_band": "small",
+    "product_focus": "conference catering, snack platters",
+    "profile": "B2B caterer for NGO and corporate events in Lusaka. Buys 50-100kg packaged snacks monthly. Quality- and safety-certification sensitive due to client base."
+  },
+  {
+    "id": "zm-008",
+    "name": "Copperbelt Retail Cooperative",
+    "country": "ZM",
+    "category": "supermarket",
+    "size_band": "medium",
+    "product_focus": "groceries, basic household goods",
+    "profile": "Cooperative of 14 mid-sized supermarkets across Kitwe and Chingola. Stocks budget-tier brands and one premium tier per category. Listing fees apply for new SKUs."
+  },
+  {
+    "id": "tz-001",
+    "name": "Dar Distribution Co",
+    "country": "TZ",
+    "category": "distributor",
+    "size_band": "large",
+    "product_focus": "packaged snacks, beverages, confectionery",
+    "profile": "Largest snack distributor in Dar es Salaam with national reach via 6 regional depots. Imports from regional SADC processors and stocks aflatoxin-tested groundnut products under multiple brands."
+  },
+  {
+    "id": "tz-002",
+    "name": "Kilimanjaro Trade Network",
+    "country": "TZ",
+    "category": "distributor",
+    "size_band": "medium",
+    "product_focus": "packaged foods, dry goods",
+    "profile": "Arusha and Moshi region distributor with strong cross-border trade into Kenya. Sales team of 12, services tourism towns and inland retail. Open to consignment terms for new entrants."
+  },
+  {
+    "id": "tz-003",
+    "name": "Bongo Markets",
+    "country": "TZ",
+    "category": "supermarket",
+    "size_band": "large",
+    "product_focus": "groceries, fresh produce, packaged snacks",
+    "profile": "Chain of 18 supermarkets in Dar es Salaam and Mwanza. Dedicated SADC-products aisle launched in 2025 promoting cross-border SME brands. Listing process is documented and SME-friendly."
+  },
+  {
+    "id": "tz-004",
+    "name": "Serengeti Lodge Group",
+    "country": "TZ",
+    "category": "horeca",
+    "size_band": "large",
+    "product_focus": "luxury hotel supplies, packaged snacks",
+    "profile": "Twelve-property luxury safari lodge group across Serengeti, Ngorongoro, and Tarangire. Requires premium-tier snacks with traceable sourcing for international guest mini-bars."
+  },
+  {
+    "id": "tz-005",
+    "name": "Zanzibar Catering Co",
+    "country": "TZ",
+    "category": "horeca",
+    "size_band": "small",
+    "product_focus": "hotel catering, snack platters, beverages",
+    "profile": "Stone Town based caterer serving boutique hotels. Halal-certification of suppliers is required. Buys in small batches monthly."
+  },
+  {
+    "id": "tz-006",
+    "name": "Arusha Wholesale Center",
+    "country": "TZ",
+    "category": "wholesaler",
+    "size_band": "medium",
+    "product_focus": "dry goods, packaged foods, cooking oils",
+    "profile": "Wholesale market hub serving northern Tanzania retailers. High volume, thin margins. Stocks groundnut products from local Babati processors."
+  },
+  {
+    "id": "tz-007",
+    "name": "Mwanza Foods Distribution",
+    "country": "TZ",
+    "category": "distributor",
+    "size_band": "small",
+    "product_focus": "packaged snacks, beverages",
+    "profile": "Lake-Zone distributor with strong reach into Geita and Shinyanga. Six-truck fleet. Specializes in low-cost packaged snacks for rural retail."
+  },
+  {
+    "id": "tz-008",
+    "name": "Ujamaa Retail Chain",
+    "country": "TZ",
+    "category": "supermarket",
+    "size_band": "medium",
+    "product_focus": "groceries, snacks, household basics",
+    "profile": "Eleven-store budget supermarket chain across Dar suburbs. Strong private-label program. Listings prioritize value-tier products."
+  },
+  {
+    "id": "tz-009",
+    "name": "Tanga Fresh Produce Co",
+    "country": "TZ",
+    "category": "wholesaler",
+    "size_band": "small",
+    "product_focus": "fresh fruit, vegetables, raw commodities",
+    "profile": "Specialist fresh-produce wholesaler. Does not typically stock packaged or shelf-stable snack products."
+  },
+  {
+    "id": "ke-001",
+    "name": "Nairobi Distribution Hub",
+    "country": "KE",
+    "category": "distributor",
+    "size_band": "large",
+    "product_focus": "packaged snacks, beverages, FMCG",
+    "profile": "Major FMCG distributor in Nairobi with national reach. Imports SADC-region snacks for the Kenyan market. Strict supplier vetting including aflatoxin compliance."
+  },
+  {
+    "id": "ke-002",
+    "name": "Mombasa Trade Co",
+    "country": "KE",
+    "category": "distributor",
+    "size_band": "medium",
+    "product_focus": "packaged foods, port-imported goods",
+    "profile": "Coast region distributor leveraging Mombasa port. Strong in tourism corridor and exports to inland Kenya retailers."
+  },
+  {
+    "id": "ke-003",
+    "name": "Tukene Supermarkets",
+    "country": "KE",
+    "category": "supermarket",
+    "size_band": "large",
+    "product_focus": "groceries, fresh produce, snacks",
+    "profile": "Kenyan supermarket chain with 35 stores nationally. Operates a Pan-African brands aisle and offers shelf-space partnerships with SADC SMEs."
+  },
+  {
+    "id": "ke-004",
+    "name": "Karibu Hospitality Network",
+    "country": "KE",
+    "category": "horeca",
+    "size_band": "medium",
+    "product_focus": "hotel supplies, conference catering",
+    "profile": "Hotel and conference catering group operating in Nairobi and Mombasa. Premium-tier sourcing with documentation requirements."
+  },
+  {
+    "id": "ke-005",
+    "name": "Eldoret Foods Distribution",
+    "country": "KE",
+    "category": "distributor",
+    "size_band": "small",
+    "product_focus": "packaged snacks, baked goods",
+    "profile": "Rift Valley distributor serving Eldoret, Nakuru, and surrounding towns. Eight-truck fleet. Willing to trial new SME brands with consignment."
+  },
+  {
+    "id": "ke-006",
+    "name": "Kisumu Wholesale Market",
+    "country": "KE",
+    "category": "wholesaler",
+    "size_band": "medium",
+    "product_focus": "dry goods, packaged foods",
+    "profile": "Lake Victoria wholesale hub serving western Kenya and cross-border trade to Uganda and Tanzania."
+  },
+  {
+    "id": "ke-007",
+    "name": "Sirikwa Boutique Hotels",
+    "country": "KE",
+    "category": "horeca",
+    "size_band": "small",
+    "product_focus": "boutique hotel supplies",
+    "profile": "Five-property boutique hotel group. Premium packaged snacks for guest rooms and meeting facilities. Story-driven sourcing preferred."
+  },
+  {
+    "id": "ng-001",
+    "name": "Lagos Mega Distribution",
+    "country": "NG",
+    "category": "distributor",
+    "size_band": "large",
+    "product_focus": "FMCG, packaged snacks, beverages",
+    "profile": "One of Nigeria's largest FMCG distributors. National reach across 18 states. Heavy import duties and registration with NAFDAC required for foreign-made packaged foods."
+  },
+  {
+    "id": "ng-002",
+    "name": "Naija Foods Wholesale",
+    "country": "NG",
+    "category": "wholesaler",
+    "size_band": "medium",
+    "product_focus": "packaged foods, dry goods, snacks",
+    "profile": "Wholesaler in Onitsha main market. High-volume cash-and-carry model. Price-sensitive customer base."
+  },
+  {
+    "id": "ng-003",
+    "name": "Sahara Retail Group",
+    "country": "NG",
+    "category": "supermarket",
+    "size_band": "large",
+    "product_focus": "groceries, household goods",
+    "profile": "Forty-store supermarket chain across Lagos, Abuja, and Port Harcourt. Listings require NAFDAC registration and minimum SKU velocity commitments."
+  },
+  {
+    "id": "ng-004",
+    "name": "Eko Catering Services",
+    "country": "NG",
+    "category": "horeca",
+    "size_band": "medium",
+    "product_focus": "event catering, corporate snack supply",
+    "profile": "Major Lagos events caterer servicing 200+ corporate clients. High volume of branded packaged snacks for conference packs."
+  },
+  {
+    "id": "ng-005",
+    "name": "Abuja Hospitality Network",
+    "country": "NG",
+    "category": "horeca",
+    "size_band": "medium",
+    "product_focus": "hotel supplies, premium snacks",
+    "profile": "Hotel supply group serving diplomatic and corporate hotels in Abuja. Premium, documentation-heavy sourcing."
+  },
+  {
+    "id": "ng-006",
+    "name": "Kano Trade Partners",
+    "country": "NG",
+    "category": "distributor",
+    "size_band": "medium",
+    "product_focus": "dry goods, packaged foods",
+    "profile": "Northern Nigeria distributor serving Kano, Kaduna, and Katsina. Halal-certification required for snack products."
+  },
+  {
+    "id": "ng-007",
+    "name": "Port Harcourt Foods Distribution",
+    "country": "NG",
+    "category": "distributor",
+    "size_band": "small",
+    "product_focus": "packaged snacks, beverages",
+    "profile": "Niger Delta region distributor. Strong relationships with oil-and-gas company canteen suppliers."
+  },
+  {
+    "id": "za-001",
+    "name": "Cape Distribution Co",
+    "country": "ZA",
+    "category": "distributor",
+    "size_band": "large",
+    "product_focus": "packaged snacks, FMCG",
+    "profile": "Western Cape FMCG distributor. SAFDA compliance and food safety audits required. Strong route to independent retail."
+  },
+  {
+    "id": "za-002",
+    "name": "Joburg Trade Hub",
+    "country": "ZA",
+    "category": "wholesaler",
+    "size_band": "large",
+    "product_focus": "packaged foods, beverages, household",
+    "profile": "Major Gauteng wholesaler. National distribution capability. SADC-origin packaged foods accepted with import documentation."
+  },
+  {
+    "id": "za-003",
+    "name": "Karoo Retail Group",
+    "country": "ZA",
+    "category": "supermarket",
+    "size_band": "medium",
+    "product_focus": "groceries, regional brands",
+    "profile": "Twelve-store regional supermarket chain across Northern Cape. Promotes regional African brands as a positioning differentiator."
+  },
+  {
+    "id": "za-004",
+    "name": "Mzansi Markets",
+    "country": "ZA",
+    "category": "supermarket",
+    "size_band": "large",
+    "product_focus": "groceries, fresh, snacks",
+    "profile": "Sixty-store nationwide chain. Heavily formalized listing process, slot fees apply, requires barcoded packaging and food-safety certification."
+  },
+  {
+    "id": "za-005",
+    "name": "Highveld Hospitality Group",
+    "country": "ZA",
+    "category": "horeca",
+    "size_band": "large",
+    "product_focus": "hotel supplies, lodge supplies",
+    "profile": "Hotel and game lodge supplier across Gauteng and Mpumalanga. Premium snack sourcing with traceability and origin-story marketing."
+  },
+  {
+    "id": "za-006",
+    "name": "Durban Catering Co",
+    "country": "ZA",
+    "category": "horeca",
+    "size_band": "medium",
+    "product_focus": "event catering, conference snacks",
+    "profile": "KwaZulu-Natal corporate caterer. Halal- and Hindu-vegetarian sourcing required for regional client base."
+  },
+  {
+    "id": "za-007",
+    "name": "Bloem Wholesale Centre",
+    "country": "ZA",
+    "category": "wholesaler",
+    "size_band": "small",
+    "product_focus": "dry goods, packaged foods",
+    "profile": "Free State wholesale operation serving rural retailers. Price-led, narrow margins."
+  },
+  {
+    "id": "za-008",
+    "name": "Cape Fresh Co",
+    "country": "ZA",
+    "category": "wholesaler",
+    "size_band": "small",
+    "product_focus": "fresh produce, raw commodities",
+    "profile": "Fresh-produce specialist; does not handle shelf-stable packaged snacks."
+  }
+]
