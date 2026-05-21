@@ -1,353 +1,3394 @@
 [
   {
-    "id": "zm-001",
-    "name": "Kasama Trade Partners",
+    "id": "co_0001",
+    "name": "Ndola Luangwa Cash & Carry",
     "country": "ZM",
-    "category": "distributor",
-    "size_band": "medium",
-    "product_focus": "packaged snacks, dry groceries, beverages",
-    "profile": "Lusaka-based distributor serving 120+ retailers across Lusaka and Central Province. Specializes in fast-moving consumer goods with cold-chain capability for short-shelf-life snacks. Twelve-truck fleet, 8 sales reps."
-  },
-  {
-    "id": "zm-002",
-    "name": "Mosi Wholesale Hub",
-    "country": "ZM",
-    "category": "wholesaler",
-    "size_band": "large",
-    "product_focus": "dry goods, packaged foods, cooking oils",
-    "profile": "Largest independent wholesaler in the Copperbelt with three warehouses in Kitwe, Ndola, and Chingola. Stocks aflatoxin-tested groundnut products from regional processors. Serves both urban retailers and rural agents."
-  },
-  {
-    "id": "zm-003",
-    "name": "Tatu Markets Group",
-    "country": "ZM",
-    "category": "supermarket",
-    "size_band": "large",
-    "product_focus": "groceries, fresh produce, household goods",
-    "profile": "Chain of 22 supermarkets across Lusaka, Kitwe, and Livingstone. Private-label snack range launched in 2024. Sources from certified local processors and emphasizes Zambian-made products in marketing."
-  },
-  {
-    "id": "zm-004",
-    "name": "Chongwe Agri-Supply Co",
-    "country": "ZM",
+    "headquarters_city": "Lusaka",
     "category": "wholesaler",
     "size_band": "small",
-    "product_focus": "fresh produce, dried legumes, maize",
-    "profile": "Small wholesaler focused on raw agricultural commodities. Not typically a buyer of packaged retail goods. Operates from Chongwe market on three-day buying cycles."
+    "employee_count_range": "51-200",
+    "annual_revenue_band": "$1M-$10M",
+    "founded_year": 2020,
+    "product_focus": [
+      "snacks",
+      "grain",
+      "dry goods"
+    ],
+    "profile": "Founded in 2020, Ndola Luangwa Cash & Carry operates from Lusaka and serves customers across Zambia, supplying small retailers, kiosks, and informal traders. They run an annual supplier review cycle for packaged-foods categories."
   },
   {
-    "id": "zm-005",
-    "name": "Victoria Falls Hospitality Group",
-    "country": "ZM",
-    "category": "horeca",
-    "size_band": "medium",
-    "product_focus": "hotel supplies, packaged snacks, beverages",
-    "profile": "Operates four lodges in Livingstone tourism corridor. Mini-bar snacks and conference catering require shelf-stable packaged items with clear ingredient labelling for international guests."
-  },
-  {
-    "id": "zm-006",
-    "name": "Ndola Foods Distribution",
-    "country": "ZM",
-    "category": "distributor",
-    "size_band": "small",
-    "product_focus": "packaged foods, snacks, confectionery",
-    "profile": "Family-owned distributor in Ndola covering 40 retail outlets on the Copperbelt. Known for fast payment terms and willingness to stock new SME products."
-  },
-  {
-    "id": "zm-007",
-    "name": "Lusaka Catering Services",
-    "country": "ZM",
-    "category": "horeca",
-    "size_band": "small",
-    "product_focus": "conference catering, snack platters",
-    "profile": "B2B caterer for NGO and corporate events in Lusaka. Buys 50-100kg packaged snacks monthly. Quality- and safety-certification sensitive due to client base."
-  },
-  {
-    "id": "zm-008",
-    "name": "Copperbelt Retail Cooperative",
-    "country": "ZM",
-    "category": "supermarket",
-    "size_band": "medium",
-    "product_focus": "groceries, basic household goods",
-    "profile": "Cooperative of 14 mid-sized supermarkets across Kitwe and Chingola. Stocks budget-tier brands and one premium tier per category. Listing fees apply for new SKUs."
-  },
-  {
-    "id": "tz-001",
-    "name": "Dar Distribution Co",
-    "country": "TZ",
-    "category": "distributor",
-    "size_band": "large",
-    "product_focus": "packaged snacks, beverages, confectionery",
-    "profile": "Largest snack distributor in Dar es Salaam with national reach via 6 regional depots. Imports from regional SADC processors and stocks aflatoxin-tested groundnut products under multiple brands."
-  },
-  {
-    "id": "tz-002",
-    "name": "Kilimanjaro Trade Network",
-    "country": "TZ",
-    "category": "distributor",
-    "size_band": "medium",
-    "product_focus": "packaged foods, dry goods",
-    "profile": "Arusha and Moshi region distributor with strong cross-border trade into Kenya. Sales team of 12, services tourism towns and inland retail. Open to consignment terms for new entrants."
-  },
-  {
-    "id": "tz-003",
-    "name": "Bongo Markets",
-    "country": "TZ",
-    "category": "supermarket",
-    "size_band": "large",
-    "product_focus": "groceries, fresh produce, packaged snacks",
-    "profile": "Chain of 18 supermarkets in Dar es Salaam and Mwanza. Dedicated SADC-products aisle launched in 2025 promoting cross-border SME brands. Listing process is documented and SME-friendly."
-  },
-  {
-    "id": "tz-004",
-    "name": "Serengeti Lodge Group",
-    "country": "TZ",
-    "category": "horeca",
-    "size_band": "large",
-    "product_focus": "luxury hotel supplies, packaged snacks",
-    "profile": "Twelve-property luxury safari lodge group across Serengeti, Ngorongoro, and Tarangire. Requires premium-tier snacks with traceable sourcing for international guest mini-bars."
-  },
-  {
-    "id": "tz-005",
-    "name": "Zanzibar Catering Co",
-    "country": "TZ",
-    "category": "horeca",
-    "size_band": "small",
-    "product_focus": "hotel catering, snack platters, beverages",
-    "profile": "Stone Town based caterer serving boutique hotels. Halal-certification of suppliers is required. Buys in small batches monthly."
-  },
-  {
-    "id": "tz-006",
-    "name": "Arusha Wholesale Center",
-    "country": "TZ",
-    "category": "wholesaler",
-    "size_band": "medium",
-    "product_focus": "dry goods, packaged foods, cooking oils",
-    "profile": "Wholesale market hub serving northern Tanzania retailers. High volume, thin margins. Stocks groundnut products from local Babati processors."
-  },
-  {
-    "id": "tz-007",
-    "name": "Mwanza Foods Distribution",
-    "country": "TZ",
-    "category": "distributor",
-    "size_band": "small",
-    "product_focus": "packaged snacks, beverages",
-    "profile": "Lake-Zone distributor with strong reach into Geita and Shinyanga. Six-truck fleet. Specializes in low-cost packaged snacks for rural retail."
-  },
-  {
-    "id": "tz-008",
-    "name": "Ujamaa Retail Chain",
-    "country": "TZ",
-    "category": "supermarket",
-    "size_band": "medium",
-    "product_focus": "groceries, snacks, household basics",
-    "profile": "Eleven-store budget supermarket chain across Dar suburbs. Strong private-label program. Listings prioritize value-tier products."
-  },
-  {
-    "id": "tz-009",
-    "name": "Tanga Fresh Produce Co",
-    "country": "TZ",
-    "category": "wholesaler",
-    "size_band": "small",
-    "product_focus": "fresh fruit, vegetables, raw commodities",
-    "profile": "Specialist fresh-produce wholesaler. Does not typically stock packaged or shelf-stable snack products."
-  },
-  {
-    "id": "ke-001",
-    "name": "Nairobi Distribution Hub",
+    "id": "co_0002",
+    "name": "Imani Bulk Traders",
     "country": "KE",
+    "headquarters_city": "Mombasa",
+    "category": "wholesaler",
+    "size_band": "small",
+    "employee_count_range": "51-200",
+    "annual_revenue_band": "$100K-$1M",
+    "founded_year": 2005,
+    "product_focus": [
+      "snacks",
+      "beverages"
+    ],
+    "profile": "Founded in 2005, Imani Bulk Traders operates from Mombasa and serves customers across Kenya, supplying small retailers, kiosks, and informal traders. Their procurement team has historically been open to new supplier conversations."
+  },
+  {
+    "id": "co_0003",
+    "name": "Iroko Yoruba Hospitality",
+    "country": "NG",
+    "headquarters_city": "Ibadan",
+    "category": "horeca",
+    "size_band": "medium",
+    "employee_count_range": "51-200",
+    "annual_revenue_band": "$1M-$10M",
+    "founded_year": 2014,
+    "product_focus": [
+      "in-room amenities",
+      "conference catering",
+      "buffet supplies",
+      "lounge snacks"
+    ],
+    "profile": "Headquartered in Ibadan, Iroko Yoruba Hospitality has been a hotel and restaurant group in the Nigeria market since 2014, with central procurement serving multiple restaurant outlets. Procurement is decentralised by outlet, with category buyers at head office for branded SKUs."
+  },
+  {
+    "id": "co_0004",
+    "name": "Mwansa Foods",
+    "country": "ZM",
+    "headquarters_city": "Chipata",
+    "category": "food_processor",
+    "size_band": "medium",
+    "employee_count_range": "51-200",
+    "annual_revenue_band": "$1M-$10M",
+    "founded_year": 2000,
+    "product_focus": [
+      "groundnut products",
+      "confectionery",
+      "packaged snacks",
+      "edible oils"
+    ],
+    "profile": "Mwansa Foods is a mid-sized food processor based in Chipata, Zambia, established in 2000, with HACCP-certified production facilities."
+  },
+  {
+    "id": "co_0005",
+    "name": "Pwani Marketplace",
+    "country": "TZ",
+    "headquarters_city": "Tanga",
+    "category": "online_retailer",
+    "size_band": "micro",
+    "employee_count_range": "1-10",
+    "annual_revenue_band": "<$100K",
+    "founded_year": 2023,
+    "product_focus": [
+      "imported goods",
+      "groceries",
+      "speciality foods"
+    ],
+    "profile": "Pwani Marketplace runs an online grocery retailer operation out of Tanga, Tanzania, with roots dating to 2023, with mobile-money payments as the primary checkout method. Recent expansion has increased their need for reliable suppliers in snack categories."
+  },
+  {
+    "id": "co_0006",
+    "name": "Kruger Mills",
+    "country": "ZA",
+    "headquarters_city": "Cape Town",
+    "category": "food_processor",
+    "size_band": "medium",
+    "employee_count_range": "51-200",
+    "annual_revenue_band": "$10M-$50M",
+    "founded_year": 2023,
+    "product_focus": [
+      "maize products",
+      "spices",
+      "confectionery"
+    ],
+    "profile": "Founded in 2023, Kruger Mills operates from Cape Town and serves customers across South Africa, exporting select product lines into neighbouring markets."
+  },
+  {
+    "id": "co_0007",
+    "name": "Boer Trading",
+    "country": "ZA",
+    "headquarters_city": "Cape Town",
     "category": "distributor",
     "size_band": "large",
-    "product_focus": "packaged snacks, beverages, FMCG",
-    "profile": "Major FMCG distributor in Nairobi with national reach. Imports SADC-region snacks for the Kenyan market. Strict supplier vetting including aflatoxin compliance."
+    "employee_count_range": "501-1000",
+    "annual_revenue_band": ">$50M",
+    "founded_year": 2005,
+    "product_focus": [
+      "personal care",
+      "edible oils",
+      "grain",
+      "processed foods"
+    ],
+    "profile": "Boer Trading is a large and established FMCG distributor based in Cape Town, South Africa, established in 2005, supplying independent retailers and chain stores across the country. Their procurement team has historically been open to new supplier conversations."
   },
   {
-    "id": "ke-002",
-    "name": "Mombasa Trade Co",
+    "id": "co_0008",
+    "name": "Olu Zenith Logistics",
+    "country": "NG",
+    "headquarters_city": "Port Harcourt",
+    "category": "logistics",
+    "size_band": "medium",
+    "employee_count_range": "201-500",
+    "annual_revenue_band": "$10M-$50M",
+    "founded_year": 2016,
+    "product_focus": [
+      "last-mile delivery",
+      "warehousing",
+      "FMCG distribution"
+    ],
+    "profile": "Founded in 2016, Olu Zenith Logistics operates from Port Harcourt and serves customers across Nigeria, with cross-border permits covering SADC routes. Active procurement contacts are based in Port Harcourt."
+  },
+  {
+    "id": "co_0009",
+    "name": "Mosi Mukuba Agro",
+    "country": "ZM",
+    "headquarters_city": "Lusaka",
+    "category": "food_processor",
+    "size_band": "small",
+    "employee_count_range": "11-50",
+    "annual_revenue_band": "$100K-$1M",
+    "founded_year": 2016,
+    "product_focus": [
+      "maize products",
+      "spices"
+    ],
+    "profile": "Mosi Mukuba Agro is a small but growing food processor based in Lusaka, Zambia, established in 2016, supplying both branded retail and unbranded wholesale channels. Buying decisions are made centrally and reviewed quarterly."
+  },
+  {
+    "id": "co_0010",
+    "name": "Bahari Karibu Trading",
     "country": "KE",
+    "headquarters_city": "Mombasa",
     "category": "distributor",
     "size_band": "medium",
-    "product_focus": "packaged foods, port-imported goods",
-    "profile": "Coast region distributor leveraging Mombasa port. Strong in tourism corridor and exports to inland Kenya retailers."
+    "employee_count_range": "201-500",
+    "annual_revenue_band": "$1M-$10M",
+    "founded_year": 2002,
+    "product_focus": [
+      "processed foods",
+      "household",
+      "edible oils",
+      "FMCG"
+    ],
+    "profile": "Headquartered in Mombasa, Bahari Karibu Trading has been an FMCG distributor in the Kenya market since 2002, with a distribution network covering both urban and peri-urban retail."
   },
   {
-    "id": "ke-003",
-    "name": "Tukene Supermarkets",
+    "id": "co_0011",
+    "name": "Bidii Hypermarket",
     "country": "KE",
+    "headquarters_city": "Thika",
+    "category": "supermarket",
+    "size_band": "small",
+    "employee_count_range": "51-200",
+    "annual_revenue_band": "$1M-$10M",
+    "founded_year": 2022,
+    "product_focus": [
+      "fresh produce",
+      "imported goods"
+    ],
+    "profile": "Bidii Hypermarket is a small but growing supermarket chain based in Thika, Kenya, established in 2022, offering a mix of local and imported products targeted at the middle-income segment. Procurement is decentralised by outlet, with category buyers at head office for branded SKUs."
+  },
+  {
+    "id": "co_0012",
+    "name": "Jambo Bahari Supermarkets",
+    "country": "KE",
+    "headquarters_city": "Nakuru",
     "category": "supermarket",
     "size_band": "large",
-    "product_focus": "groceries, fresh produce, snacks",
-    "profile": "Kenyan supermarket chain with 35 stores nationally. Operates a Pan-African brands aisle and offers shelf-space partnerships with SADC SMEs."
+    "employee_count_range": "501-1000",
+    "annual_revenue_band": "$10M-$50M",
+    "founded_year": 2006,
+    "product_focus": [
+      "fresh produce",
+      "deli",
+      "snacks"
+    ],
+    "profile": "Jambo Bahari Supermarkets runs a supermarket chain operation out of Nakuru, Kenya, with roots dating to 2006, running a loyalty programme that drives repeat traffic. Active procurement contacts are based in Nakuru."
   },
   {
-    "id": "ke-004",
-    "name": "Karibu Hospitality Network",
-    "country": "KE",
-    "category": "horeca",
-    "size_band": "medium",
-    "product_focus": "hotel supplies, conference catering",
-    "profile": "Hotel and conference catering group operating in Nairobi and Mombasa. Premium-tier sourcing with documentation requirements."
-  },
-  {
-    "id": "ke-005",
-    "name": "Eldoret Foods Distribution",
-    "country": "KE",
-    "category": "distributor",
-    "size_band": "small",
-    "product_focus": "packaged snacks, baked goods",
-    "profile": "Rift Valley distributor serving Eldoret, Nakuru, and surrounding towns. Eight-truck fleet. Willing to trial new SME brands with consignment."
-  },
-  {
-    "id": "ke-006",
-    "name": "Kisumu Wholesale Market",
-    "country": "KE",
-    "category": "wholesaler",
-    "size_band": "medium",
-    "product_focus": "dry goods, packaged foods",
-    "profile": "Lake Victoria wholesale hub serving western Kenya and cross-border trade to Uganda and Tanzania."
-  },
-  {
-    "id": "ke-007",
-    "name": "Sirikwa Boutique Hotels",
-    "country": "KE",
-    "category": "horeca",
-    "size_band": "small",
-    "product_focus": "boutique hotel supplies",
-    "profile": "Five-property boutique hotel group. Premium packaged snacks for guest rooms and meeting facilities. Story-driven sourcing preferred."
-  },
-  {
-    "id": "ng-001",
-    "name": "Lagos Mega Distribution",
-    "country": "NG",
-    "category": "distributor",
-    "size_band": "large",
-    "product_focus": "FMCG, packaged snacks, beverages",
-    "profile": "One of Nigeria's largest FMCG distributors. National reach across 18 states. Heavy import duties and registration with NAFDAC required for foreign-made packaged foods."
-  },
-  {
-    "id": "ng-002",
-    "name": "Naija Foods Wholesale",
-    "country": "NG",
-    "category": "wholesaler",
-    "size_band": "medium",
-    "product_focus": "packaged foods, dry goods, snacks",
-    "profile": "Wholesaler in Onitsha main market. High-volume cash-and-carry model. Price-sensitive customer base."
-  },
-  {
-    "id": "ng-003",
-    "name": "Sahara Retail Group",
-    "country": "NG",
+    "id": "co_0013",
+    "name": "Nyota Supermarkets",
+    "country": "TZ",
+    "headquarters_city": "Dodoma",
     "category": "supermarket",
     "size_band": "large",
-    "product_focus": "groceries, household goods",
-    "profile": "Forty-store supermarket chain across Lagos, Abuja, and Port Harcourt. Listings require NAFDAC registration and minimum SKU velocity commitments."
+    "employee_count_range": "1000+",
+    "annual_revenue_band": "$10M-$50M",
+    "founded_year": 2014,
+    "product_focus": [
+      "snacks",
+      "bakery",
+      "beverages"
+    ],
+    "profile": "Nyota Supermarkets runs a supermarket chain operation out of Dodoma, Tanzania, with roots dating to 2014, with a private-label range alongside national and international brands. Procurement is decentralised by outlet, with category buyers at head office for branded SKUs."
   },
   {
-    "id": "ng-004",
-    "name": "Eko Catering Services",
-    "country": "NG",
-    "category": "horeca",
-    "size_band": "medium",
-    "product_focus": "event catering, corporate snack supply",
-    "profile": "Major Lagos events caterer servicing 200+ corporate clients. High volume of branded packaged snacks for conference packs."
+    "id": "co_0014",
+    "name": "Tembo Digital",
+    "country": "TZ",
+    "headquarters_city": "Dodoma",
+    "category": "online_retailer",
+    "size_band": "large",
+    "employee_count_range": "501-1000",
+    "annual_revenue_band": "$10M-$50M",
+    "founded_year": 2011,
+    "product_focus": [
+      "last-mile groceries",
+      "speciality foods",
+      "groceries",
+      "imported goods"
+    ],
+    "profile": "Founded in 2011, Tembo Digital operates from Dodoma and serves customers across Tanzania, targeting younger urban consumers via mobile-first ordering. Recent expansion has increased their need for reliable suppliers in snack categories."
   },
   {
-    "id": "ng-005",
-    "name": "Abuja Hospitality Network",
-    "country": "NG",
-    "category": "horeca",
-    "size_band": "medium",
-    "product_focus": "hotel supplies, premium snacks",
-    "profile": "Hotel supply group serving diplomatic and corporate hotels in Abuja. Premium, documentation-heavy sourcing."
-  },
-  {
-    "id": "ng-006",
-    "name": "Kano Trade Partners",
-    "country": "NG",
-    "category": "distributor",
-    "size_band": "medium",
-    "product_focus": "dry goods, packaged foods",
-    "profile": "Northern Nigeria distributor serving Kano, Kaduna, and Katsina. Halal-certification required for snack products."
-  },
-  {
-    "id": "ng-007",
-    "name": "Port Harcourt Foods Distribution",
-    "country": "NG",
-    "category": "distributor",
-    "size_band": "small",
-    "product_focus": "packaged snacks, beverages",
-    "profile": "Niger Delta region distributor. Strong relationships with oil-and-gas company canteen suppliers."
-  },
-  {
-    "id": "za-001",
-    "name": "Cape Distribution Co",
-    "country": "ZA",
+    "id": "co_0015",
+    "name": "Jiwe Supplies",
+    "country": "TZ",
+    "headquarters_city": "Arusha",
     "category": "distributor",
     "size_band": "large",
-    "product_focus": "packaged snacks, FMCG",
-    "profile": "Western Cape FMCG distributor. SAFDA compliance and food safety audits required. Strong route to independent retail."
+    "employee_count_range": "501-1000",
+    "annual_revenue_band": "$10M-$50M",
+    "founded_year": 2016,
+    "product_focus": [
+      "snacks",
+      "processed foods",
+      "FMCG",
+      "beverages"
+    ],
+    "profile": "Jiwe Supplies runs an FMCG distributor operation out of Arusha, Tanzania, with roots dating to 2016, with a distribution network covering both urban and peri-urban retail. Buying decisions are made centrally and reviewed quarterly."
   },
   {
-    "id": "za-002",
-    "name": "Joburg Trade Hub",
-    "country": "ZA",
+    "id": "co_0016",
+    "name": "Luangwa Mulenga Hospitality",
+    "country": "ZM",
+    "headquarters_city": "Kabwe",
+    "category": "horeca",
+    "size_band": "medium",
+    "employee_count_range": "51-200",
+    "annual_revenue_band": "$1M-$10M",
+    "founded_year": 2019,
+    "product_focus": [
+      "bulk catering",
+      "snack platters",
+      "lounge snacks",
+      "restaurant chain procurement"
+    ],
+    "profile": "Luangwa Mulenga Hospitality is a mid-sized hotel and restaurant group based in Kabwe, Zambia, established in 2019, with central procurement serving multiple restaurant outlets. Recent expansion has increased their need for reliable suppliers in snack categories."
+  },
+  {
+    "id": "co_0017",
+    "name": "Zambezi Cash & Carry",
+    "country": "ZM",
+    "headquarters_city": "Livingstone",
     "category": "wholesaler",
     "size_band": "large",
-    "product_focus": "packaged foods, beverages, household",
-    "profile": "Major Gauteng wholesaler. National distribution capability. SADC-origin packaged foods accepted with import documentation."
+    "employee_count_range": "501-1000",
+    "annual_revenue_band": "$10M-$50M",
+    "founded_year": 2005,
+    "product_focus": [
+      "beverages",
+      "household consumables",
+      "grain",
+      "imported goods"
+    ],
+    "profile": "Founded in 2005, Zambezi Cash & Carry operates from Livingstone and serves customers across Zambia, serving both retail and small institutional buyers. Recent expansion has increased their need for reliable suppliers in snack categories."
   },
   {
-    "id": "za-003",
-    "name": "Karoo Retail Group",
-    "country": "ZA",
+    "id": "co_0018",
+    "name": "Kazi Neighbourhood",
+    "country": "KE",
+    "headquarters_city": "Nairobi",
+    "category": "convenience_chain",
+    "size_band": "small",
+    "employee_count_range": "51-200",
+    "annual_revenue_band": "$1M-$10M",
+    "founded_year": 2002,
+    "product_focus": [
+      "impulse buys",
+      "snacks",
+      "ready-to-eat"
+    ],
+    "profile": "Kazi Neighbourhood is a small but growing convenience-store chain based in Nairobi, Kenya, established in 2002, operating a tight SKU range optimised for impulse and top-up shopping. Recent expansion has increased their need for reliable suppliers in snack categories."
+  },
+  {
+    "id": "co_0019",
+    "name": "Sahel Catering",
+    "country": "NG",
+    "headquarters_city": "Ibadan",
+    "category": "horeca",
+    "size_band": "large",
+    "employee_count_range": "501-1000",
+    "annual_revenue_band": ">$50M",
+    "founded_year": 2011,
+    "product_focus": [
+      "conference catering",
+      "buffet supplies"
+    ],
+    "profile": "Sahel Catering is a large and established hotel and restaurant group based in Ibadan, Nigeria, established in 2011, supplying snack and beverage packages to hotels and lodges. Their procurement team has historically been open to new supplier conversations."
+  },
+  {
+    "id": "co_0020",
+    "name": "Asali Karibu Hypermarket",
+    "country": "KE",
+    "headquarters_city": "Nakuru",
+    "category": "supermarket",
+    "size_band": "small",
+    "employee_count_range": "11-50",
+    "annual_revenue_band": "$1M-$10M",
+    "founded_year": 2003,
+    "product_focus": [
+      "snacks",
+      "deli"
+    ],
+    "profile": "Founded in 2003, Asali Karibu Hypermarket operates from Nakuru and serves customers across Kenya, with a private-label range alongside national and international brands. Procurement is decentralised by outlet, with category buyers at head office for branded SKUs."
+  },
+  {
+    "id": "co_0021",
+    "name": "Bahari Hakuna Express",
+    "country": "KE",
+    "headquarters_city": "Eldoret",
+    "category": "convenience_chain",
+    "size_band": "medium",
+    "employee_count_range": "201-500",
+    "annual_revenue_band": "$1M-$10M",
+    "founded_year": 2001,
+    "product_focus": [
+      "impulse buys",
+      "confectionery"
+    ],
+    "profile": "Headquartered in Eldoret, Bahari Hakuna Express has been a convenience-store chain in the Kenya market since 2001, with extended trading hours across all locations. Buying decisions are made centrally and reviewed quarterly."
+  },
+  {
+    "id": "co_0022",
+    "name": "Yoruba Eko Freight",
+    "country": "NG",
+    "headquarters_city": "Port Harcourt",
+    "category": "logistics",
+    "size_band": "small",
+    "employee_count_range": "11-50",
+    "annual_revenue_band": "$100K-$1M",
+    "founded_year": 1999,
+    "product_focus": [
+      "last-mile delivery",
+      "cross-border haulage",
+      "warehousing"
+    ],
+    "profile": "Yoruba Eko Freight is a small but growing logistics provider based in Port Harcourt, Nigeria, established in 1999, providing warehousing, distribution, and last-mile services. Recent expansion has increased their need for reliable suppliers in snack categories. The company has been recognised in trade press for its category management and has piloted small AI-driven inventory programmes with mixed results."
+  },
+  {
+    "id": "co_0023",
+    "name": "Zenith Imports",
+    "country": "NG",
+    "headquarters_city": "Lagos",
+    "category": "distributor",
+    "size_band": "small",
+    "employee_count_range": "11-50",
+    "annual_revenue_band": "$100K-$1M",
+    "founded_year": 2023,
+    "product_focus": [
+      "beverages",
+      "confectionery",
+      "dry goods"
+    ],
+    "profile": "Zenith Imports is a small but growing FMCG distributor based in Lagos, Nigeria, established in 2023, with a distribution network covering both urban and peri-urban retail. Active procurement contacts are based in Lagos."
+  },
+  {
+    "id": "co_0024",
+    "name": "Zenith Lagos Processing",
+    "country": "NG",
+    "headquarters_city": "Benin City",
+    "category": "food_processor",
+    "size_band": "medium",
+    "employee_count_range": "201-500",
+    "annual_revenue_band": "$10M-$50M",
+    "founded_year": 2011,
+    "product_focus": [
+      "maize products",
+      "packaged snacks"
+    ],
+    "profile": "Founded in 2011, Zenith Lagos Processing operates from Benin City and serves customers across Nigeria, exporting select product lines into neighbouring markets. Buying decisions are made centrally and reviewed quarterly."
+  },
+  {
+    "id": "co_0025",
+    "name": "Kilimanjaro Hospitality",
+    "country": "TZ",
+    "headquarters_city": "Tanga",
+    "category": "horeca",
+    "size_band": "micro",
+    "employee_count_range": "1-10",
+    "annual_revenue_band": "<$100K",
+    "founded_year": 2019,
+    "product_focus": [
+      "conference catering",
+      "snack platters"
+    ],
+    "profile": "Headquartered in Tanga, Kilimanjaro Hospitality has been a hotel and restaurant group in the Tanzania market since 2019, catering to business travellers and conference clients. Recent expansion has increased their need for reliable suppliers in snack categories."
+  },
+  {
+    "id": "co_0026",
+    "name": "Chongwe Restaurants",
+    "country": "ZM",
+    "headquarters_city": "Lusaka",
+    "category": "horeca",
+    "size_band": "medium",
+    "employee_count_range": "201-500",
+    "annual_revenue_band": "$1M-$10M",
+    "founded_year": 2000,
+    "product_focus": [
+      "lounge snacks",
+      "in-room amenities"
+    ],
+    "profile": "Headquartered in Lusaka, Chongwe Restaurants has been a hotel and restaurant group in the Zambia market since 2000, supplying snack and beverage packages to hotels and lodges. Active procurement contacts are based in Lusaka."
+  },
+  {
+    "id": "co_0027",
+    "name": "Pamba Trading",
+    "country": "TZ",
+    "headquarters_city": "Dar es Salaam",
+    "category": "distributor",
+    "size_band": "large",
+    "employee_count_range": "1000+",
+    "annual_revenue_band": ">$50M",
+    "founded_year": 1998,
+    "product_focus": [
+      "personal care",
+      "FMCG",
+      "household"
+    ],
+    "profile": "Pamba Trading runs an FMCG distributor operation out of Dar es Salaam, Tanzania, with roots dating to 1998, with cold-chain capability for select product lines. Buying decisions are made centrally and reviewed quarterly."
+  },
+  {
+    "id": "co_0028",
+    "name": "Mwema Catering",
+    "country": "KE",
+    "headquarters_city": "Kisumu",
+    "category": "horeca",
+    "size_band": "small",
+    "employee_count_range": "51-200",
+    "annual_revenue_band": "$1M-$10M",
+    "founded_year": 2020,
+    "product_focus": [
+      "in-room amenities",
+      "conference catering",
+      "restaurant chain procurement"
+    ],
+    "profile": "Mwema Catering is a small but growing hotel and restaurant group based in Kisumu, Kenya, established in 2020, catering to business travellers and conference clients. They run an annual supplier review cycle for packaged-foods categories."
+  },
+  {
+    "id": "co_0029",
+    "name": "Chibwe Online",
+    "country": "ZM",
+    "headquarters_city": "Kabwe",
+    "category": "online_retailer",
+    "size_band": "medium",
+    "employee_count_range": "201-500",
+    "annual_revenue_band": "$1M-$10M",
+    "founded_year": 2020,
+    "product_focus": [
+      "groceries",
+      "last-mile groceries"
+    ],
+    "profile": "Chibwe Online is a mid-sized online grocery retailer based in Kabwe, Zambia, established in 2020, targeting younger urban consumers via mobile-first ordering. Active procurement contacts are based in Kabwe."
+  },
+  {
+    "id": "co_0030",
+    "name": "Uhuru E-Commerce",
+    "country": "TZ",
+    "headquarters_city": "Tanga",
+    "category": "online_retailer",
+    "size_band": "medium",
+    "employee_count_range": "51-200",
+    "annual_revenue_band": "$10M-$50M",
+    "founded_year": 2020,
+    "product_focus": [
+      "groceries",
+      "imported goods"
+    ],
+    "profile": "Founded in 2020, Uhuru E-Commerce operates from Tanga and serves customers across Tanzania, with same-day delivery in the capital and next-day delivery in secondary cities. They run an annual supplier review cycle for packaged-foods categories."
+  },
+  {
+    "id": "co_0031",
+    "name": "Tumaini Logistics",
+    "country": "KE",
+    "headquarters_city": "Nakuru",
+    "category": "logistics",
+    "size_band": "medium",
+    "employee_count_range": "201-500",
+    "annual_revenue_band": "$1M-$10M",
+    "founded_year": 2017,
+    "product_focus": [
+      "last-mile delivery",
+      "cold chain",
+      "warehousing"
+    ],
+    "profile": "Founded in 2017, Tumaini Logistics operates from Nakuru and serves customers across Kenya, specialising in FMCG and perishable-goods movement. Recent expansion has increased their need for reliable suppliers in snack categories."
+  },
+  {
+    "id": "co_0032",
+    "name": "Onyx Eko Foods",
+    "country": "NG",
+    "headquarters_city": "Kano",
+    "category": "food_processor",
+    "size_band": "medium",
+    "employee_count_range": "51-200",
+    "annual_revenue_band": "$10M-$50M",
+    "founded_year": 2023,
+    "product_focus": [
+      "edible oils",
+      "maize products",
+      "confectionery"
+    ],
+    "profile": "Founded in 2023, Onyx Eko Foods operates from Kano and serves customers across Nigeria, manufacturing packaged products under their own brand and on contract. They run an annual supplier review cycle for packaged-foods categories."
+  },
+  {
+    "id": "co_0033",
+    "name": "Mlima Hotels",
+    "country": "KE",
+    "headquarters_city": "Nakuru",
+    "category": "horeca",
+    "size_band": "medium",
+    "employee_count_range": "201-500",
+    "annual_revenue_band": "$1M-$10M",
+    "founded_year": 2022,
+    "product_focus": [
+      "lounge snacks",
+      "bulk catering"
+    ],
+    "profile": "Founded in 2022, Mlima Hotels operates from Nakuru and serves customers across Kenya, with a focus on conference and event catering."
+  },
+  {
+    "id": "co_0034",
+    "name": "Zambezi Hypermarket",
+    "country": "ZM",
+    "headquarters_city": "Ndola",
     "category": "supermarket",
     "size_band": "medium",
-    "product_focus": "groceries, regional brands",
-    "profile": "Twelve-store regional supermarket chain across Northern Cape. Promotes regional African brands as a positioning differentiator."
+    "employee_count_range": "201-500",
+    "annual_revenue_band": "$1M-$10M",
+    "founded_year": 2023,
+    "product_focus": [
+      "bakery",
+      "dairy"
+    ],
+    "profile": "Zambezi Hypermarket is a mid-sized supermarket chain based in Ndola, Zambia, established in 2023, with a private-label range alongside national and international brands. Active procurement contacts are based in Ndola."
   },
   {
-    "id": "za-004",
-    "name": "Mzansi Markets",
-    "country": "ZA",
-    "category": "supermarket",
+    "id": "co_0035",
+    "name": "Bidii Hotels",
+    "country": "KE",
+    "headquarters_city": "Nairobi",
+    "category": "horeca",
+    "size_band": "small",
+    "employee_count_range": "11-50",
+    "annual_revenue_band": "$1M-$10M",
+    "founded_year": 2018,
+    "product_focus": [
+      "restaurant chain procurement",
+      "buffet supplies",
+      "in-room amenities"
+    ],
+    "profile": "Bidii Hotels runs a hotel and restaurant group operation out of Nairobi, Kenya, with roots dating to 2018, catering to business travellers and conference clients. Recent expansion has increased their need for reliable suppliers in snack categories."
+  },
+  {
+    "id": "co_0036",
+    "name": "Asali Corner Stores",
+    "country": "KE",
+    "headquarters_city": "Nakuru",
+    "category": "convenience_chain",
+    "size_band": "medium",
+    "employee_count_range": "201-500",
+    "annual_revenue_band": "$1M-$10M",
+    "founded_year": 2015,
+    "product_focus": [
+      "confectionery",
+      "beverages"
+    ],
+    "profile": "Headquartered in Nakuru, Asali Corner Stores has been a convenience-store chain in the Kenya market since 2015, operating a tight SKU range optimised for impulse and top-up shopping."
+  },
+  {
+    "id": "co_0037",
+    "name": "Ndola Digital",
+    "country": "ZM",
+    "headquarters_city": "Kitwe",
+    "category": "online_retailer",
     "size_band": "large",
-    "product_focus": "groceries, fresh, snacks",
-    "profile": "Sixty-store nationwide chain. Heavily formalized listing process, slot fees apply, requires barcoded packaging and food-safety certification."
+    "employee_count_range": "501-1000",
+    "annual_revenue_band": "$10M-$50M",
+    "founded_year": 2001,
+    "product_focus": [
+      "imported goods",
+      "subscription boxes"
+    ],
+    "profile": "Headquartered in Kitwe, Ndola Digital has been an online grocery retailer in the Zambia market since 2001, targeting younger urban consumers via mobile-first ordering. Their procurement team has historically been open to new supplier conversations."
   },
   {
-    "id": "za-005",
-    "name": "Highveld Hospitality Group",
+    "id": "co_0038",
+    "name": "Faraja Logistics",
+    "country": "KE",
+    "headquarters_city": "Nakuru",
+    "category": "logistics",
+    "size_band": "micro",
+    "employee_count_range": "1-10",
+    "annual_revenue_band": "<$100K",
+    "founded_year": 2000,
+    "product_focus": [
+      "last-mile delivery",
+      "warehousing",
+      "cold chain"
+    ],
+    "profile": "Founded in 2000, Faraja Logistics operates from Nakuru and serves customers across Kenya, with cross-border permits covering SADC routes. Recent expansion has increased their need for reliable suppliers in snack categories."
+  },
+  {
+    "id": "co_0039",
+    "name": "Naija Processing",
+    "country": "NG",
+    "headquarters_city": "Port Harcourt",
+    "category": "food_processor",
+    "size_band": "small",
+    "employee_count_range": "11-50",
+    "annual_revenue_band": "$100K-$1M",
+    "founded_year": 2002,
+    "product_focus": [
+      "dairy",
+      "bakery",
+      "confectionery"
+    ],
+    "profile": "Naija Processing is a small but growing food processor based in Port Harcourt, Nigeria, established in 2002, with HACCP-certified production facilities. Procurement is decentralised by outlet, with category buyers at head office for branded SKUs."
+  },
+  {
+    "id": "co_0040",
+    "name": "Uhuru Trading",
+    "country": "TZ",
+    "headquarters_city": "Dodoma",
+    "category": "distributor",
+    "size_band": "small",
+    "employee_count_range": "51-200",
+    "annual_revenue_band": "$1M-$10M",
+    "founded_year": 2007,
+    "product_focus": [
+      "confectionery",
+      "beverages",
+      "processed foods"
+    ],
+    "profile": "Headquartered in Dodoma, Uhuru Trading has been an FMCG distributor in the Tanzania market since 2007, with cold-chain capability for select product lines. Buying decisions are made centrally and reviewed quarterly."
+  },
+  {
+    "id": "co_0041",
+    "name": "Boer Marketplace",
     "country": "ZA",
+    "headquarters_city": "Bloemfontein",
+    "category": "online_retailer",
+    "size_band": "medium",
+    "employee_count_range": "201-500",
+    "annual_revenue_band": "$10M-$50M",
+    "founded_year": 1998,
+    "product_focus": [
+      "groceries",
+      "speciality foods",
+      "snacks",
+      "FMCG e-commerce"
+    ],
+    "profile": "Boer Marketplace runs an online grocery retailer operation out of Bloemfontein, South Africa, with roots dating to 1998, with same-day delivery in the capital and next-day delivery in secondary cities. They run an annual supplier review cycle for packaged-foods categories."
+  },
+  {
+    "id": "co_0042",
+    "name": "Mosi Mulenga Processing",
+    "country": "ZM",
+    "headquarters_city": "Ndola",
+    "category": "food_processor",
+    "size_band": "medium",
+    "employee_count_range": "201-500",
+    "annual_revenue_band": "$1M-$10M",
+    "founded_year": 2000,
+    "product_focus": [
+      "confectionery",
+      "packaged snacks",
+      "bakery",
+      "edible oils"
+    ],
+    "profile": "Headquartered in Ndola, Mosi Mulenga Processing has been a food processor in the Zambia market since 2000, exporting select product lines into neighbouring markets. Recent expansion has increased their need for reliable suppliers in snack categories."
+  },
+  {
+    "id": "co_0043",
+    "name": "Mwema E-Commerce",
+    "country": "KE",
+    "headquarters_city": "Mombasa",
+    "category": "online_retailer",
+    "size_band": "medium",
+    "employee_count_range": "51-200",
+    "annual_revenue_band": "$1M-$10M",
+    "founded_year": 2022,
+    "product_focus": [
+      "snacks",
+      "speciality foods",
+      "groceries"
+    ],
+    "profile": "Headquartered in Mombasa, Mwema E-Commerce has been an online grocery retailer in the Kenya market since 2022, with same-day delivery in the capital and next-day delivery in secondary cities. Buying decisions are made centrally and reviewed quarterly."
+  },
+  {
+    "id": "co_0044",
+    "name": "Adero Catering",
+    "country": "NG",
+    "headquarters_city": "Port Harcourt",
+    "category": "horeca",
+    "size_band": "small",
+    "employee_count_range": "51-200",
+    "annual_revenue_band": "$1M-$10M",
+    "founded_year": 2001,
+    "product_focus": [
+      "snack platters",
+      "buffet supplies"
+    ],
+    "profile": "Adero Catering runs a hotel and restaurant group operation out of Port Harcourt, Nigeria, with roots dating to 2001, supplying snack and beverage packages to hotels and lodges. Their procurement team has historically been open to new supplier conversations."
+  },
+  {
+    "id": "co_0045",
+    "name": "Karibu Supplies",
+    "country": "KE",
+    "headquarters_city": "Nairobi",
+    "category": "distributor",
+    "size_band": "large",
+    "employee_count_range": "501-1000",
+    "annual_revenue_band": ">$50M",
+    "founded_year": 2000,
+    "product_focus": [
+      "confectionery",
+      "processed foods",
+      "personal care"
+    ],
+    "profile": "Headquartered in Nairobi, Karibu Supplies has been an FMCG distributor in the Kenya market since 2000, with cold-chain capability for select product lines. Recent expansion has increased their need for reliable suppliers in snack categories."
+  },
+  {
+    "id": "co_0046",
+    "name": "Mbuga Kilimanjaro Distributors",
+    "country": "TZ",
+    "headquarters_city": "Tanga",
+    "category": "distributor",
+    "size_band": "medium",
+    "employee_count_range": "51-200",
+    "annual_revenue_band": "$10M-$50M",
+    "founded_year": 2002,
+    "product_focus": [
+      "household",
+      "processed foods"
+    ],
+    "profile": "Founded in 2002, Mbuga Kilimanjaro Distributors operates from Tanga and serves customers across Tanzania, with cold-chain capability for select product lines. Active procurement contacts are based in Tanga."
+  },
+  {
+    "id": "co_0047",
+    "name": "Pamba Jiwe Corner Stores",
+    "country": "TZ",
+    "headquarters_city": "Mbeya",
+    "category": "convenience_chain",
+    "size_band": "small",
+    "employee_count_range": "51-200",
+    "annual_revenue_band": "$100K-$1M",
+    "founded_year": 2015,
+    "product_focus": [
+      "snacks",
+      "beverages"
+    ],
+    "profile": "Pamba Jiwe Corner Stores is a small but growing convenience-store chain based in Mbeya, Tanzania, established in 2015, targeting commuters and on-the-go customers. Their procurement team has historically been open to new supplier conversations."
+  },
+  {
+    "id": "co_0048",
+    "name": "Asali Logistics",
+    "country": "KE",
+    "headquarters_city": "Thika",
+    "category": "logistics",
+    "size_band": "small",
+    "employee_count_range": "51-200",
+    "annual_revenue_band": "$1M-$10M",
+    "founded_year": 2002,
+    "product_focus": [
+      "FMCG distribution",
+      "cross-border haulage",
+      "regional freight",
+      "last-mile delivery"
+    ],
+    "profile": "Founded in 2002, Asali Logistics operates from Thika and serves customers across Kenya, with cross-border permits covering SADC routes."
+  },
+  {
+    "id": "co_0049",
+    "name": "Mwangaza Jiwe Distributors",
+    "country": "TZ",
+    "headquarters_city": "Mbeya",
+    "category": "distributor",
+    "size_band": "large",
+    "employee_count_range": "1000+",
+    "annual_revenue_band": "$10M-$50M",
+    "founded_year": 1999,
+    "product_focus": [
+      "edible oils",
+      "grain",
+      "personal care"
+    ],
+    "profile": "Mwangaza Jiwe Distributors runs an FMCG distributor operation out of Mbeya, Tanzania, with roots dating to 1999, operating from a central warehouse and three regional depots."
+  },
+  {
+    "id": "co_0050",
+    "name": "Crown Express",
+    "country": "NG",
+    "headquarters_city": "Kano",
+    "category": "convenience_chain",
+    "size_band": "medium",
+    "employee_count_range": "201-500",
+    "annual_revenue_band": "$1M-$10M",
+    "founded_year": 2007,
+    "product_focus": [
+      "ready-to-eat",
+      "impulse buys"
+    ],
+    "profile": "Headquartered in Kano, Crown Express has been a convenience-store chain in the Nigeria market since 2007, with extended trading hours across all locations."
+  },
+  {
+    "id": "co_0051",
+    "name": "Kilimanjaro Agro",
+    "country": "TZ",
+    "headquarters_city": "Dar es Salaam",
+    "category": "food_processor",
+    "size_band": "small",
+    "employee_count_range": "11-50",
+    "annual_revenue_band": "$1M-$10M",
+    "founded_year": 2000,
+    "product_focus": [
+      "bakery",
+      "maize products"
+    ],
+    "profile": "Kilimanjaro Agro is a small but growing food processor based in Dar es Salaam, Tanzania, established in 2000, exporting select product lines into neighbouring markets."
+  },
+  {
+    "id": "co_0052",
+    "name": "Klipdrift Marketplace",
+    "country": "ZA",
+    "headquarters_city": "Durban",
+    "category": "online_retailer",
+    "size_band": "medium",
+    "employee_count_range": "201-500",
+    "annual_revenue_band": "$1M-$10M",
+    "founded_year": 2001,
+    "product_focus": [
+      "groceries",
+      "speciality foods"
+    ],
+    "profile": "Klipdrift Marketplace runs an online grocery retailer operation out of Durban, South Africa, with roots dating to 2001, operating a fulfilment centre and partnering with local couriers. Buying decisions are made centrally and reviewed quarterly."
+  },
+  {
+    "id": "co_0053",
+    "name": "Mulenga Freight",
+    "country": "ZM",
+    "headquarters_city": "Kabwe",
+    "category": "logistics",
+    "size_band": "medium",
+    "employee_count_range": "51-200",
+    "annual_revenue_band": "$10M-$50M",
+    "founded_year": 2019,
+    "product_focus": [
+      "cross-border haulage",
+      "warehousing",
+      "FMCG distribution"
+    ],
+    "profile": "Founded in 2019, Mulenga Freight operates from Kabwe and serves customers across Zambia, with cross-border permits covering SADC routes. Buying decisions are made centrally and reviewed quarterly."
+  },
+  {
+    "id": "co_0054",
+    "name": "Karibu Marketplace",
+    "country": "KE",
+    "headquarters_city": "Nairobi",
+    "category": "online_retailer",
+    "size_band": "medium",
+    "employee_count_range": "51-200",
+    "annual_revenue_band": "$10M-$50M",
+    "founded_year": 1999,
+    "product_focus": [
+      "groceries",
+      "last-mile groceries"
+    ],
+    "profile": "Karibu Marketplace is a mid-sized online grocery retailer based in Nairobi, Kenya, established in 1999, with same-day delivery in the capital and next-day delivery in secondary cities. Buying decisions are made centrally and reviewed quarterly."
+  },
+  {
+    "id": "co_0055",
+    "name": "Kazi Hotels",
+    "country": "KE",
+    "headquarters_city": "Eldoret",
+    "category": "horeca",
+    "size_band": "small",
+    "employee_count_range": "11-50",
+    "annual_revenue_band": "$1M-$10M",
+    "founded_year": 2013,
+    "product_focus": [
+      "buffet supplies",
+      "in-room amenities",
+      "conference catering",
+      "snack platters"
+    ],
+    "profile": "Headquartered in Eldoret, Kazi Hotels has been a hotel and restaurant group in the Kenya market since 2013, with a focus on conference and event catering. They run an annual supplier review cycle for packaged-foods categories."
+  },
+  {
+    "id": "co_0056",
+    "name": "Tumaini Corner Stores",
+    "country": "KE",
+    "headquarters_city": "Thika",
+    "category": "convenience_chain",
+    "size_band": "medium",
+    "employee_count_range": "201-500",
+    "annual_revenue_band": "$10M-$50M",
+    "founded_year": 2000,
+    "product_focus": [
+      "beverages",
+      "ready-to-eat",
+      "impulse buys"
+    ],
+    "profile": "Tumaini Corner Stores is a mid-sized convenience-store chain based in Thika, Kenya, established in 2000, operating a tight SKU range optimised for impulse and top-up shopping. Recent expansion has increased their need for reliable suppliers in snack categories."
+  },
+  {
+    "id": "co_0057",
+    "name": "Yoruba Wholesale",
+    "country": "NG",
+    "headquarters_city": "Abuja",
+    "category": "wholesaler",
+    "size_band": "medium",
+    "employee_count_range": "51-200",
+    "annual_revenue_band": "$1M-$10M",
+    "founded_year": 2004,
+    "product_focus": [
+      "imported goods",
+      "bulk FMCG"
+    ],
+    "profile": "Founded in 2004, Yoruba Wholesale operates from Abuja and serves customers across Nigeria, serving both retail and small institutional buyers. Recent expansion has increased their need for reliable suppliers in snack categories."
+  },
+  {
+    "id": "co_0058",
+    "name": "Pwani Jiwe Catering",
+    "country": "TZ",
+    "headquarters_city": "Dodoma",
+    "category": "horeca",
+    "size_band": "small",
+    "employee_count_range": "11-50",
+    "annual_revenue_band": "$1M-$10M",
+    "founded_year": 2017,
+    "product_focus": [
+      "snack platters",
+      "in-room amenities"
+    ],
+    "profile": "Pwani Jiwe Catering runs a hotel and restaurant group operation out of Dodoma, Tanzania, with roots dating to 2017, supplying snack and beverage packages to hotels and lodges. Active procurement contacts are based in Dodoma."
+  },
+  {
+    "id": "co_0059",
+    "name": "Chanda Supplies",
+    "country": "ZM",
+    "headquarters_city": "Kitwe",
+    "category": "distributor",
+    "size_band": "small",
+    "employee_count_range": "11-50",
+    "annual_revenue_band": "$100K-$1M",
+    "founded_year": 2008,
+    "product_focus": [
+      "beverages",
+      "grain",
+      "snacks",
+      "edible oils"
+    ],
+    "profile": "Founded in 2008, Chanda Supplies operates from Kitwe and serves customers across Zambia, with a distribution network covering both urban and peri-urban retail."
+  },
+  {
+    "id": "co_0060",
+    "name": "Mwema Hakuna Logistics",
+    "country": "KE",
+    "headquarters_city": "Eldoret",
+    "category": "logistics",
+    "size_band": "medium",
+    "employee_count_range": "51-200",
+    "annual_revenue_band": "$10M-$50M",
+    "founded_year": 2018,
+    "product_focus": [
+      "cold chain",
+      "cross-border haulage",
+      "warehousing",
+      "last-mile delivery"
+    ],
+    "profile": "Mwema Hakuna Logistics runs a logistics provider operation out of Eldoret, Kenya, with roots dating to 2018, specialising in FMCG and perishable-goods movement. Recent expansion has increased their need for reliable suppliers in snack categories."
+  },
+  {
+    "id": "co_0061",
+    "name": "Mulenga Logistics",
+    "country": "ZM",
+    "headquarters_city": "Livingstone",
+    "category": "logistics",
+    "size_band": "small",
+    "employee_count_range": "51-200",
+    "annual_revenue_band": "$100K-$1M",
+    "founded_year": 2021,
+    "product_focus": [
+      "FMCG distribution",
+      "warehousing"
+    ],
+    "profile": "Mulenga Logistics runs a logistics provider operation out of Livingstone, Zambia, with roots dating to 2021, specialising in FMCG and perishable-goods movement. Active procurement contacts are based in Livingstone."
+  },
+  {
+    "id": "co_0062",
+    "name": "Hakuna Cash & Carry",
+    "country": "KE",
+    "headquarters_city": "Eldoret",
+    "category": "wholesaler",
+    "size_band": "small",
+    "employee_count_range": "11-50",
+    "annual_revenue_band": "$100K-$1M",
+    "founded_year": 2016,
+    "product_focus": [
+      "dry goods",
+      "edible oils",
+      "beverages",
+      "grain"
+    ],
+    "profile": "Founded in 2016, Hakuna Cash & Carry operates from Eldoret and serves customers across Kenya, operating cash-and-carry warehouses in two cities. They run an annual supplier review cycle for packaged-foods categories."
+  },
+  {
+    "id": "co_0063",
+    "name": "Munali Distributors",
+    "country": "ZM",
+    "headquarters_city": "Chipata",
+    "category": "distributor",
+    "size_band": "small",
+    "employee_count_range": "11-50",
+    "annual_revenue_band": "$100K-$1M",
+    "founded_year": 2023,
+    "product_focus": [
+      "FMCG",
+      "grain",
+      "household",
+      "personal care"
+    ],
+    "profile": "Headquartered in Chipata, Munali Distributors has been an FMCG distributor in the Zambia market since 2023, with cold-chain capability for select product lines. Buying decisions are made centrally and reviewed quarterly."
+  },
+  {
+    "id": "co_0064",
+    "name": "Mbuga Twiga Hospitality",
+    "country": "TZ",
+    "headquarters_city": "Dar es Salaam",
+    "category": "horeca",
+    "size_band": "micro",
+    "employee_count_range": "1-10",
+    "annual_revenue_band": "<$100K",
+    "founded_year": 1999,
+    "product_focus": [
+      "restaurant chain procurement",
+      "buffet supplies",
+      "in-room amenities",
+      "snack platters"
+    ],
+    "profile": "Founded in 1999, Mbuga Twiga Hospitality operates from Dar es Salaam and serves customers across Tanzania, with a focus on conference and event catering. Buying decisions are made centrally and reviewed quarterly."
+  },
+  {
+    "id": "co_0065",
+    "name": "Tembo Bulk Traders",
+    "country": "TZ",
+    "headquarters_city": "Mbeya",
+    "category": "wholesaler",
+    "size_band": "large",
+    "employee_count_range": "501-1000",
+    "annual_revenue_band": ">$50M",
+    "founded_year": 2022,
+    "product_focus": [
+      "beverages",
+      "imported goods"
+    ],
+    "profile": "Founded in 2022, Tembo Bulk Traders operates from Mbeya and serves customers across Tanzania, supplying small retailers, kiosks, and informal traders. Active procurement contacts are based in Mbeya."
+  },
+  {
+    "id": "co_0066",
+    "name": "Bidii Tumaini Supplies",
+    "country": "KE",
+    "headquarters_city": "Mombasa",
+    "category": "distributor",
+    "size_band": "medium",
+    "employee_count_range": "51-200",
+    "annual_revenue_band": "$1M-$10M",
+    "founded_year": 2013,
+    "product_focus": [
+      "dry goods",
+      "snacks"
+    ],
+    "profile": "Bidii Tumaini Supplies runs an FMCG distributor operation out of Mombasa, Kenya, with roots dating to 2013, with a distribution network covering both urban and peri-urban retail. They run an annual supplier review cycle for packaged-foods categories."
+  },
+  {
+    "id": "co_0067",
+    "name": "Sahel Hotels",
+    "country": "NG",
+    "headquarters_city": "Benin City",
     "category": "horeca",
     "size_band": "large",
-    "product_focus": "hotel supplies, lodge supplies",
-    "profile": "Hotel and game lodge supplier across Gauteng and Mpumalanga. Premium snack sourcing with traceability and origin-story marketing."
+    "employee_count_range": "501-1000",
+    "annual_revenue_band": ">$50M",
+    "founded_year": 2009,
+    "product_focus": [
+      "conference catering",
+      "bulk catering",
+      "restaurant chain procurement",
+      "buffet supplies"
+    ],
+    "profile": "Sahel Hotels runs a hotel and restaurant group operation out of Benin City, Nigeria, with roots dating to 2009, catering to business travellers and conference clients. Their procurement team has historically been open to new supplier conversations."
   },
   {
-    "id": "za-006",
-    "name": "Durban Catering Co",
-    "country": "ZA",
+    "id": "co_0068",
+    "name": "Bahari Freight",
+    "country": "TZ",
+    "headquarters_city": "Arusha",
+    "category": "logistics",
+    "size_band": "small",
+    "employee_count_range": "51-200",
+    "annual_revenue_band": "$1M-$10M",
+    "founded_year": 2019,
+    "product_focus": [
+      "cold chain",
+      "FMCG distribution",
+      "last-mile delivery",
+      "regional freight"
+    ],
+    "profile": "Bahari Freight runs a logistics provider operation out of Arusha, Tanzania, with roots dating to 2019, operating a fleet of refrigerated and dry vehicles."
+  },
+  {
+    "id": "co_0069",
+    "name": "Munali Agro",
+    "country": "ZM",
+    "headquarters_city": "Kabwe",
+    "category": "food_processor",
+    "size_band": "small",
+    "employee_count_range": "51-200",
+    "annual_revenue_band": "$100K-$1M",
+    "founded_year": 2016,
+    "product_focus": [
+      "groundnut products",
+      "maize products",
+      "bakery"
+    ],
+    "profile": "Founded in 2016, Munali Agro operates from Kabwe and serves customers across Zambia, supplying both branded retail and unbranded wholesale channels. Procurement is decentralised by outlet, with category buyers at head office for branded SKUs."
+  },
+  {
+    "id": "co_0070",
+    "name": "Mlima Corner Stores",
+    "country": "KE",
+    "headquarters_city": "Nairobi",
+    "category": "convenience_chain",
+    "size_band": "micro",
+    "employee_count_range": "1-10",
+    "annual_revenue_band": "<$100K",
+    "founded_year": 2000,
+    "product_focus": [
+      "petrol-forecourt retail",
+      "snacks"
+    ],
+    "profile": "Mlima Corner Stores is a small, owner-operated convenience-store chain based in Nairobi, Kenya, established in 2000, operating a tight SKU range optimised for impulse and top-up shopping. Active procurement contacts are based in Nairobi."
+  },
+  {
+    "id": "co_0071",
+    "name": "Tembo Corner Stores",
+    "country": "TZ",
+    "headquarters_city": "Arusha",
+    "category": "convenience_chain",
+    "size_band": "small",
+    "employee_count_range": "51-200",
+    "annual_revenue_band": "$100K-$1M",
+    "founded_year": 2021,
+    "product_focus": [
+      "ready-to-eat",
+      "petrol-forecourt retail"
+    ],
+    "profile": "Founded in 2021, Tembo Corner Stores operates from Arusha and serves customers across Tanzania, operating a tight SKU range optimised for impulse and top-up shopping. They run an annual supplier review cycle for packaged-foods categories."
+  },
+  {
+    "id": "co_0072",
+    "name": "Mulenga Marketplace",
+    "country": "ZM",
+    "headquarters_city": "Livingstone",
+    "category": "online_retailer",
+    "size_band": "small",
+    "employee_count_range": "11-50",
+    "annual_revenue_band": "$1M-$10M",
+    "founded_year": 2015,
+    "product_focus": [
+      "imported goods",
+      "FMCG e-commerce",
+      "speciality foods"
+    ],
+    "profile": "Headquartered in Livingstone, Mulenga Marketplace has been an online grocery retailer in the Zambia market since 2015, with same-day delivery in the capital and next-day delivery in secondary cities. Their procurement team has historically been open to new supplier conversations."
+  },
+  {
+    "id": "co_0073",
+    "name": "Simba Mbuga Marketplace",
+    "country": "TZ",
+    "headquarters_city": "Dodoma",
+    "category": "online_retailer",
+    "size_band": "micro",
+    "employee_count_range": "1-10",
+    "annual_revenue_band": "<$100K",
+    "founded_year": 2006,
+    "product_focus": [
+      "FMCG e-commerce",
+      "imported goods"
+    ],
+    "profile": "Simba Mbuga Marketplace runs an online grocery retailer operation out of Dodoma, Tanzania, with roots dating to 2006, operating a fulfilment centre and partnering with local couriers. Buying decisions are made centrally and reviewed quarterly."
+  },
+  {
+    "id": "co_0074",
+    "name": "Mwansa Kalulu Online",
+    "country": "ZM",
+    "headquarters_city": "Lusaka",
+    "category": "online_retailer",
+    "size_band": "small",
+    "employee_count_range": "51-200",
+    "annual_revenue_band": "$1M-$10M",
+    "founded_year": 1999,
+    "product_focus": [
+      "imported goods",
+      "snacks",
+      "speciality foods"
+    ],
+    "profile": "Headquartered in Lusaka, Mwansa Kalulu Online has been an online grocery retailer in the Zambia market since 1999, with same-day delivery in the capital and next-day delivery in secondary cities. They run an annual supplier review cycle for packaged-foods categories."
+  },
+  {
+    "id": "co_0075",
+    "name": "Nyota Trading",
+    "country": "TZ",
+    "headquarters_city": "Mbeya",
+    "category": "distributor",
+    "size_band": "small",
+    "employee_count_range": "51-200",
+    "annual_revenue_band": "$100K-$1M",
+    "founded_year": 2003,
+    "product_focus": [
+      "edible oils"
+    ],
+    "profile": "Nyota Trading, a distributor based in Mbeya."
+  },
+  {
+    "id": "co_0076",
+    "name": "Twiga Restaurants",
+    "country": "TZ",
+    "headquarters_city": "Dodoma",
     "category": "horeca",
     "size_band": "medium",
-    "product_focus": "event catering, conference snacks",
-    "profile": "KwaZulu-Natal corporate caterer. Halal- and Hindu-vegetarian sourcing required for regional client base."
+    "employee_count_range": "201-500",
+    "annual_revenue_band": "$10M-$50M",
+    "founded_year": 2002,
+    "product_focus": [
+      "buffet supplies",
+      "bulk catering",
+      "in-room amenities"
+    ],
+    "profile": "Twiga Restaurants runs a hotel and restaurant group operation out of Dodoma, Tanzania, with roots dating to 2002, with a focus on conference and event catering. Recent expansion has increased their need for reliable suppliers in snack categories."
   },
   {
-    "id": "za-007",
-    "name": "Bloem Wholesale Centre",
-    "country": "ZA",
+    "id": "co_0077",
+    "name": "Munali Bulk Traders",
+    "country": "ZM",
+    "headquarters_city": "Kitwe",
     "category": "wholesaler",
-    "size_band": "small",
-    "product_focus": "dry goods, packaged foods",
-    "profile": "Free State wholesale operation serving rural retailers. Price-led, narrow margins."
+    "size_band": "medium",
+    "employee_count_range": "51-200",
+    "annual_revenue_band": "$1M-$10M",
+    "founded_year": 2009,
+    "product_focus": [
+      "snacks",
+      "grain",
+      "household consumables"
+    ],
+    "profile": "Munali Bulk Traders runs a wholesale operation operation out of Kitwe, Zambia, with roots dating to 2009, supplying small retailers, kiosks, and informal traders."
   },
   {
-    "id": "za-008",
-    "name": "Cape Fresh Co",
+    "id": "co_0078",
+    "name": "Faraja Marketplace",
+    "country": "KE",
+    "headquarters_city": "Nakuru",
+    "category": "online_retailer",
+    "size_band": "small",
+    "employee_count_range": "51-200",
+    "annual_revenue_band": "$1M-$10M",
+    "founded_year": 2007,
+    "product_focus": [
+      "subscription boxes",
+      "imported goods",
+      "last-mile groceries"
+    ],
+    "profile": "Faraja Marketplace runs an online grocery retailer operation out of Nakuru, Kenya, with roots dating to 2007, with same-day delivery in the capital and next-day delivery in secondary cities. Active procurement contacts are based in Nakuru."
+  },
+  {
+    "id": "co_0079",
+    "name": "Tafel Imports",
     "country": "ZA",
+    "headquarters_city": "Pretoria",
+    "category": "distributor",
+    "size_band": "medium",
+    "employee_count_range": "51-200",
+    "annual_revenue_band": "$1M-$10M",
+    "founded_year": 2003,
+    "product_focus": [
+      "snacks",
+      "processed foods",
+      "frozen foods",
+      "grain"
+    ],
+    "profile": "Founded in 2003, Tafel Imports operates from Pretoria and serves customers across South Africa, supplying independent retailers and chain stores across the country. Their procurement team has historically been open to new supplier conversations."
+  },
+  {
+    "id": "co_0080",
+    "name": "Ushindi Tumaini Trading",
+    "country": "KE",
+    "headquarters_city": "Eldoret",
+    "category": "distributor",
+    "size_band": "large",
+    "employee_count_range": "501-1000",
+    "annual_revenue_band": "$10M-$50M",
+    "founded_year": 2005,
+    "product_focus": [
+      "beverages",
+      "household",
+      "snacks"
+    ],
+    "profile": "Ushindi Tumaini Trading runs an FMCG distributor operation out of Eldoret, Kenya, with roots dating to 2005, with a distribution network covering both urban and peri-urban retail. Buying decisions are made centrally and reviewed quarterly."
+  },
+  {
+    "id": "co_0081",
+    "name": "Palm Mills",
+    "country": "NG",
+    "headquarters_city": "Kano",
+    "category": "food_processor",
+    "size_band": "small",
+    "employee_count_range": "11-50",
+    "annual_revenue_band": "$100K-$1M",
+    "founded_year": 2013,
+    "product_focus": [
+      "edible oils",
+      "maize products",
+      "confectionery"
+    ],
+    "profile": "Palm Mills runs a food processor operation out of Kano, Nigeria, with roots dating to 2013, manufacturing packaged products under their own brand and on contract. Their procurement team has historically been open to new supplier conversations."
+  },
+  {
+    "id": "co_0082",
+    "name": "Mwangaza Stores",
+    "country": "TZ",
+    "headquarters_city": "Arusha",
+    "category": "supermarket",
+    "size_band": "small",
+    "employee_count_range": "51-200",
+    "annual_revenue_band": "$100K-$1M",
+    "founded_year": 2014,
+    "product_focus": [
+      "household",
+      "bakery",
+      "imported goods"
+    ],
+    "profile": "Headquartered in Arusha, Mwangaza Stores has been a supermarket chain in the Tanzania market since 2014, with stores in major urban centres and a growing presence in smaller cities."
+  },
+  {
+    "id": "co_0083",
+    "name": "Mbuga Mills",
+    "country": "TZ",
+    "headquarters_city": "Mwanza",
+    "category": "food_processor",
+    "size_band": "medium",
+    "employee_count_range": "51-200",
+    "annual_revenue_band": "$1M-$10M",
+    "founded_year": 2007,
+    "product_focus": [
+      "confectionery",
+      "packaged snacks"
+    ],
+    "profile": "Founded in 2007, Mbuga Mills operates from Mwanza and serves customers across Tanzania, with HACCP-certified production facilities. Active procurement contacts are based in Mwanza."
+  },
+  {
+    "id": "co_0084",
+    "name": "Tafel Corner Stores",
+    "country": "ZA",
+    "headquarters_city": "Bloemfontein",
+    "category": "convenience_chain",
+    "size_band": "medium",
+    "employee_count_range": "51-200",
+    "annual_revenue_band": "$10M-$50M",
+    "founded_year": 2002,
+    "product_focus": [
+      "confectionery",
+      "ready-to-eat",
+      "petrol-forecourt retail",
+      "snacks"
+    ],
+    "profile": "Tafel Corner Stores runs a convenience-store chain operation out of Bloemfontein, South Africa, with roots dating to 2002, with extended trading hours across all locations. Their procurement team has historically been open to new supplier conversations."
+  },
+  {
+    "id": "co_0085",
+    "name": "Lagos Cash & Carry",
+    "country": "NG",
+    "headquarters_city": "Kano",
+    "category": "wholesaler",
+    "size_band": "medium",
+    "employee_count_range": "51-200",
+    "annual_revenue_band": "$10M-$50M",
+    "founded_year": 2017,
+    "product_focus": [
+      "snacks",
+      "grain"
+    ],
+    "profile": "Founded in 2017, Lagos Cash & Carry operates from Kano and serves customers across Nigeria, supplying small retailers, kiosks, and informal traders. Buying decisions are made centrally and reviewed quarterly."
+  },
+  {
+    "id": "co_0086",
+    "name": "Jambo Catering",
+    "country": "KE",
+    "headquarters_city": "Nairobi",
+    "category": "horeca",
+    "size_band": "micro",
+    "employee_count_range": "1-10",
+    "annual_revenue_band": "<$100K",
+    "founded_year": 2012,
+    "product_focus": [
+      "snack platters",
+      "restaurant chain procurement",
+      "conference catering",
+      "lounge snacks"
+    ],
+    "profile": "Headquartered in Nairobi, Jambo Catering has been a hotel and restaurant group in the Kenya market since 2012, with a focus on conference and event catering. Recent expansion has increased their need for reliable suppliers in snack categories."
+  },
+  {
+    "id": "co_0087",
+    "name": "Cape E-Commerce",
+    "country": "ZA",
+    "headquarters_city": "Cape Town",
+    "category": "online_retailer",
+    "size_band": "small",
+    "employee_count_range": "11-50",
+    "annual_revenue_band": "$1M-$10M",
+    "founded_year": 2019,
+    "product_focus": [
+      "last-mile groceries",
+      "FMCG e-commerce"
+    ],
+    "profile": "Headquartered in Cape Town, Cape E-Commerce has been an online grocery retailer in the South Africa market since 2019, with mobile-money payments as the primary checkout method. Their procurement team has historically been open to new supplier conversations."
+  },
+  {
+    "id": "co_0088",
+    "name": "Mwansa Mills",
+    "country": "ZM",
+    "headquarters_city": "Lusaka",
+    "category": "food_processor",
+    "size_band": "small",
+    "employee_count_range": "51-200",
+    "annual_revenue_band": "$1M-$10M",
+    "founded_year": 2010,
+    "product_focus": [
+      "bakery",
+      "spices",
+      "groundnut products"
+    ],
+    "profile": "Headquartered in Lusaka, Mwansa Mills has been a food processor in the Zambia market since 2010, manufacturing packaged products under their own brand and on contract. Recent expansion has increased their need for reliable suppliers in snack categories."
+  },
+  {
+    "id": "co_0089",
+    "name": "Mulenga Distribution Services",
+    "country": "ZM",
+    "headquarters_city": "Livingstone",
+    "category": "logistics",
+    "size_band": "medium",
+    "employee_count_range": "201-500",
+    "annual_revenue_band": "$10M-$50M",
+    "founded_year": 2016,
+    "product_focus": [
+      "last-mile delivery",
+      "cross-border haulage",
+      "FMCG distribution"
+    ],
+    "profile": "Headquartered in Livingstone, Mulenga Distribution Services has been a logistics provider in the Zambia market since 2016, providing warehousing, distribution, and last-mile services. Procurement is decentralised by outlet, with category buyers at head office for branded SKUs."
+  },
+  {
+    "id": "co_0090",
+    "name": "Pwani Mwangaza Catering",
+    "country": "TZ",
+    "headquarters_city": "Dar es Salaam",
+    "category": "horeca",
+    "size_band": "medium",
+    "employee_count_range": "51-200",
+    "annual_revenue_band": "$10M-$50M",
+    "founded_year": 1998,
+    "product_focus": [
+      "buffet supplies",
+      "conference catering",
+      "restaurant chain procurement",
+      "lounge snacks"
+    ],
+    "profile": "Founded in 1998, Pwani Mwangaza Catering operates from Dar es Salaam and serves customers across Tanzania, supplying snack and beverage packages to hotels and lodges. Buying decisions are made centrally and reviewed quarterly."
+  },
+  {
+    "id": "co_0091",
+    "name": "Eko Trading",
+    "country": "NG",
+    "headquarters_city": "Abuja",
+    "category": "distributor",
+    "size_band": "small",
+    "employee_count_range": "51-200",
+    "annual_revenue_band": "$1M-$10M",
+    "founded_year": 2022,
+    "product_focus": [
+      "personal care",
+      "frozen foods",
+      "household",
+      "beverages"
+    ],
+    "profile": "Eko Trading is a small but growing FMCG distributor based in Abuja, Nigeria, established in 2022, with cold-chain capability for select product lines. Recent expansion has increased their need for reliable suppliers in snack categories."
+  },
+  {
+    "id": "co_0092",
+    "name": "Tembo Cash & Carry",
+    "country": "TZ",
+    "headquarters_city": "Mbeya",
+    "category": "wholesaler",
+    "size_band": "medium",
+    "employee_count_range": "51-200",
+    "annual_revenue_band": "$10M-$50M",
+    "founded_year": 2003,
+    "product_focus": [
+      "beverages",
+      "edible oils",
+      "grain"
+    ],
+    "profile": "Tembo Cash & Carry runs a wholesale operation operation out of Mbeya, Tanzania, with roots dating to 2003, supplying small retailers, kiosks, and informal traders. Recent expansion has increased their need for reliable suppliers in snack categories."
+  },
+  {
+    "id": "co_0093",
+    "name": "Cape Bulk Traders",
+    "country": "ZA",
+    "headquarters_city": "Port Elizabeth",
+    "category": "wholesaler",
+    "size_band": "micro",
+    "employee_count_range": "1-10",
+    "annual_revenue_band": "<$100K",
+    "founded_year": 1998,
+    "product_focus": [
+      "grain",
+      "household consumables",
+      "dry goods",
+      "imported goods"
+    ],
+    "profile": "Cape Bulk Traders runs a wholesale operation operation out of Port Elizabeth, South Africa, with roots dating to 1998, serving both retail and small institutional buyers. They run an annual supplier review cycle for packaged-foods categories."
+  },
+  {
+    "id": "co_0094",
+    "name": "Chibwe Logistics",
+    "country": "ZM",
+    "headquarters_city": "Livingstone",
+    "category": "logistics",
+    "size_band": "small",
+    "employee_count_range": "51-200",
+    "annual_revenue_band": "$1M-$10M",
+    "founded_year": 2016,
+    "product_focus": [
+      "cold chain",
+      "FMCG distribution"
+    ],
+    "profile": "Founded in 2016, Chibwe Logistics operates from Livingstone and serves customers across Zambia, specialising in FMCG and perishable-goods movement. Active procurement contacts are based in Livingstone."
+  },
+  {
+    "id": "co_0095",
+    "name": "Springbok Hospitality",
+    "country": "ZA",
+    "headquarters_city": "Port Elizabeth",
+    "category": "horeca",
+    "size_band": "small",
+    "employee_count_range": "11-50",
+    "annual_revenue_band": "$100K-$1M",
+    "founded_year": 2023,
+    "product_focus": [
+      "bulk catering",
+      "in-room amenities"
+    ],
+    "profile": "Headquartered in Port Elizabeth, Springbok Hospitality has been a hotel and restaurant group in the South Africa market since 2023, supplying snack and beverage packages to hotels and lodges. They run an annual supplier review cycle for packaged-foods categories."
+  },
+  {
+    "id": "co_0096",
+    "name": "Pwani Hotels",
+    "country": "TZ",
+    "headquarters_city": "Mbeya",
+    "category": "horeca",
+    "size_band": "micro",
+    "employee_count_range": "1-10",
+    "annual_revenue_band": "<$100K",
+    "founded_year": 2009,
+    "product_focus": [
+      "buffet supplies",
+      "bulk catering",
+      "conference catering"
+    ],
+    "profile": "Pwani Hotels runs a hotel and restaurant group operation out of Mbeya, Tanzania, with roots dating to 2009, catering to business travellers and conference clients. Their procurement team has historically been open to new supplier conversations."
+  },
+  {
+    "id": "co_0097",
+    "name": "Kalulu E-Commerce",
+    "country": "ZM",
+    "headquarters_city": "Ndola",
+    "category": "online_retailer",
+    "size_band": "medium",
+    "employee_count_range": "51-200",
+    "annual_revenue_band": "$10M-$50M",
+    "founded_year": 2018,
+    "product_focus": [
+      "speciality foods",
+      "imported goods",
+      "groceries"
+    ],
+    "profile": "Kalulu E-Commerce is a mid-sized online grocery retailer based in Ndola, Zambia, established in 2018, targeting younger urban consumers via mobile-first ordering. They run an annual supplier review cycle for packaged-foods categories."
+  },
+  {
+    "id": "co_0098",
+    "name": "Luangwa Supermarkets",
+    "country": "ZM",
+    "headquarters_city": "Kabwe",
+    "category": "supermarket",
+    "size_band": "medium",
+    "employee_count_range": "201-500",
+    "annual_revenue_band": "$1M-$10M",
+    "founded_year": 1998,
+    "product_focus": [
+      "imported goods",
+      "dairy",
+      "bakery",
+      "deli"
+    ],
+    "profile": "Luangwa Supermarkets is a mid-sized supermarket chain based in Kabwe, Zambia, established in 1998, with a private-label range alongside national and international brands. Recent expansion has increased their need for reliable suppliers in snack categories."
+  },
+  {
+    "id": "co_0099",
+    "name": "Bidii Freight",
+    "country": "KE",
+    "headquarters_city": "Mombasa",
+    "category": "logistics",
+    "size_band": "small",
+    "employee_count_range": "51-200",
+    "annual_revenue_band": "$1M-$10M",
+    "founded_year": 1998,
+    "product_focus": [
+      "cross-border haulage",
+      "regional freight",
+      "warehousing"
+    ],
+    "profile": "Headquartered in Mombasa, Bidii Freight has been a logistics provider in the Kenya market since 1998, operating a fleet of refrigerated and dry vehicles. Active procurement contacts are based in Mombasa."
+  },
+  {
+    "id": "co_0100",
+    "name": "Safari Mart",
+    "country": "TZ",
+    "headquarters_city": "Arusha",
+    "category": "supermarket",
+    "size_band": "medium",
+    "employee_count_range": "51-200",
+    "annual_revenue_band": "$1M-$10M",
+    "founded_year": 2010,
+    "product_focus": [
+      "household",
+      "dairy"
+    ],
+    "profile": "Founded in 2010, Safari Mart operates from Arusha and serves customers across Tanzania, with a private-label range alongside national and international brands. Active procurement contacts are based in Arusha."
+  },
+  {
+    "id": "co_0101",
+    "name": "Obi Freight Group",
+    "country": "NG",
+    "headquarters_city": "Ibadan",
+    "category": "logistics",
+    "size_band": "medium",
+    "employee_count_range": "51-200",
+    "annual_revenue_band": "$1M-$10M",
+    "founded_year": 2021,
+    "product_focus": [
+      "cross-border haulage",
+      "cold chain",
+      "last-mile delivery"
+    ],
+    "profile": "Founded in 2021, Obi Freight operates from Ibadan and serves customers across Nigeria, providing warehousing, distribution, and last-mile services."
+  },
+  {
+    "id": "co_0102",
+    "name": "Olu Cash & Carry",
+    "country": "NG",
+    "headquarters_city": "Benin City",
     "category": "wholesaler",
     "size_band": "small",
-    "product_focus": "fresh produce, raw commodities",
-    "profile": "Fresh-produce specialist; does not handle shelf-stable packaged snacks."
+    "employee_count_range": "11-50",
+    "annual_revenue_band": "$1M-$10M",
+    "founded_year": 2023,
+    "product_focus": [
+      "snacks",
+      "dry goods"
+    ],
+    "profile": "Olu Cash & Carry runs a wholesale operation operation out of Benin City, Nigeria, with roots dating to 2023, supplying small retailers, kiosks, and informal traders. Recent expansion has increased their need for reliable suppliers in snack categories."
+  },
+  {
+    "id": "co_0103",
+    "name": "Obi Freight",
+    "country": "NG",
+    "headquarters_city": "Benin City",
+    "category": "logistics",
+    "size_band": "medium",
+    "employee_count_range": "51-200",
+    "annual_revenue_band": "$10M-$50M",
+    "founded_year": 2016,
+    "product_focus": [
+      "last-mile delivery",
+      "FMCG distribution",
+      "regional freight"
+    ],
+    "profile": "Headquartered in Benin City, Obi Freight has been a logistics provider in the Nigeria market since 2016, operating a fleet of refrigerated and dry vehicles. Recent expansion has increased their need for reliable suppliers in snack categories."
+  },
+  {
+    "id": "co_0104",
+    "name": "Protea Mills",
+    "country": "ZA",
+    "headquarters_city": "Durban",
+    "category": "food_processor",
+    "size_band": "small",
+    "employee_count_range": "11-50",
+    "annual_revenue_band": "$1M-$10M",
+    "founded_year": 1998,
+    "product_focus": [
+      "edible oils",
+      "groundnut products",
+      "dairy",
+      "bakery"
+    ],
+    "profile": "Protea Mills is a small but growing food processor based in Durban, South Africa, established in 1998, exporting select product lines into neighbouring markets. Procurement is decentralised by outlet, with category buyers at head office for branded SKUs."
+  },
+  {
+    "id": "co_0105",
+    "name": "Mwansa Logistics",
+    "country": "ZM",
+    "headquarters_city": "Chipata",
+    "category": "logistics",
+    "size_band": "small",
+    "employee_count_range": "11-50",
+    "annual_revenue_band": "$1M-$10M",
+    "founded_year": 2002,
+    "product_focus": [
+      "FMCG distribution",
+      "last-mile delivery"
+    ],
+    "profile": "Mwansa Logistics runs a logistics provider operation out of Chipata, Zambia, with roots dating to 2002, operating a fleet of refrigerated and dry vehicles. Procurement is decentralised by outlet, with category buyers at head office for branded SKUs."
+  },
+  {
+    "id": "co_0106",
+    "name": "Kazi Express",
+    "country": "KE",
+    "headquarters_city": "Nairobi",
+    "category": "convenience_chain",
+    "size_band": "medium",
+    "employee_count_range": "201-500",
+    "annual_revenue_band": "$1M-$10M",
+    "founded_year": 2009,
+    "product_focus": [
+      "snacks",
+      "impulse buys"
+    ],
+    "profile": "Kazi Express runs a convenience-store chain operation out of Nairobi, Kenya, with roots dating to 2009, operating a tight SKU range optimised for impulse and top-up shopping."
+  },
+  {
+    "id": "co_0107",
+    "name": "Indaba Madiba Hotels",
+    "country": "ZA",
+    "headquarters_city": "Cape Town",
+    "category": "horeca",
+    "size_band": "micro",
+    "employee_count_range": "1-10",
+    "annual_revenue_band": "<$100K",
+    "founded_year": 2014,
+    "product_focus": [
+      "lounge snacks",
+      "bulk catering",
+      "conference catering",
+      "buffet supplies"
+    ],
+    "profile": "Indaba Madiba Hotels runs a hotel and restaurant group operation out of Cape Town, South Africa, with roots dating to 2014, catering to business travellers and conference clients. Procurement is decentralised by outlet, with category buyers at head office for branded SKUs."
+  },
+  {
+    "id": "co_0108",
+    "name": "Obi Stores",
+    "country": "NG",
+    "headquarters_city": "Ibadan",
+    "category": "supermarket",
+    "size_band": "medium",
+    "employee_count_range": "201-500",
+    "annual_revenue_band": "$1M-$10M",
+    "founded_year": 2020,
+    "product_focus": [
+      "household",
+      "imported goods",
+      "beverages"
+    ],
+    "profile": "Obi Stores is a mid-sized supermarket chain based in Ibadan, Nigeria, established in 2020, with a private-label range alongside national and international brands. Buying decisions are made centrally and reviewed quarterly."
+  },
+  {
+    "id": "co_0109",
+    "name": "Hakuna Hospitality",
+    "country": "KE",
+    "headquarters_city": "Mombasa",
+    "category": "horeca",
+    "size_band": "medium",
+    "employee_count_range": "201-500",
+    "annual_revenue_band": "$10M-$50M",
+    "founded_year": 2002,
+    "product_focus": [
+      "bulk catering",
+      "buffet supplies",
+      "snack platters",
+      "lounge snacks"
+    ],
+    "profile": "Hakuna Hospitality is a mid-sized hotel and restaurant group based in Mombasa, Kenya, established in 2002, with a focus on conference and event catering. Buying decisions are made centrally and reviewed quarterly."
+  },
+  {
+    "id": "co_0110",
+    "name": "Indaba Hotels",
+    "country": "ZA",
+    "headquarters_city": "Pretoria",
+    "category": "horeca",
+    "size_band": "small",
+    "employee_count_range": "51-200",
+    "annual_revenue_band": "$100K-$1M",
+    "founded_year": 1998,
+    "product_focus": [
+      "restaurant chain procurement",
+      "conference catering"
+    ],
+    "profile": "Indaba Hotels runs a hotel and restaurant group operation out of Pretoria, South Africa, with roots dating to 1998, with central procurement serving multiple restaurant outlets. Their procurement team has historically been open to new supplier conversations."
+  },
+  {
+    "id": "co_0111",
+    "name": "Crown Cargo",
+    "country": "NG",
+    "headquarters_city": "Lagos",
+    "category": "logistics",
+    "size_band": "small",
+    "employee_count_range": "51-200",
+    "annual_revenue_band": "$100K-$1M",
+    "founded_year": 2011,
+    "product_focus": [
+      "cross-border haulage",
+      "warehousing",
+      "cold chain"
+    ],
+    "profile": "Crown Cargo runs a logistics provider operation out of Lagos, Nigeria, with roots dating to 2011, providing warehousing, distribution, and last-mile services. Buying decisions are made centrally and reviewed quarterly."
+  },
+  {
+    "id": "co_0112",
+    "name": "Pamba Corner Stores",
+    "country": "TZ",
+    "headquarters_city": "Dar es Salaam",
+    "category": "convenience_chain",
+    "size_band": "small",
+    "employee_count_range": "11-50",
+    "annual_revenue_band": "$100K-$1M",
+    "founded_year": 1998,
+    "product_focus": [
+      "confectionery",
+      "snacks"
+    ],
+    "profile": "Founded in 1998, Pamba Corner Stores operates from Dar es Salaam and serves customers across Tanzania, targeting commuters and on-the-go customers. Recent expansion has increased their need for reliable suppliers in snack categories."
+  },
+  {
+    "id": "co_0113",
+    "name": "Kruger Foods",
+    "country": "ZA",
+    "headquarters_city": "Johannesburg",
+    "category": "food_processor",
+    "size_band": "medium",
+    "employee_count_range": "51-200",
+    "annual_revenue_band": "$1M-$10M",
+    "founded_year": 2007,
+    "product_focus": [
+      "packaged snacks",
+      "spices"
+    ],
+    "profile": "Headquartered in Johannesburg, Kruger Foods has been a food processor in the South Africa market since 2007, manufacturing packaged products under their own brand and on contract. Procurement is decentralised by outlet, with category buyers at head office for branded SKUs."
+  },
+  {
+    "id": "co_0114",
+    "name": "Mosi Stores",
+    "country": "ZM",
+    "headquarters_city": "Ndola",
+    "category": "supermarket",
+    "size_band": "medium",
+    "employee_count_range": "201-500",
+    "annual_revenue_band": "$1M-$10M",
+    "founded_year": 1998,
+    "product_focus": [
+      "imported goods",
+      "groceries"
+    ],
+    "profile": "Mosi Stores is a mid-sized supermarket chain based in Ndola, Zambia, established in 1998, offering a mix of local and imported products targeted at the middle-income segment. Buying decisions are made centrally and reviewed quarterly."
+  },
+  {
+    "id": "co_0115",
+    "name": "Royal Mills",
+    "country": "NG",
+    "headquarters_city": "Lagos",
+    "category": "food_processor",
+    "size_band": "small",
+    "employee_count_range": "11-50",
+    "annual_revenue_band": "$100K-$1M",
+    "founded_year": 2016,
+    "product_focus": [
+      "confectionery",
+      "maize products"
+    ],
+    "profile": "Headquartered in Lagos, Royal Mills has been a food processor in the Nigeria market since 2016, with HACCP-certified production facilities."
+  },
+  {
+    "id": "co_0116",
+    "name": "Mulenga Express",
+    "country": "ZM",
+    "headquarters_city": "Kitwe",
+    "category": "convenience_chain",
+    "size_band": "medium",
+    "employee_count_range": "51-200",
+    "annual_revenue_band": "$10M-$50M",
+    "founded_year": 2011,
+    "product_focus": [
+      "beverages",
+      "confectionery",
+      "ready-to-eat",
+      "snacks"
+    ],
+    "profile": "Mulenga Express runs a convenience-store chain operation out of Kitwe, Zambia, with roots dating to 2011, with extended trading hours across all locations. Recent expansion has increased their need for reliable suppliers in snack categories."
+  },
+  {
+    "id": "co_0117",
+    "name": "Mlima Stores",
+    "country": "KE",
+    "headquarters_city": "Mombasa",
+    "category": "supermarket",
+    "size_band": "large",
+    "employee_count_range": "1000+",
+    "annual_revenue_band": "$10M-$50M",
+    "founded_year": 1999,
+    "product_focus": [
+      "frozen foods",
+      "deli",
+      "fresh produce"
+    ],
+    "profile": "Headquartered in Mombasa, Mlima Stores has been a supermarket chain in the Kenya market since 1999, offering a mix of local and imported products targeted at the middle-income segment. Active procurement contacts are based in Mombasa."
+  },
+  {
+    "id": "co_0118",
+    "name": "Munali Freight",
+    "country": "ZM",
+    "headquarters_city": "Ndola",
+    "category": "logistics",
+    "size_band": "medium",
+    "employee_count_range": "201-500",
+    "annual_revenue_band": "$1M-$10M",
+    "founded_year": 2013,
+    "product_focus": [
+      "cross-border haulage",
+      "warehousing",
+      "FMCG distribution",
+      "last-mile delivery"
+    ],
+    "profile": "Munali Freight runs a logistics provider operation out of Ndola, Zambia, with roots dating to 2013, operating a fleet of refrigerated and dry vehicles. Buying decisions are made centrally and reviewed quarterly."
+  },
+  {
+    "id": "co_0119",
+    "name": "Naija Royal Agro",
+    "country": "NG",
+    "headquarters_city": "Benin City",
+    "category": "food_processor",
+    "size_band": "small",
+    "employee_count_range": "51-200",
+    "annual_revenue_band": "$100K-$1M",
+    "founded_year": 1999,
+    "product_focus": [
+      "spices",
+      "confectionery",
+      "groundnut products",
+      "dairy"
+    ],
+    "profile": "Naija Royal Agro is a small but growing food processor based in Benin City, Nigeria, established in 1999, exporting select product lines into neighbouring markets. Their procurement team has historically been open to new supplier conversations."
+  },
+  {
+    "id": "co_0120",
+    "name": "Bidii Distribution Services",
+    "country": "KE",
+    "headquarters_city": "Mombasa",
+    "category": "logistics",
+    "size_band": "micro",
+    "employee_count_range": "1-10",
+    "annual_revenue_band": "<$100K",
+    "founded_year": 1999,
+    "product_focus": [
+      "FMCG distribution",
+      "regional freight",
+      "last-mile delivery"
+    ],
+    "profile": "Headquartered in Mombasa, Bidii Distribution Services has been a logistics provider in the Kenya market since 1999, operating a fleet of refrigerated and dry vehicles. Procurement is decentralised by outlet, with category buyers at head office for branded SKUs."
+  },
+  {
+    "id": "co_0121",
+    "name": "Chanda Foods",
+    "country": "ZM",
+    "headquarters_city": "Kabwe",
+    "category": "food_processor",
+    "size_band": "small",
+    "employee_count_range": "11-50",
+    "annual_revenue_band": "$100K-$1M",
+    "founded_year": 2007,
+    "product_focus": [
+      "packaged snacks",
+      "bakery",
+      "groundnut products",
+      "edible oils"
+    ],
+    "profile": "Chanda Foods is a small but growing food processor based in Kabwe, Zambia, established in 2007, supplying both branded retail and unbranded wholesale channels. Recent expansion has increased their need for reliable suppliers in snack categories."
+  },
+  {
+    "id": "co_0122",
+    "name": "Pwani Agro",
+    "country": "TZ",
+    "headquarters_city": "Mwanza",
+    "category": "food_processor",
+    "size_band": "medium",
+    "employee_count_range": "51-200",
+    "annual_revenue_band": "$1M-$10M",
+    "founded_year": 1999,
+    "product_focus": [
+      "maize products",
+      "dairy",
+      "spices"
+    ],
+    "profile": "Pwani Agro is a mid-sized food processor based in Mwanza, Tanzania, established in 1999, with HACCP-certified production facilities. Their procurement team has historically been open to new supplier conversations."
+  },
+  {
+    "id": "co_0123",
+    "name": "Kalulu Supermarkets",
+    "country": "ZM",
+    "headquarters_city": "Kabwe",
+    "category": "supermarket",
+    "size_band": "small",
+    "employee_count_range": "51-200",
+    "annual_revenue_band": "$100K-$1M",
+    "founded_year": 2009,
+    "product_focus": [
+      "fresh produce",
+      "bakery",
+      "groceries",
+      "imported goods"
+    ],
+    "profile": "Headquartered in Kabwe, Kalulu Supermarkets has been a supermarket chain in the Zambia market since 2009, running a loyalty programme that drives repeat traffic. Procurement is decentralised by outlet, with category buyers at head office for branded SKUs."
+  },
+  {
+    "id": "co_0124",
+    "name": "Klipdrift E-Commerce",
+    "country": "ZA",
+    "headquarters_city": "Cape Town",
+    "category": "online_retailer",
+    "size_band": "medium",
+    "employee_count_range": "51-200",
+    "annual_revenue_band": "$1M-$10M",
+    "founded_year": 2020,
+    "product_focus": [
+      "imported goods",
+      "speciality foods",
+      "last-mile groceries",
+      "subscription boxes"
+    ],
+    "profile": "Klipdrift E-Commerce runs an online grocery retailer operation out of Cape Town, South Africa, with roots dating to 2020, with mobile-money payments as the primary checkout method. They run an annual supplier review cycle for packaged-foods categories."
+  },
+  {
+    "id": "co_0125",
+    "name": "Sahel Naija Cash & Carry",
+    "country": "NG",
+    "headquarters_city": "Lagos",
+    "category": "wholesaler",
+    "size_band": "small",
+    "employee_count_range": "11-50",
+    "annual_revenue_band": "$1M-$10M",
+    "founded_year": 2006,
+    "product_focus": [
+      "snacks",
+      "dry goods",
+      "imported goods"
+    ],
+    "profile": "Headquartered in Lagos, Sahel Naija Cash & Carry has been a wholesale operation in the Nigeria market since 2006, operating cash-and-carry warehouses in two cities. They run an annual supplier review cycle for packaged-foods categories."
+  },
+  {
+    "id": "co_0126",
+    "name": "Uhuru Corner Stores",
+    "country": "TZ",
+    "headquarters_city": "Mwanza",
+    "category": "convenience_chain",
+    "size_band": "medium",
+    "employee_count_range": "51-200",
+    "annual_revenue_band": "$1M-$10M",
+    "founded_year": 2012,
+    "product_focus": [
+      "beverages",
+      "impulse buys"
+    ],
+    "profile": "Headquartered in Mwanza, Uhuru Corner Stores has been a convenience-store chain in the Tanzania market since 2012, with outlets in petrol-station forecourts and high-traffic urban corners."
+  },
+  {
+    "id": "co_0127",
+    "name": "Cape Trading",
+    "country": "ZA",
+    "headquarters_city": "Bloemfontein",
+    "category": "distributor",
+    "size_band": "medium",
+    "employee_count_range": "201-500",
+    "annual_revenue_band": "$1M-$10M",
+    "founded_year": 2001,
+    "product_focus": [
+      "grain",
+      "edible oils",
+      "beverages"
+    ],
+    "profile": "Founded in 2001, Cape Trading operates from Bloemfontein and serves customers across South Africa, operating from a central warehouse and three regional depots. They run an annual supplier review cycle for packaged-foods categories."
+  },
+  {
+    "id": "co_0128",
+    "name": "Tafel Quick Shops",
+    "country": "ZA",
+    "headquarters_city": "Johannesburg",
+    "category": "convenience_chain",
+    "size_band": "medium",
+    "employee_count_range": "201-500",
+    "annual_revenue_band": "$10M-$50M",
+    "founded_year": 2010,
+    "product_focus": [
+      "snacks"
+    ],
+    "profile": "Tafel Quick Shops, a convenience_chain based in Johannesburg."
+  },
+  {
+    "id": "co_0129",
+    "name": "Crown Online",
+    "country": "NG",
+    "headquarters_city": "Benin City",
+    "category": "online_retailer",
+    "size_band": "small",
+    "employee_count_range": "11-50",
+    "annual_revenue_band": "$100K-$1M",
+    "founded_year": 2009,
+    "product_focus": [
+      "speciality foods",
+      "FMCG e-commerce",
+      "last-mile groceries"
+    ],
+    "profile": "Founded in 2009, Crown Online operates from Benin City and serves customers across Nigeria, with mobile-money payments as the primary checkout method."
+  },
+  {
+    "id": "co_0130",
+    "name": "Chibwe Supermarkets",
+    "country": "ZM",
+    "headquarters_city": "Kabwe",
+    "category": "supermarket",
+    "size_band": "small",
+    "employee_count_range": "11-50",
+    "annual_revenue_band": "$1M-$10M",
+    "founded_year": 2009,
+    "product_focus": [
+      "household",
+      "beverages",
+      "fresh produce"
+    ],
+    "profile": "Founded in 2009, Chibwe Supermarkets operates from Kabwe and serves customers across Zambia, offering a mix of local and imported products targeted at the middle-income segment. Active procurement contacts are based in Kabwe."
+  },
+  {
+    "id": "co_0131",
+    "name": "Pwani Stores",
+    "country": "TZ",
+    "headquarters_city": "Tanga",
+    "category": "supermarket",
+    "size_band": "small",
+    "employee_count_range": "51-200",
+    "annual_revenue_band": "$1M-$10M",
+    "founded_year": 2019,
+    "product_focus": [
+      "snacks",
+      "frozen foods",
+      "beverages",
+      "bakery"
+    ],
+    "profile": "Pwani Stores runs a supermarket chain operation out of Tanga, Tanzania, with roots dating to 2019, with stores in major urban centres and a growing presence in smaller cities."
+  },
+  {
+    "id": "co_0132",
+    "name": "Springbok Catering",
+    "country": "ZA",
+    "headquarters_city": "Pretoria",
+    "category": "horeca",
+    "size_band": "small",
+    "employee_count_range": "51-200",
+    "annual_revenue_band": "$1M-$10M",
+    "founded_year": 2007,
+    "product_focus": [
+      "snack platters",
+      "buffet supplies",
+      "bulk catering",
+      "in-room amenities"
+    ],
+    "profile": "Springbok Catering is a small but growing hotel and restaurant group based in Pretoria, South Africa, established in 2007, with central procurement serving multiple restaurant outlets. Recent expansion has increased their need for reliable suppliers in snack categories."
+  },
+  {
+    "id": "co_0133",
+    "name": "Onyx Obi Agro",
+    "country": "NG",
+    "headquarters_city": "Benin City",
+    "category": "food_processor",
+    "size_band": "small",
+    "employee_count_range": "11-50",
+    "annual_revenue_band": "$1M-$10M",
+    "founded_year": 2012,
+    "product_focus": [
+      "confectionery",
+      "dairy"
+    ],
+    "profile": "Headquartered in Benin City, Onyx Obi Agro has been a food processor in the Nigeria market since 2012, with HACCP-certified production facilities. They run an annual supplier review cycle for packaged-foods categories."
+  },
+  {
+    "id": "co_0134",
+    "name": "Lungu Logistics",
+    "country": "ZM",
+    "headquarters_city": "Chipata",
+    "category": "logistics",
+    "size_band": "small",
+    "employee_count_range": "11-50",
+    "annual_revenue_band": "$1M-$10M",
+    "founded_year": 2012,
+    "product_focus": [
+      "cross-border haulage",
+      "warehousing",
+      "regional freight",
+      "FMCG distribution"
+    ],
+    "profile": "Lungu Logistics runs a logistics provider operation out of Chipata, Zambia, with roots dating to 2012, with cross-border permits covering SADC routes. Recent expansion has increased their need for reliable suppliers in snack categories."
+  },
+  {
+    "id": "co_0135",
+    "name": "Bidii Hakuna Mart",
+    "country": "KE",
+    "headquarters_city": "Nakuru",
+    "category": "supermarket",
+    "size_band": "small",
+    "employee_count_range": "11-50",
+    "annual_revenue_band": "$100K-$1M",
+    "founded_year": 2004,
+    "product_focus": [
+      "imported goods",
+      "household",
+      "snacks",
+      "groceries"
+    ],
+    "profile": "Headquartered in Nakuru, Bidii Hakuna Mart has been a supermarket chain in the Kenya market since 2004, with stores in major urban centres and a growing presence in smaller cities. Active procurement contacts are based in Nakuru."
+  },
+  {
+    "id": "co_0136",
+    "name": "Protea Hotels",
+    "country": "ZA",
+    "headquarters_city": "Cape Town",
+    "category": "horeca",
+    "size_band": "medium",
+    "employee_count_range": "51-200",
+    "annual_revenue_band": "$10M-$50M",
+    "founded_year": 2001,
+    "product_focus": [
+      "conference catering",
+      "in-room amenities",
+      "snack platters",
+      "restaurant chain procurement"
+    ],
+    "profile": "Protea Hotels is a mid-sized hotel and restaurant group based in Cape Town, South Africa, established in 2001, catering to business travellers and conference clients. Their procurement team has historically been open to new supplier conversations."
+  },
+  {
+    "id": "co_0137",
+    "name": "Asali Bidii Stores",
+    "country": "KE",
+    "headquarters_city": "Nairobi",
+    "category": "supermarket",
+    "size_band": "medium",
+    "employee_count_range": "201-500",
+    "annual_revenue_band": "$1M-$10M",
+    "founded_year": 2015,
+    "product_focus": [
+      "frozen foods",
+      "fresh produce",
+      "beverages",
+      "dairy"
+    ],
+    "profile": "Asali Bidii Stores runs a supermarket chain operation out of Nairobi, Kenya, with roots dating to 2015, offering a mix of local and imported products targeted at the middle-income segment. Recent expansion has increased their need for reliable suppliers in snack categories."
+  },
+  {
+    "id": "co_0138",
+    "name": "Tafel Madiba Quick Shops",
+    "country": "ZA",
+    "headquarters_city": "Pretoria",
+    "category": "convenience_chain",
+    "size_band": "medium",
+    "employee_count_range": "51-200",
+    "annual_revenue_band": "$10M-$50M",
+    "founded_year": 2019,
+    "product_focus": [
+      "petrol-forecourt retail",
+      "ready-to-eat"
+    ],
+    "profile": "Tafel Madiba Quick Shops is a mid-sized convenience-store chain based in Pretoria, South Africa, established in 2019, operating a tight SKU range optimised for impulse and top-up shopping. Active procurement contacts are based in Pretoria."
+  },
+  {
+    "id": "co_0139",
+    "name": "Naija Digital",
+    "country": "NG",
+    "headquarters_city": "Port Harcourt",
+    "category": "online_retailer",
+    "size_band": "large",
+    "employee_count_range": "1000+",
+    "annual_revenue_band": ">$50M",
+    "founded_year": 2000,
+    "product_focus": [
+      "subscription boxes",
+      "groceries",
+      "speciality foods",
+      "last-mile groceries"
+    ],
+    "profile": "Naija Digital runs an online grocery retailer operation out of Port Harcourt, Nigeria, with roots dating to 2000, operating a fulfilment centre and partnering with local couriers. They run an annual supplier review cycle for packaged-foods categories."
+  },
+  {
+    "id": "co_0140",
+    "name": "Mlima Imani Digital",
+    "country": "KE",
+    "headquarters_city": "Kisumu",
+    "category": "online_retailer",
+    "size_band": "medium",
+    "employee_count_range": "51-200",
+    "annual_revenue_band": "$1M-$10M",
+    "founded_year": 2008,
+    "product_focus": [
+      "last-mile groceries",
+      "subscription boxes"
+    ],
+    "profile": "Headquartered in Kisumu, Mlima Imani Digital has been an online grocery retailer in the Kenya market since 2008, with same-day delivery in the capital and next-day delivery in secondary cities. Their procurement team has historically been open to new supplier conversations."
+  },
+  {
+    "id": "co_0141",
+    "name": "Ubuntu Cash & Carry",
+    "country": "ZA",
+    "headquarters_city": "Johannesburg",
+    "category": "wholesaler",
+    "size_band": "medium",
+    "employee_count_range": "201-500",
+    "annual_revenue_band": "$1M-$10M",
+    "founded_year": 2003,
+    "product_focus": [
+      "dry goods",
+      "edible oils",
+      "beverages"
+    ],
+    "profile": "Ubuntu Cash & Carry runs a wholesale operation operation out of Johannesburg, South Africa, with roots dating to 2003, operating cash-and-carry warehouses in two cities. Procurement is decentralised by outlet, with category buyers at head office for branded SKUs."
+  },
+  {
+    "id": "co_0142",
+    "name": "Crown Trading",
+    "country": "NG",
+    "headquarters_city": "Lagos",
+    "category": "distributor",
+    "size_band": "medium",
+    "employee_count_range": "51-200",
+    "annual_revenue_band": "$10M-$50M",
+    "founded_year": 2002,
+    "product_focus": [
+      "grain",
+      "FMCG",
+      "confectionery"
+    ],
+    "profile": "Crown Trading runs an FMCG distributor operation out of Lagos, Nigeria, with roots dating to 2002, with a distribution network covering both urban and peri-urban retail. They run an annual supplier review cycle for packaged-foods categories."
+  },
+  {
+    "id": "co_0143",
+    "name": "Nyota Distributors",
+    "country": "TZ",
+    "headquarters_city": "Arusha",
+    "category": "distributor",
+    "size_band": "medium",
+    "employee_count_range": "51-200",
+    "annual_revenue_band": "$10M-$50M",
+    "founded_year": 2013,
+    "product_focus": [
+      "snacks",
+      "confectionery"
+    ],
+    "profile": "Nyota Distributors runs an FMCG distributor operation out of Arusha, Tanzania, with roots dating to 2013, with cold-chain capability for select product lines. Buying decisions are made centrally and reviewed quarterly."
+  },
+  {
+    "id": "co_0144",
+    "name": "Protea Trading",
+    "country": "ZA",
+    "headquarters_city": "Pretoria",
+    "category": "distributor",
+    "size_band": "micro",
+    "employee_count_range": "1-10",
+    "annual_revenue_band": "<$100K",
+    "founded_year": 2015,
+    "product_focus": [
+      "beverages",
+      "snacks"
+    ],
+    "profile": "Founded in 2015, Protea Trading operates from Pretoria and serves customers across South Africa, with a distribution network covering both urban and peri-urban retail. Procurement is decentralised by outlet, with category buyers at head office for branded SKUs."
+  },
+  {
+    "id": "co_0145",
+    "name": "Lagos Supplies",
+    "country": "NG",
+    "headquarters_city": "Ibadan",
+    "category": "distributor",
+    "size_band": "small",
+    "employee_count_range": "11-50",
+    "annual_revenue_band": "$1M-$10M",
+    "founded_year": 2017,
+    "product_focus": [
+      "dry goods",
+      "FMCG",
+      "household",
+      "beverages"
+    ],
+    "profile": "Lagos Supplies runs an FMCG distributor operation out of Ibadan, Nigeria, with roots dating to 2017, with cold-chain capability for select product lines. Active procurement contacts are based in Ibadan."
+  },
+  {
+    "id": "co_0146",
+    "name": "Simba Safari Processing",
+    "country": "TZ",
+    "headquarters_city": "Dodoma",
+    "category": "food_processor",
+    "size_band": "small",
+    "employee_count_range": "51-200",
+    "annual_revenue_band": "$100K-$1M",
+    "founded_year": 2008,
+    "product_focus": [
+      "spices",
+      "maize products"
+    ],
+    "profile": "Simba Safari Processing runs a food processor operation out of Dodoma, Tanzania, with roots dating to 2008, with HACCP-certified production facilities."
+  },
+  {
+    "id": "co_0147",
+    "name": "Springbok Foods",
+    "country": "ZA",
+    "headquarters_city": "Bloemfontein",
+    "category": "food_processor",
+    "size_band": "large",
+    "employee_count_range": "501-1000",
+    "annual_revenue_band": ">$50M",
+    "founded_year": 2017,
+    "product_focus": [
+      "edible oils",
+      "spices",
+      "maize products",
+      "confectionery"
+    ],
+    "profile": "Springbok Foods is a large and established food processor based in Bloemfontein, South Africa, established in 2017, supplying both branded retail and unbranded wholesale channels."
+  },
+  {
+    "id": "co_0148",
+    "name": "Mbuga Catering",
+    "country": "TZ",
+    "headquarters_city": "Tanga",
+    "category": "horeca",
+    "size_band": "small",
+    "employee_count_range": "51-200",
+    "annual_revenue_band": "$100K-$1M",
+    "founded_year": 2006,
+    "product_focus": [
+      "in-room amenities",
+      "restaurant chain procurement",
+      "conference catering"
+    ],
+    "profile": "Mbuga Catering is a small but growing hotel and restaurant group based in Tanga, Tanzania, established in 2006, with central procurement serving multiple restaurant outlets."
+  },
+  {
+    "id": "co_0149",
+    "name": "Mukuba Online",
+    "country": "ZM",
+    "headquarters_city": "Ndola",
+    "category": "online_retailer",
+    "size_band": "small",
+    "employee_count_range": "51-200",
+    "annual_revenue_band": "$1M-$10M",
+    "founded_year": 2007,
+    "product_focus": [
+      "speciality foods",
+      "snacks",
+      "groceries",
+      "subscription boxes"
+    ],
+    "profile": "Mukuba Online is a small but growing online grocery retailer based in Ndola, Zambia, established in 2007, with mobile-money payments as the primary checkout method. Their procurement team has historically been open to new supplier conversations."
+  },
+  {
+    "id": "co_0150",
+    "name": "Naija Trading",
+    "country": "NG",
+    "headquarters_city": "Benin City",
+    "category": "distributor",
+    "size_band": "small",
+    "employee_count_range": "11-50",
+    "annual_revenue_band": "$1M-$10M",
+    "founded_year": 2020,
+    "product_focus": [
+      "household",
+      "FMCG"
+    ],
+    "profile": "Naija Trading runs an FMCG distributor operation out of Benin City, Nigeria, with roots dating to 2020, with cold-chain capability for select product lines. Their procurement team has historically been open to new supplier conversations."
+  },
+  {
+    "id": "co_0151",
+    "name": "Chanda Restaurants",
+    "country": "ZM",
+    "headquarters_city": "Lusaka",
+    "category": "horeca",
+    "size_band": "medium",
+    "employee_count_range": "201-500",
+    "annual_revenue_band": "$1M-$10M",
+    "founded_year": 2001,
+    "product_focus": [
+      "conference catering",
+      "snack platters"
+    ],
+    "profile": "Founded in 2001, Chanda Restaurants operates from Lusaka and serves customers across Zambia, with central procurement serving multiple restaurant outlets."
+  },
+  {
+    "id": "co_0152",
+    "name": "Boer Kgalagadi Distributors",
+    "country": "ZA",
+    "headquarters_city": "Cape Town",
+    "category": "distributor",
+    "size_band": "large",
+    "employee_count_range": "1000+",
+    "annual_revenue_band": ">$50M",
+    "founded_year": 2010,
+    "product_focus": [
+      "grain",
+      "edible oils",
+      "personal care"
+    ],
+    "profile": "Founded in 2010, Boer Kgalagadi Distributors operates from Cape Town and serves customers across South Africa, supplying independent retailers and chain stores across the country."
+  },
+  {
+    "id": "co_0153",
+    "name": "Kgalagadi Karoo Hypermarket",
+    "country": "ZA",
+    "headquarters_city": "Bloemfontein",
+    "category": "supermarket",
+    "size_band": "large",
+    "employee_count_range": "1000+",
+    "annual_revenue_band": "$10M-$50M",
+    "founded_year": 2011,
+    "product_focus": [
+      "snacks",
+      "household",
+      "beverages",
+      "imported goods"
+    ],
+    "profile": "Kgalagadi Karoo Hypermarket is a large and established supermarket chain based in Bloemfontein, South Africa, established in 2011, with a private-label range alongside national and international brands. Active procurement contacts are based in Bloemfontein. The company has been recognised in trade press for its category management and has piloted small AI-driven inventory programmes with mixed results."
+  },
+  {
+    "id": "co_0154",
+    "name": "Kilimanjaro Bulk Traders",
+    "country": "TZ",
+    "headquarters_city": "Mwanza",
+    "category": "wholesaler",
+    "size_band": "micro",
+    "employee_count_range": "1-10",
+    "annual_revenue_band": "<$100K",
+    "founded_year": 2003,
+    "product_focus": [
+      "edible oils",
+      "bulk FMCG",
+      "household consumables"
+    ],
+    "profile": "Kilimanjaro Bulk Traders runs a wholesale operation operation out of Mwanza, Tanzania, with roots dating to 2003, serving both retail and small institutional buyers. They run an annual supplier review cycle for packaged-foods categories. The company has been recognised in trade press for its category management and has piloted small AI-driven inventory programmes with mixed results."
+  },
+  {
+    "id": "co_0155",
+    "name": "Pamba Mwangaza Corner Stores",
+    "country": "TZ",
+    "headquarters_city": "Mwanza",
+    "category": "convenience_chain",
+    "size_band": "medium",
+    "employee_count_range": "51-200",
+    "annual_revenue_band": "$10M-$50M",
+    "founded_year": 2021,
+    "product_focus": [
+      "beverages",
+      "ready-to-eat",
+      "petrol-forecourt retail",
+      "snacks"
+    ],
+    "profile": "Pamba Mwangaza Corner Stores is a mid-sized convenience-store chain based in Mwanza, Tanzania, established in 2021, with outlets in petrol-station forecourts and high-traffic urban corners. Procurement is decentralised by outlet, with category buyers at head office for branded SKUs."
+  },
+  {
+    "id": "co_0156",
+    "name": "Nyota Stores",
+    "country": "TZ",
+    "headquarters_city": "Tanga",
+    "category": "supermarket",
+    "size_band": "large",
+    "employee_count_range": "1000+",
+    "annual_revenue_band": "$10M-$50M",
+    "founded_year": 1998,
+    "product_focus": [
+      "groceries",
+      "imported goods",
+      "frozen foods"
+    ],
+    "profile": "Nyota Stores runs a supermarket chain operation out of Tanga, Tanzania, with roots dating to 1998, offering a mix of local and imported products targeted at the middle-income segment."
+  },
+  {
+    "id": "co_0157",
+    "name": "Iroko Marketplace",
+    "country": "NG",
+    "headquarters_city": "Kano",
+    "category": "online_retailer",
+    "size_band": "large",
+    "employee_count_range": "1000+",
+    "annual_revenue_band": "$10M-$50M",
+    "founded_year": 1998,
+    "product_focus": [
+      "subscription boxes",
+      "snacks"
+    ],
+    "profile": "Iroko Marketplace is a large and established online grocery retailer based in Kano, Nigeria, established in 1998, with same-day delivery in the capital and next-day delivery in secondary cities. Buying decisions are made centrally and reviewed quarterly."
+  },
+  {
+    "id": "co_0158",
+    "name": "Madiba Hospitality",
+    "country": "ZA",
+    "headquarters_city": "Johannesburg",
+    "category": "horeca",
+    "size_band": "medium",
+    "employee_count_range": "201-500",
+    "annual_revenue_band": "$10M-$50M",
+    "founded_year": 2022,
+    "product_focus": [
+      "in-room amenities",
+      "bulk catering",
+      "snack platters"
+    ],
+    "profile": "Madiba Hospitality is a mid-sized hotel and restaurant group based in Johannesburg, South Africa, established in 2022, catering to business travellers and conference clients. Their procurement team has historically been open to new supplier conversations."
+  },
+  {
+    "id": "co_0159",
+    "name": "Lungu Imports",
+    "country": "ZM",
+    "headquarters_city": "Kitwe",
+    "category": "distributor",
+    "size_band": "medium",
+    "employee_count_range": "201-500",
+    "annual_revenue_band": "$10M-$50M",
+    "founded_year": 1998,
+    "product_focus": [
+      "confectionery",
+      "grain",
+      "dry goods",
+      "beverages"
+    ],
+    "profile": "Founded in 1998, Lungu Imports operates from Kitwe and serves customers across Zambia, with a distribution network covering both urban and peri-urban retail. They run an annual supplier review cycle for packaged-foods categories."
+  },
+  {
+    "id": "co_0160",
+    "name": "Sahel Lagos Cargo",
+    "country": "NG",
+    "headquarters_city": "Abuja",
+    "category": "logistics",
+    "size_band": "large",
+    "employee_count_range": "1000+",
+    "annual_revenue_band": "$10M-$50M",
+    "founded_year": 2017,
+    "product_focus": [
+      "last-mile delivery",
+      "warehousing"
+    ],
+    "profile": "Sahel Lagos Cargo is a large and established logistics provider based in Abuja, Nigeria, established in 2017, providing warehousing, distribution, and last-mile services. Buying decisions are made centrally and reviewed quarterly."
+  },
+  {
+    "id": "co_0161",
+    "name": "Asali Hypermarket",
+    "country": "KE",
+    "headquarters_city": "Eldoret",
+    "category": "supermarket",
+    "size_band": "medium",
+    "employee_count_range": "201-500",
+    "annual_revenue_band": "$10M-$50M",
+    "founded_year": 2010,
+    "product_focus": [
+      "imported goods",
+      "dairy"
+    ],
+    "profile": "Founded in 2010, Asali Hypermarket operates from Eldoret and serves customers across Kenya, offering a mix of local and imported products targeted at the middle-income segment. Procurement is decentralised by outlet, with category buyers at head office for branded SKUs."
+  },
+  {
+    "id": "co_0162",
+    "name": "Zambezi Supermarkets",
+    "country": "ZM",
+    "headquarters_city": "Chipata",
+    "category": "supermarket",
+    "size_band": "small",
+    "employee_count_range": "51-200",
+    "annual_revenue_band": "$100K-$1M",
+    "founded_year": 2018,
+    "product_focus": [
+      "fresh produce",
+      "frozen foods",
+      "household"
+    ],
+    "profile": "Zambezi Supermarkets is a small but growing supermarket chain based in Chipata, Zambia, established in 2018, running a loyalty programme that drives repeat traffic. Buying decisions are made centrally and reviewed quarterly."
+  },
+  {
+    "id": "co_0163",
+    "name": "Madiba Express",
+    "country": "ZA",
+    "headquarters_city": "Bloemfontein",
+    "category": "convenience_chain",
+    "size_band": "medium",
+    "employee_count_range": "201-500",
+    "annual_revenue_band": "$1M-$10M",
+    "founded_year": 2023,
+    "product_focus": [
+      "petrol-forecourt retail",
+      "ready-to-eat",
+      "confectionery",
+      "snacks"
+    ],
+    "profile": "Headquartered in Bloemfontein, Madiba Express has been a convenience-store chain in the South Africa market since 2023, with extended trading hours across all locations. Buying decisions are made centrally and reviewed quarterly."
+  },
+  {
+    "id": "co_0164",
+    "name": "Mbuga Bulk Traders",
+    "country": "TZ",
+    "headquarters_city": "Mwanza",
+    "category": "wholesaler",
+    "size_band": "medium",
+    "employee_count_range": "51-200",
+    "annual_revenue_band": "$1M-$10M",
+    "founded_year": 2020,
+    "product_focus": [
+      "grain",
+      "imported goods"
+    ],
+    "profile": "Mbuga Bulk Traders runs a wholesale operation operation out of Mwanza, Tanzania, with roots dating to 2020, supplying small retailers, kiosks, and informal traders. Recent expansion has increased their need for reliable suppliers in snack categories."
+  },
+  {
+    "id": "co_0165",
+    "name": "Protea Logistics",
+    "country": "ZA",
+    "headquarters_city": "Pretoria",
+    "category": "logistics",
+    "size_band": "medium",
+    "employee_count_range": "51-200",
+    "annual_revenue_band": "$1M-$10M",
+    "founded_year": 2003,
+    "product_focus": [
+      "cold chain",
+      "cross-border haulage",
+      "regional freight",
+      "last-mile delivery"
+    ],
+    "profile": "Founded in 2003, Protea Logistics operates from Pretoria and serves customers across South Africa, with cross-border permits covering SADC routes. Procurement is decentralised by outlet, with category buyers at head office for branded SKUs."
+  },
+  {
+    "id": "co_0166",
+    "name": "Kalulu Restaurants",
+    "country": "ZM",
+    "headquarters_city": "Livingstone",
+    "category": "horeca",
+    "size_band": "large",
+    "employee_count_range": "1000+",
+    "annual_revenue_band": ">$50M",
+    "founded_year": 1998,
+    "product_focus": [
+      "bulk catering",
+      "restaurant chain procurement",
+      "in-room amenities"
+    ],
+    "profile": "Kalulu Restaurants runs a hotel and restaurant group operation out of Livingstone, Zambia, with roots dating to 1998, with a focus on conference and event catering. Recent expansion has increased their need for reliable suppliers in snack categories."
+  },
+  {
+    "id": "co_0167",
+    "name": "Chanda Stores",
+    "country": "ZM",
+    "headquarters_city": "Livingstone",
+    "category": "supermarket",
+    "size_band": "medium",
+    "employee_count_range": "201-500",
+    "annual_revenue_band": "$1M-$10M",
+    "founded_year": 1998,
+    "product_focus": [
+      "household",
+      "fresh produce",
+      "frozen foods",
+      "groceries"
+    ],
+    "profile": "Founded in 1998, Chanda Stores operates from Livingstone and serves customers across Zambia, with stores in major urban centres and a growing presence in smaller cities. Procurement is decentralised by outlet, with category buyers at head office for branded SKUs."
+  },
+  {
+    "id": "co_0168",
+    "name": "Maridadi Cash & Carry",
+    "country": "KE",
+    "headquarters_city": "Eldoret",
+    "category": "wholesaler",
+    "size_band": "small",
+    "employee_count_range": "11-50",
+    "annual_revenue_band": "$1M-$10M",
+    "founded_year": 2014,
+    "product_focus": [
+      "beverages"
+    ],
+    "profile": "Maridadi Cash & Carry, a wholesaler based in Eldoret."
+  },
+  {
+    "id": "co_0169",
+    "name": "Zambezi Mosi Cash & Carry",
+    "country": "ZM",
+    "headquarters_city": "Lusaka",
+    "category": "wholesaler",
+    "size_band": "small",
+    "employee_count_range": "11-50",
+    "annual_revenue_band": "$1M-$10M",
+    "founded_year": 2000,
+    "product_focus": [
+      "bulk FMCG",
+      "beverages",
+      "imported goods",
+      "grain"
+    ],
+    "profile": "Zambezi Mosi Cash & Carry runs a wholesale operation operation out of Lusaka, Zambia, with roots dating to 2000, serving both retail and small institutional buyers. Recent expansion has increased their need for reliable suppliers in snack categories."
+  },
+  {
+    "id": "co_0170",
+    "name": "Protea Bulk Traders",
+    "country": "ZA",
+    "headquarters_city": "Bloemfontein",
+    "category": "wholesaler",
+    "size_band": "medium",
+    "employee_count_range": "201-500",
+    "annual_revenue_band": "$1M-$10M",
+    "founded_year": 2010,
+    "product_focus": [
+      "imported goods",
+      "household consumables"
+    ],
+    "profile": "Protea Bulk Traders is a mid-sized wholesale operation based in Bloemfontein, South Africa, established in 2010, serving both retail and small institutional buyers. Recent expansion has increased their need for reliable suppliers in snack categories."
+  },
+  {
+    "id": "co_0171",
+    "name": "Kruger Drakens Marketplace",
+    "country": "ZA",
+    "headquarters_city": "Bloemfontein",
+    "category": "online_retailer",
+    "size_band": "medium",
+    "employee_count_range": "201-500",
+    "annual_revenue_band": "$10M-$50M",
+    "founded_year": 2020,
+    "product_focus": [
+      "last-mile groceries",
+      "FMCG e-commerce",
+      "groceries"
+    ],
+    "profile": "Kruger Drakens Marketplace runs an online grocery retailer operation out of Bloemfontein, South Africa, with roots dating to 2020, with same-day delivery in the capital and next-day delivery in secondary cities. Procurement is decentralised by outlet, with category buyers at head office for branded SKUs."
+  },
+  {
+    "id": "co_0172",
+    "name": "Naija Eko Wholesale",
+    "country": "NG",
+    "headquarters_city": "Ibadan",
+    "category": "wholesaler",
+    "size_band": "medium",
+    "employee_count_range": "51-200",
+    "annual_revenue_band": "$10M-$50M",
+    "founded_year": 2011,
+    "product_focus": [
+      "snacks",
+      "household consumables"
+    ],
+    "profile": "Founded in 2011, Naija Eko Wholesale operates from Ibadan and serves customers across Nigeria, operating cash-and-carry warehouses in two cities. Active procurement contacts are based in Ibadan."
+  },
+  {
+    "id": "co_0173",
+    "name": "Zambezi Mukuba Freight",
+    "country": "ZM",
+    "headquarters_city": "Chipata",
+    "category": "logistics",
+    "size_band": "small",
+    "employee_count_range": "51-200",
+    "annual_revenue_band": "$100K-$1M",
+    "founded_year": 2007,
+    "product_focus": [
+      "FMCG distribution",
+      "last-mile delivery",
+      "cross-border haulage"
+    ],
+    "profile": "Founded in 2007, Zambezi Mukuba Freight operates from Chipata and serves customers across Zambia, specialising in FMCG and perishable-goods movement. Their procurement team has historically been open to new supplier conversations."
+  },
+  {
+    "id": "co_0174",
+    "name": "Ndola Corner Stores",
+    "country": "ZM",
+    "headquarters_city": "Livingstone",
+    "category": "convenience_chain",
+    "size_band": "medium",
+    "employee_count_range": "51-200",
+    "annual_revenue_band": "$1M-$10M",
+    "founded_year": 2009,
+    "product_focus": [
+      "petrol-forecourt retail",
+      "ready-to-eat",
+      "snacks",
+      "impulse buys"
+    ],
+    "profile": "Ndola Corner Stores is a mid-sized convenience-store chain based in Livingstone, Zambia, established in 2009, with extended trading hours across all locations. They run an annual supplier review cycle for packaged-foods categories."
+  },
+  {
+    "id": "co_0175",
+    "name": "Sahel Mills",
+    "country": "NG",
+    "headquarters_city": "Abuja",
+    "category": "food_processor",
+    "size_band": "medium",
+    "employee_count_range": "201-500",
+    "annual_revenue_band": "$1M-$10M",
+    "founded_year": 2014,
+    "product_focus": [
+      "maize products",
+      "packaged snacks",
+      "groundnut products",
+      "spices"
+    ],
+    "profile": "Headquartered in Abuja, Sahel Mills has been a food processor in the Nigeria market since 2014, exporting select product lines into neighbouring markets. Active procurement contacts are based in Abuja."
+  },
+  {
+    "id": "co_0176",
+    "name": "Indaba Hotels Group",
+    "country": "ZA",
+    "headquarters_city": "Cape Town",
+    "category": "horeca",
+    "size_band": "micro",
+    "employee_count_range": "1-10",
+    "annual_revenue_band": "<$100K",
+    "founded_year": 2009,
+    "product_focus": [
+      "restaurant chain procurement",
+      "bulk catering"
+    ],
+    "profile": "Indaba Hotels is a small, owner-operated hotel and restaurant group based in Cape Town, South Africa, established in 2009, supplying snack and beverage packages to hotels and lodges."
+  },
+  {
+    "id": "co_0177",
+    "name": "Lungu Mulenga Foods",
+    "country": "ZM",
+    "headquarters_city": "Kitwe",
+    "category": "food_processor",
+    "size_band": "medium",
+    "employee_count_range": "51-200",
+    "annual_revenue_band": "$10M-$50M",
+    "founded_year": 2013,
+    "product_focus": [
+      "groundnut products"
+    ],
+    "profile": "Lungu Mulenga Foods, a food_processor based in Kitwe."
+  },
+  {
+    "id": "co_0178",
+    "name": "Maridadi Mwema Agro",
+    "country": "KE",
+    "headquarters_city": "Mombasa",
+    "category": "food_processor",
+    "size_band": "small",
+    "employee_count_range": "51-200",
+    "annual_revenue_band": "$1M-$10M",
+    "founded_year": 2014,
+    "product_focus": [
+      "confectionery",
+      "spices"
+    ],
+    "profile": "Maridadi Mwema Agro is a small but growing food processor based in Mombasa, Kenya, established in 2014, supplying both branded retail and unbranded wholesale channels. Active procurement contacts are based in Mombasa."
+  },
+  {
+    "id": "co_0179",
+    "name": "Sapphire Hypermarket",
+    "country": "NG",
+    "headquarters_city": "Benin City",
+    "category": "supermarket",
+    "size_band": "small",
+    "employee_count_range": "51-200",
+    "annual_revenue_band": "$1M-$10M",
+    "founded_year": 2021,
+    "product_focus": [
+      "beverages",
+      "deli"
+    ],
+    "profile": "Headquartered in Benin City, Sapphire Hypermarket has been a supermarket chain in the Nigeria market since 2021, with a private-label range alongside national and international brands. Active procurement contacts are based in Benin City."
+  },
+  {
+    "id": "co_0180",
+    "name": "Naija Onyx Distribution Services",
+    "country": "NG",
+    "headquarters_city": "Abuja",
+    "category": "logistics",
+    "size_band": "medium",
+    "employee_count_range": "51-200",
+    "annual_revenue_band": "$10M-$50M",
+    "founded_year": 2009,
+    "product_focus": [
+      "cold chain",
+      "cross-border haulage",
+      "warehousing"
+    ],
+    "profile": "Founded in 2009, Naija Onyx Distribution Services operates from Abuja and serves customers across Nigeria, providing warehousing, distribution, and last-mile services. They run an annual supplier review cycle for packaged-foods categories."
+  },
+  {
+    "id": "co_0181",
+    "name": "Asali Bulk Traders",
+    "country": "KE",
+    "headquarters_city": "Thika",
+    "category": "wholesaler",
+    "size_band": "medium",
+    "employee_count_range": "51-200",
+    "annual_revenue_band": "$1M-$10M",
+    "founded_year": 2002,
+    "product_focus": [
+      "imported goods",
+      "snacks",
+      "household consumables",
+      "grain"
+    ],
+    "profile": "Asali Bulk Traders is a mid-sized wholesale operation based in Thika, Kenya, established in 2002, with strong relationships with informal-sector buyers."
+  },
+  {
+    "id": "co_0182",
+    "name": "Kgalagadi Marketplace",
+    "country": "ZA",
+    "headquarters_city": "Johannesburg",
+    "category": "online_retailer",
+    "size_band": "large",
+    "employee_count_range": "1000+",
+    "annual_revenue_band": "$10M-$50M",
+    "founded_year": 2015,
+    "product_focus": [
+      "subscription boxes",
+      "snacks",
+      "imported goods",
+      "last-mile groceries"
+    ],
+    "profile": "Kgalagadi Marketplace is a large and established online grocery retailer based in Johannesburg, South Africa, established in 2015, operating a fulfilment centre and partnering with local couriers. Their procurement team has historically been open to new supplier conversations."
+  },
+  {
+    "id": "co_0183",
+    "name": "Tembo Stores",
+    "country": "TZ",
+    "headquarters_city": "Tanga",
+    "category": "supermarket",
+    "size_band": "medium",
+    "employee_count_range": "51-200",
+    "annual_revenue_band": "$1M-$10M",
+    "founded_year": 2001,
+    "product_focus": [
+      "fresh produce",
+      "snacks",
+      "deli",
+      "household"
+    ],
+    "profile": "Headquartered in Tanga, Tembo Stores has been a supermarket chain in the Tanzania market since 2001, offering a mix of local and imported products targeted at the middle-income segment."
+  },
+  {
+    "id": "co_0184",
+    "name": "Mosi Zambezi Cargo",
+    "country": "ZM",
+    "headquarters_city": "Livingstone",
+    "category": "logistics",
+    "size_band": "small",
+    "employee_count_range": "11-50",
+    "annual_revenue_band": "$1M-$10M",
+    "founded_year": 2002,
+    "product_focus": [
+      "regional freight",
+      "warehousing",
+      "FMCG distribution",
+      "cross-border haulage"
+    ],
+    "profile": "Mosi Zambezi Cargo is a small but growing logistics provider based in Livingstone, Zambia, established in 2002, providing warehousing, distribution, and last-mile services. Recent expansion has increased their need for reliable suppliers in snack categories."
+  },
+  {
+    "id": "co_0185",
+    "name": "Chanda Lungu Catering",
+    "country": "ZM",
+    "headquarters_city": "Ndola",
+    "category": "horeca",
+    "size_band": "medium",
+    "employee_count_range": "201-500",
+    "annual_revenue_band": "$1M-$10M",
+    "founded_year": 2019,
+    "product_focus": [
+      "in-room amenities",
+      "lounge snacks",
+      "restaurant chain procurement"
+    ],
+    "profile": "Chanda Lungu Catering is a mid-sized hotel and restaurant group based in Ndola, Zambia, established in 2019, catering to business travellers and conference clients. Procurement is decentralised by outlet, with category buyers at head office for branded SKUs."
+  },
+  {
+    "id": "co_0186",
+    "name": "Tumaini Restaurants",
+    "country": "KE",
+    "headquarters_city": "Kisumu",
+    "category": "horeca",
+    "size_band": "large",
+    "employee_count_range": "1000+",
+    "annual_revenue_band": ">$50M",
+    "founded_year": 2000,
+    "product_focus": [
+      "lounge snacks",
+      "snack platters",
+      "bulk catering"
+    ],
+    "profile": "Founded in 2000, Tumaini Restaurants operates from Kisumu and serves customers across Kenya, with central procurement serving multiple restaurant outlets. Procurement is decentralised by outlet, with category buyers at head office for branded SKUs."
+  },
+  {
+    "id": "co_0187",
+    "name": "Mwansa Restaurants",
+    "country": "ZM",
+    "headquarters_city": "Chipata",
+    "category": "horeca",
+    "size_band": "small",
+    "employee_count_range": "51-200",
+    "annual_revenue_band": "$100K-$1M",
+    "founded_year": 2020,
+    "product_focus": [
+      "in-room amenities",
+      "lounge snacks",
+      "buffet supplies"
+    ],
+    "profile": "Founded in 2020, Mwansa Restaurants operates from Chipata and serves customers across Zambia, with central procurement serving multiple restaurant outlets. Active procurement contacts are based in Chipata. The company has been recognised in trade press for its category management and has piloted small AI-driven inventory programmes with mixed results."
+  },
+  {
+    "id": "co_0188",
+    "name": "Safari Digital",
+    "country": "TZ",
+    "headquarters_city": "Mbeya",
+    "category": "online_retailer",
+    "size_band": "small",
+    "employee_count_range": "51-200",
+    "annual_revenue_band": "$100K-$1M",
+    "founded_year": 2022,
+    "product_focus": [
+      "subscription boxes",
+      "last-mile groceries"
+    ],
+    "profile": "Headquartered in Mbeya, Safari Digital has been an online grocery retailer in the Tanzania market since 2022, with mobile-money payments as the primary checkout method. They run an annual supplier review cycle for packaged-foods categories."
+  },
+  {
+    "id": "co_0189",
+    "name": "Klipdrift Cargo",
+    "country": "ZA",
+    "headquarters_city": "Bloemfontein",
+    "category": "logistics",
+    "size_band": "micro",
+    "employee_count_range": "1-10",
+    "annual_revenue_band": "<$100K",
+    "founded_year": 2010,
+    "product_focus": [
+      "last-mile delivery",
+      "warehousing",
+      "regional freight",
+      "cold chain"
+    ],
+    "profile": "Klipdrift Cargo runs a logistics provider operation out of Bloemfontein, South Africa, with roots dating to 2010, specialising in FMCG and perishable-goods movement."
+  },
+  {
+    "id": "co_0190",
+    "name": "Indaba Distributors",
+    "country": "ZA",
+    "headquarters_city": "Johannesburg",
+    "category": "distributor",
+    "size_band": "medium",
+    "employee_count_range": "51-200",
+    "annual_revenue_band": "$1M-$10M",
+    "founded_year": 2002,
+    "product_focus": [
+      "edible oils",
+      "processed foods",
+      "confectionery",
+      "FMCG"
+    ],
+    "profile": "Founded in 2002, Indaba Distributors operates from Johannesburg and serves customers across South Africa, with a distribution network covering both urban and peri-urban retail. Procurement is decentralised by outlet, with category buyers at head office for branded SKUs."
+  },
+  {
+    "id": "co_0191",
+    "name": "Kazi Mart",
+    "country": "KE",
+    "headquarters_city": "Kisumu",
+    "category": "supermarket",
+    "size_band": "medium",
+    "employee_count_range": "51-200",
+    "annual_revenue_band": "$10M-$50M",
+    "founded_year": 2014,
+    "product_focus": [
+      "household",
+      "groceries",
+      "beverages"
+    ],
+    "profile": "Kazi Mart is a mid-sized supermarket chain based in Kisumu, Kenya, established in 2014, offering a mix of local and imported products targeted at the middle-income segment. Recent expansion has increased their need for reliable suppliers in snack categories."
+  },
+  {
+    "id": "co_0192",
+    "name": "Luangwa Quick Shops",
+    "country": "ZM",
+    "headquarters_city": "Kabwe",
+    "category": "convenience_chain",
+    "size_band": "medium",
+    "employee_count_range": "201-500",
+    "annual_revenue_band": "$10M-$50M",
+    "founded_year": 2015,
+    "product_focus": [
+      "beverages",
+      "confectionery",
+      "petrol-forecourt retail",
+      "impulse buys"
+    ],
+    "profile": "Founded in 2015, Luangwa Quick Shops operates from Kabwe and serves customers across Zambia, operating a tight SKU range optimised for impulse and top-up shopping. Recent expansion has increased their need for reliable suppliers in snack categories."
+  },
+  {
+    "id": "co_0193",
+    "name": "Uhuru Express",
+    "country": "TZ",
+    "headquarters_city": "Arusha",
+    "category": "convenience_chain",
+    "size_band": "micro",
+    "employee_count_range": "1-10",
+    "annual_revenue_band": "<$100K",
+    "founded_year": 2009,
+    "product_focus": [
+      "beverages",
+      "petrol-forecourt retail",
+      "confectionery",
+      "ready-to-eat"
+    ],
+    "profile": "Headquartered in Arusha, Uhuru Express has been a convenience-store chain in the Tanzania market since 2009, with extended trading hours across all locations. Their procurement team has historically been open to new supplier conversations."
+  },
+  {
+    "id": "co_0194",
+    "name": "Zambezi Processing",
+    "country": "ZM",
+    "headquarters_city": "Kitwe",
+    "category": "food_processor",
+    "size_band": "small",
+    "employee_count_range": "51-200",
+    "annual_revenue_band": "$1M-$10M",
+    "founded_year": 2002,
+    "product_focus": [
+      "groundnut products",
+      "confectionery",
+      "packaged snacks"
+    ],
+    "profile": "Headquartered in Kitwe, Zambezi Processing has been a food processor in the Zambia market since 2002, manufacturing packaged products under their own brand and on contract. Active procurement contacts are based in Kitwe."
+  },
+  {
+    "id": "co_0195",
+    "name": "Drakens Agro",
+    "country": "ZA",
+    "headquarters_city": "Pretoria",
+    "category": "food_processor",
+    "size_band": "small",
+    "employee_count_range": "51-200",
+    "annual_revenue_band": "$100K-$1M",
+    "founded_year": 2001,
+    "product_focus": [
+      "spices",
+      "confectionery",
+      "groundnut products"
+    ],
+    "profile": "Founded in 2001, Drakens Agro operates from Pretoria and serves customers across South Africa, with HACCP-certified production facilities. Buying decisions are made centrally and reviewed quarterly."
+  },
+  {
+    "id": "co_0196",
+    "name": "Mosi Hospitality",
+    "country": "ZM",
+    "headquarters_city": "Kitwe",
+    "category": "horeca",
+    "size_band": "small",
+    "employee_count_range": "11-50",
+    "annual_revenue_band": "$1M-$10M",
+    "founded_year": 2020,
+    "product_focus": [
+      "conference catering",
+      "snack platters"
+    ],
+    "profile": "Headquartered in Kitwe, Mosi Hospitality has been a hotel and restaurant group in the Zambia market since 2020, catering to business travellers and conference clients. Recent expansion has increased their need for reliable suppliers in snack categories."
+  },
+  {
+    "id": "co_0197",
+    "name": "Kafue Mosi Mills",
+    "country": "ZM",
+    "headquarters_city": "Livingstone",
+    "category": "food_processor",
+    "size_band": "medium",
+    "employee_count_range": "51-200",
+    "annual_revenue_band": "$1M-$10M",
+    "founded_year": 2003,
+    "product_focus": [
+      "packaged snacks",
+      "groundnut products",
+      "dairy",
+      "maize products"
+    ],
+    "profile": "Founded in 2003, Kafue Mosi Mills operates from Livingstone and serves customers across Zambia, manufacturing packaged products under their own brand and on contract."
+  },
+  {
+    "id": "co_0198",
+    "name": "Lungu Express",
+    "country": "ZM",
+    "headquarters_city": "Chipata",
+    "category": "convenience_chain",
+    "size_band": "medium",
+    "employee_count_range": "201-500",
+    "annual_revenue_band": "$10M-$50M",
+    "founded_year": 2006,
+    "product_focus": [
+      "petrol-forecourt retail",
+      "ready-to-eat",
+      "impulse buys",
+      "beverages"
+    ],
+    "profile": "Headquartered in Chipata, Lungu Express has been a convenience-store chain in the Zambia market since 2006, targeting commuters and on-the-go customers."
+  },
+  {
+    "id": "co_0199",
+    "name": "Lungu Distribution Services",
+    "country": "ZM",
+    "headquarters_city": "Kitwe",
+    "category": "logistics",
+    "size_band": "medium",
+    "employee_count_range": "51-200",
+    "annual_revenue_band": "$10M-$50M",
+    "founded_year": 2013,
+    "product_focus": [
+      "FMCG distribution",
+      "warehousing"
+    ],
+    "profile": "Founded in 2013, Lungu Distribution Services operates from Kitwe and serves customers across Zambia, operating a fleet of refrigerated and dry vehicles. Their procurement team has historically been open to new supplier conversations."
+  },
+  {
+    "id": "co_0200",
+    "name": "Kgalagadi Corner Stores",
+    "country": "ZA",
+    "headquarters_city": "Cape Town",
+    "category": "convenience_chain",
+    "size_band": "small",
+    "employee_count_range": "51-200",
+    "annual_revenue_band": "$100K-$1M",
+    "founded_year": 2007,
+    "product_focus": [
+      "beverages",
+      "snacks",
+      "impulse buys",
+      "confectionery"
+    ],
+    "profile": "Founded in 2007, Kgalagadi Corner Stores operates from Cape Town and serves customers across South Africa, targeting commuters and on-the-go customers. Their procurement team has historically been open to new supplier conversations."
   }
 ]

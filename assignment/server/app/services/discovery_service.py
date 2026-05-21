@@ -2,59 +2,88 @@
     Author: Happy Banda
 """
 
-import logging
+from uuid import UUID
 from datetime import datetime, timezone
+from typing import List
 
 from sqlalchemy.orm import Session
+from app.agent.graph import run_discovery_graph
+from app.models import DiscoveryJob, DiscoveryLead
+from app.schemas import DiscoveryRequest, DiscoveryResult, LeadOut
 
-from app.agent.runner import run_discovery
-from app.models import DiscoveryJob, DiscoveryLead, JobStatus
-from app.schemas import DiscoveryRequest
 
-log = logging.getLogger(__name__)
-
-def create_and_run_job(db: Session, request: DiscoveryRequest) -> DiscoveryJob:
-    """Create a job row, run the agent synchronously, persist leads."""
+def create_discovery_job(
+        db: Session,
+        request: DiscoveryRequest,
+) -> DiscoveryJob:
     job = DiscoveryJob(
-        status=JobStatus.RUNNING,
+        status="queued",
         business_description=request.business_description,
         target_market=request.target_market,
-        buyer_types=list(request.buyer_types),
+        buyer_types=request.buyer_types,
         max_results=request.max_results,
     )
     db.add(job)
     db.commit()
     db.refresh(job)
+    return job
 
-    try:
-        leads = run_discovery(
-            business_description=request.business_description,
-            target_market=request.target_market,
-            buyer_types=list(request.buyer_types),
-            max_results=request.max_results
+def run_and_save_discovery_job(
+        db: Session,
+        job: DiscoveryJob,
+) -> DiscoveryResult:
+    final_state = run_discovery_graph(
+        business_description=job.business_description,
+        target_market=job.target_market,
+        buyer_types=job.buyer_types,
+        max_results=job.max_results,
+        thread_id=str(job.id),
+    )
+
+    scored_leads = final_state.get("scored_leads", [])
+
+    for rank, lead_data in enumerate(scored_leads, start=1):
+        lead = DiscoveryLead(
+            job_id=job.id,
+            company_id=lead_data["company_id"],
+            name=lead_data["name"],
+            category=lead_data["category"],
+            country=lead_data["country"],
+            headquarters_city=lead_data.get("headquarters_city", ""),
+            fit_score=lead_data["fit_score"],
+            justification=lead_data["justification"],
+            rank=rank,
         )
+        db.add(lead)
 
-        for rank, lead in enumerate(leads, start=1):
-            db.add(DiscoveryLead(
-                job_id=job.id,
-                rank=rank,
-                seed_id=lead.seed_id,
-                name=lead.name,
-                country=lead.country,
-                category=lead.category,
-                score=lead.score,
-                justification=lead.justification,
-                grounded=lead.grounded,
-            ))
-        job.status = JobStatus.DONE
-        job.finished_at = datetime.now(timezone.utc)
-
-    except Exception as e:
-        log.exception("Discovery job failed: job_id=%s", job.id)
-        job.status = JobStatus.FAILED
-        job.error_message = str(e)[:500]
-        job.finished_at = datetime.now(timezone.utc)
-
+    job.status = "done"
+    job.finished_at = datetime.now(timezone.utc)
     db.commit()
     db.refresh(job)
-    return job
+
+    leads_out = [
+        LeadOut(
+            id=lead.id,
+            name=lead.name,
+            category=lead.category,
+            country=lead.country,
+            headquarters_city=lead.headquarters_city,
+            fit_score=lead.fit_score,
+            justification=lead.justification,
+            rank=lead.rank,
+        )
+        for lead in job.leads
+    ]
+
+    return DiscoveryResult(job_id=job.id, leads=leads_out)
+
+def get_job_status(db: Session, job_id: UUID) -> DiscoveryJob | None:
+    return db.query(DiscoveryJob).filter(DiscoveryJob.id == job_id).first()
+
+def get_job_leads(db: Session, job_id: UUID) -> List[DiscoveryLead]:
+    return (
+        db.query(DiscoveryLead)
+        .filter(DiscoveryLead.job_id == job_id)
+        .order_by(DiscoveryLead.rank)
+        .all()
+    )

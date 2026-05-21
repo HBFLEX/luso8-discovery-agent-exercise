@@ -1,6 +1,7 @@
 services:
   db:
     image: postgres:16-alpine
+    container_name: luso8-db
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
@@ -12,29 +13,26 @@ services:
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U postgres -d luso8"]
       interval: 3s
-      timeout: 3s
-      retries: 20
+      timeout: 5s
+      retries: 5
 
-  api:
-    build:
-      context: ./server
-    depends_on:
-      db:
-        condition: service_healthy
+  server:
+    build: ./server
+    container_name: luso8-server
+    ports:
+      - "8000:8000"
     environment:
       DATABASE_URL: postgresql+psycopg://postgres:postgres@db:5432/luso8
       GROQ_API_KEY: ${GROQ_API_KEY}
       LLM_MODEL: ${LLM_MODEL:-qwen/qwen3-32b}
       APP_ENV: development
       LOG_LEVEL: INFO
-    ports:
-      - "8000:8000"
-    command: >
-      sh -c "alembic upgrade head &&
-             uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload"
+    depends_on:
+      db:
+        condition: service_healthy
     volumes:
-      - ./server/app:/app/app
-      - ./server/alembic:/app/alembic
+      - ./server/data:/app/data
+    restart: unless-stopped
 
 volumes:
   db_data:

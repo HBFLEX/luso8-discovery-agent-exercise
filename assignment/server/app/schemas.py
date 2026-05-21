@@ -1,60 +1,58 @@
 """
-Models for request validations and serialization
-Author: Happy Banda
+    API Contracts & response models
+    Author: Happy Banda
 """
 
 from datetime import datetime
-from typing import Literal
-from pydantic import BaseModel, ConfigDict, Field
-
-SUPPORTED_MARKETS = {"ZM", "TZ", "KE", "NG", "ZA"}
-BuyerType = Literal["distributor", "wholesaler", "supermarket", "horeca"]
+from uuid import UUID
+from pydantic import BaseModel, Field, field_validator
+from typing import Literal, List
 
 
 class DiscoveryRequest(BaseModel):
-    business_description: str = Field(..., min_length=10, max_length=2000)
-    target_market: str = Field(..., min_length=2, max_length=2)
-    buyer_types: list[BuyerType] = Field(..., min_length=1, max_length=4)
-    max_results: int = Field(default=10, ge=1, le=50)
+    business_description: str = Field(
+        ...,
+        min_length=20,
+        max_length=500,
+        description="Description of your business and what you sell"
+    )
+    target_market: Literal["ZM", "KE", "TZ", "NG", "ZA"] = Field(
+        ..., description="Target country (ISO code)"
+    )
+    buyer_types: List[Literal[
+        "distributor", "supermarket", "horeca", "wholesaler",
+        "online_retailer", "food_processor", "convenience_chain", "logistics"
+    ]] = Field(
+        ...,
+        min_length=1,
+        description="Types of buyers you want to target"
+    )
+    max_results: int = Field(10, ge=1, le=50)
 
-    def model_post_init(self, _context: object) -> None:
-        market = self.target_market.upper()
-        if market not in SUPPORTED_MARKETS:
-            raise ValueError(
-                f"Unsupported market '{self.target_market}'"
-                f"Must be one of: {sorted(SUPPORTED_MARKETS)}"
-            )
-        object.__setattr__(self, "target_market", market)
+    @field_validator("buyer_types")
+    @classmethod
+    def validate_buyer_types(cls, v: List[str]) -> List[str]:
+        return list(dict.fromkeys(v))
 
 
-class JobCreatedResponse(BaseModel):
-    job_id: str
-    status: str
-
-
-class JobStatusResponse(BaseModel):
-    job_id: str
+class JobStatus(BaseModel):
+    job_id: UUID
     status: str
     created_at: datetime
-    finished_at: datetime | None
-    error_message: str | None
+    finished_at: datetime | None = None
 
 
-class LeadResponse(BaseModel):
-    model_config = ConfigDict(from_attributes=True)
-
-    rank: int
-    seed_id: int
+class LeadOut(BaseModel):
+    id: UUID
     name: str
-    country: str
     category: str
-    score: float
+    country: str
+    headquarters_city: str
+    fit_score: float = Field(..., ge=0.0, le=1.0)
     justification: str
-    grounded: bool
+    rank: int
 
-
-class LeadsResponse(BaseModel):
-    job_id: str
-    status: str
-    leads: list[LeadResponse]
-
+class DiscoveryResult(BaseModel):
+    job_id: UUID
+    leads: List[LeadOut]
+    

@@ -1,177 +1,177 @@
 """
-Graph Nodes
-Author: Happy Banda
+    Agent Nodes
+    Author: Happy Banda
 """
 
-import re
-from typing import Any
+import json
+from pathlib import Path
+from typing import List, Dict, Any
 
-from anyio.streams import file
-from langchain_core.language_models import BaseChatModel
-from langchain_core.messages import HumanMessage, SystemMessage
-from pydantic import BaseModel
+from langchain_groq import ChatGroq
+from langchain_core.output_parsers import PydanticOutputParser
+from langchain_core.runnables import RunnableConfig
 
-from app.agent.prompts import (
-    JUSTIFICATION_SYSTEM_PROMPT,
-    SCORING_SYSTEM_PROMPT,
-    JUSTIFICATION_RETRY_HINT
-)
+from app.agent.prompts import scoring_prompt, LeadScore
+from app.config import get_settings
 
-from app.agent.state import DiscoveryState, JustifiedLead, ScoredLead
+settings = get_settings()
 
+_SEED_DATA: List[Dict[str, Any]] | None = None
 
-# LLM Structured output guiding
+def load_seed_data() -> List[Dict[str, Any]]:
+    """ Loads leads_seed.json - called only once """
+    global _SEED_DATA
+    if _SEED_DATA is None:
+        seed_path = Path(__file__).parent.parent.parent / "data" / "leads_seed.json"
+        with open(seed_path, encoding="utf-8") as f:
+            _SEED_DATA = json.load(f)
+    return _SEED_DATA
 
-class _ScoringResult(BaseModel):
-    scores: list[ScoredLead]
+def filter_candidates(state: Dict[str, Any]) -> Dict[str, Any]:
+    """
+    Step 1: Simple but effective filter based on target market and buyer types.
+    This keeps token usage low and makes scoring faster.
+    """
 
-
-class _JustificationResult(BaseModel):
-    justification: str
-
-# Nodes
-
-def filter_candidates(state: DiscoveryState) -> dict[str, Any]:
-    """Deterministic filter by country and buyer category."""
-    market = state["target_market"]
+    seed = load_seed_data()
+    target_market = state["target_market"]
     buyer_types = set(state["buyer_types"])
 
-    filtered = [
-        lead for lead in state["all_leads"]
-        if lead["country"] == market and lead["category"] in buyer_types
+    candidates = [
+        company for company in seed
+        if company["country"] == target_market and company["category"] in buyer_types
     ]
-    return { "filtered_candidates": filtered }
 
-def make_score_candidates(llm: BaseChatModel):
-    """Closure pattern: bind the LLM once, return the node function.
+    # Fallback: if no exact match, return from target market only
+    if not candidates:
+        candidates = [
+            company for company in seed
+            if company["country"] == target_market
+        ]
 
-    This keeps the LLM out of the global namespace and makes the node
-    trivially testable by passing a fake model.
+    # Limit to 30 candidate max for performance
+    candidates = candidates[:30]
+    state["candidates"] = candidates
+    state["status"] = "filtering_complete"
+    return state
+
+def score_lead(state: Dict[str, Any], config: RunnableConfig) -> Dict[str, Any]:
     """
-    scorer = llm.with_structured_output(_ScoringResult)
-
-    def score_candidates(state: DiscoveryState) -> dict[str, Any]:
-        candidates = state["filtered_candidates"]
-        if not candidates:
-            return {"scored_candidates": []}
-
-        lines = "\n".join(
-            f"- id={c['id']} | {c['name']} | category={c['category']} | "
-            f"size={c['size_band']} | focus={c['product_focus']} | profile={c['profile']}"
-            for c in candidates
-        )
-        user_msg = (
-            f"Business description:\n{state['business_description']}\n\n"
-            f"Candidates:\n{lines}\n\n"
-            "Score every candidate. Return one score object per id."
-        )
-        result = scorer.invoke([
-            SystemMessage(content=SCORING_SYSTEM_PROMPT),
-            HumanMessage(content=user_msg),
-        ])
-        return {"scored_candidates": result.scores} # type: ignore[union-attr]
-
-    return score_candidates
-
-def select_top_n(state: DiscoveryState) -> dict[str, Any]:
-    """Deterministic top-N selection."""
-    scored = state["scored_candidates"]
-    by_id = {c["id"]: c for c in state["filtered_candidates"]}
-    top = sorted(scored, key=lambda s: s.score, reverse=True)[: state["max_results"]]
-    enriched = [{**by_id[s.id], "score": s.score} for s in top if s.id in by_id]
-    return {"top_candidates": enriched}
-
-def make_justify_leads(llm: BaseChatModel):
-    justifier = llm.with_structured_output(_JustificationResult)
-
-    def justify_leads(state: DiscoveryState) -> dict[str, Any]:
-        retry = state.get("retry_count", 0) > 0
-        system = JUSTIFICATION_SYSTEM_PROMPT + (JUSTIFICATION_RETRY_HINT if retry else "")
-        results: list[JustifiedLead] = []
-
-        for lead in state["top_candidates"]:
-            user_msg = (
-                f"Business description:\n{state['business_description']}\n\n"
-                "Seed record (the ONLY company you may discuss):\n"
-                f"- name: {lead['name']}\n"
-                f"- country: {lead['country']}\n"
-                f"- category: {lead['category']}\n"
-                f"- size_band: {lead['size_band']}\n"
-                f"- product_focus: {lead['product_focus']}\n"
-                f"- profile: {lead['profile']}\n\n"
-                "Write the justification paragraph."
-            )
-            result = justifier.invoke([
-                SystemMessage(content=system),
-                HumanMessage(content=user_msg),
-            ])
-            results.append(JustifiedLead(
-                seed_id=lead["id"],
-                name=lead["name"],
-                country=lead["country"],
-                category=lead["category"],
-                score=lead["score"],
-                justification=result.justification,  # type: ignore[union-attr]
-            ))
-        return {"justified_leads": results}
-
-    return justify_leads
-
-# Guard hallucinations
-_TOKEN_RE = re.compile(r"[a-z0-9]+")
-_MIN_TOKEN_LEN = 3
-
-# Generic vocabulary the model may use without grounding.
-_STOPWORDS: frozenset[str] = frozenset({
-    "the", "and", "for", "with", "this", "that", "their", "they", "are", "has", "have",
-    "would", "could", "should", "from", "into", "your", "you", "our", "company", "business",
-    "product", "products", "lead", "leads", "fit", "good", "strong", "match", "potential",
-    "customer", "customers", "buyer", "buyers", "market", "category", "size", "focus",
-    "profile", "based", "given", "makes", "make", "due", "ideal", "well", "very", "across",
-    "specifically", "particularly", "which", "where", "while", "also", "both", "more",
-    "distributor", "wholesaler", "supermarket", "horeca", "retail", "retailer", "retailers",
-    "small", "medium", "large", "national", "regional", "local",
-})
-
-def _tokens(text: str) -> set[str]:
-    return {t for t in _TOKEN_RE.findall(text.lower()) if len(t) >= _MIN_TOKEN_LEN}
-
-def validate_grounding(state: DiscoveryState) -> dict[str, Any]:
-    """Flag justifications that introduce tokens not present in the seed record.
-
-    A deterministic check is intentional: asking another LLM to validate output
-    just multiplies the hallucination surface area.
+    Score each candidate.
     """
-    seed_by_id = {c["id"]: c for c in state["filtered_candidates"]}
-    business_tokens = _tokens(state["business_description"])
+    llm = ChatGroq(
+        api_key=settings.groq_api_key,
+        model=settings.llm_model,
+        temperature=0.0,
+        max_tokens=500,
+    )
 
-    validated: list[JustifiedLead] = []
-    any_failed = False
+    parser = PydanticOutputParser(pydantic_object=LeadScore)
+    chain = scoring_prompt | llm | parser
 
-    for lead in state["justified_leads"]:
-        seed = seed_by_id.get(lead.seed_id, {})
-        allowed = (
-            _tokens(seed.get("name", ""))
-            | _tokens(seed.get("size_band", ""))
-            | _tokens(seed.get("product_focus", ""))
-            | _tokens(seed.get("profile", ""))
-            | business_tokens
-            | _STOPWORDS
-        )
-        ungrounded = _tokens(lead.justification) - allowed
-        grounded = not ungrounded
-        if not grounded:
-            any_failed = True
-        validated.append(lead.model_copy(update={"grounded": grounded}))
+    scored_leads = []
+    candidates = state.get("candidates", [])
 
-    return {
-        "justified_leads": validated,
-        "retry_count": state.get("retry_count", 0) + (1 if any_failed else 0),
-    }
+    print(f"🔥 Scoring {len(candidates)} candidates...")  # debug
+
+    for i, company in enumerate(candidates):
+        seed_record_str = json.dumps(company, indent=2, ensure_ascii=False)
+
+        try:
+            result: LeadScore = chain.invoke({
+                "seed_record": seed_record_str,
+                "business_description": state["business_description"],
+                "target_market": state["target_market"],
+                "buyer_types": ", ".join(state["buyer_types"]),
+            }, config=config)
+
+            scored_leads.append({
+                "company_id": result.company_id,
+                "name": company["name"],
+                "category": company["category"],
+                "country": company["country"],
+                "headquarters_city": company.get("headquarters_city", ""),
+                "fit_score": round(result.fit_score, 2),
+                "justification": result.justification.strip(),
+            })
+            print(f"✅ Scored {company['name']} → {result.fit_score}")
+
+        except Exception as e:
+            print(f"❌ LLM failed for {company['name']}: {type(e).__name__} - {e}")
+            # Fallback
+            scored_leads.append({
+                "company_id": company["id"],
+                "name": company["name"],
+                "category": company["category"],
+                "country": company["country"],
+                "headquarters_city": company.get("headquarters_city", ""),
+                "fit_score": 0.2,
+                "justification": f"Could not evaluate: {str(e)[:100]}",
+            })
+
+    scored_leads.sort(key=lambda x: x["fit_score"], reverse=True)
+    state["scored_leads"] = scored_leads[:state.get("max_results", 10)]
+    state["status"] = "scoring_complete"
+    return state
+
+# def score_lead(state: Dict[str, Any], config: RunnableConfig) -> Dict[str, Any]:
+#     """
+#     Step 2: Score each candidate using structured output + strict prompt.
+#     This is where we prevent hallucinations.
+#     """
+#     llm = ChatGroq(
+#         api_key=settings.groq_api_key,
+#         model=settings.llm_model,
+#         temperature=0.0,
+#         max_tokens=500
+#     )
+#
+#     parser = PydanticOutputParser(pydantic_object=LeadScore)
+#     chain = scoring_prompt | llm | parser
+#
+#     scored_leads = []
+#
+#     for company in state.get("candidates", []):
+#         # format the seed record
+#         seed_record_str = json.dumps(company, indent=2, ensure_ascii=False)
+#
+#         try:
+#             result: LeadScore = chain.invoke({
+#                 "seed_record": seed_record_str,
+#                 "business_description": state["business_description"],
+#                 "target_market": state["target_market"],
+#                 "buyer_types": ", ".join(state["buyer_types"]),
+#             }, config=config)
+#
+#             scored_leads.append({
+#                 "company_id": result.company_id,
+#                 "name": company["name"],
+#                 "category": company["category"],
+#                 "country": company["country"],
+#                 "headquarters_city": company.get("headquarters_city", ""),
+#                 "fit_score": round(result.fit_score, 2),
+#                 "justification": result.justification.strip(),
+#             })
+#         except Exception as e:
+#             # Fallback score if model fails
+#             scored_leads.append({
+#                 "company_id": company["id"],
+#                 "name": company["name"],
+#                 "category": company["category"],
+#                 "country": company["country"],
+#                 "headquarters_city": company.get("headquarters_city", ""),
+#                 "fit_score": 0.2,
+#                 "justification": "Could not evaluate properly due to technical issue.",
+#             })
+#
+#     # Sort by fit_score descending
+#     scored_leads.sort(key=lambda x: x["fit_score"], reverse=True)
+#     # Take only the top N selected
+#     max_results = state.get("max_results", 10)
+#     state["scored_leads"] = scored_leads[:max_results]
+#     state["status"] = "scoring_complete"
+#
+#     return state
 
 
-def should_retry(state: DiscoveryState) -> str:
-    any_failed = any(not l.grounded for l in state["justified_leads"])
-    if any_failed and state.get("retry_count", 0) <= 1:
-        return "retry"
-    return "done"
+__all__ = ["filter_candidates", "score_lead", "load_seed_data"]

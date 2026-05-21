@@ -3,38 +3,41 @@ LLM Prompts
 Author: Happy Banda
 """
 
-SCORING_SYSTEM_PROMPT = """You are a lead qualification analyst for an African B2B platform.
+from langchain_core.prompts import ChatPromptTemplate
+from pydantic import BaseModel, Field
 
-Given a business description and candidate companies, score each from 0.0 to 1.0
-based on how well it fits as a sales lead.
 
-Scoring scale:
-  0.9-1.0  Excellent fit (product, scale, and category strongly align)
-  0.7-0.9  Strong fit (clearly relevant with minor gaps)
-  0.4-0.7  Moderate fit (relevant category but unclear product alignment)
-  0.1-0.4  Weak fit (right category, wrong focus or scale)
-  0.0-0.1  Poor fit
+class LeadScore(BaseModel):
+    company_id: str = Field(..., description="Exact ID from seed data, e.g. co_0001")
+    fit_score: float = Field(..., ge=0.0, le=1.0, description="Relevance score 0.0-1.0")
+    justification: str = Field(
+        ...,
+        description="1-2 sentences ONLY using facts that exist in the provided seed record (name, category, country, product_focus, profile, size_band, etc.). Never invent information."
+    )
 
-Be strict. Most leads should fall in 0.3-0.7. Reserve 0.9+ for strong matches.
-Give a one-sentence reason citing specific fields from the seed record.
+SCORING_SYSTEM_PROMPT = """You are an expert lead qualification analyst for Luso8 Cloud.
+
+Your ONLY job is to score companies. 
+
+STRICT RULES - FOLLOW EXACTLY:
+- NEVER output any thinking, explanation, <think>, or markdown.
+- Return ONLY a single valid JSON object.
+- Do NOT add any text before or after the JSON.
+- Use exactly these field names: "company_id", "fit_score", "justification".
+- "fit_score" must be a number between 0.0 and 1.0.
+- "justification" must be 1-2 short sentences using ONLY facts from the Seed Record.
+
+Seed Record:
+{seed_record}
+
+User Request:
+Business Description: {business_description}
+Target Market: {target_market}
+Buyer Types: {buyer_types}
 """
 
-JUSTIFICATION_SYSTEM_PROMPT = """You are writing a one-paragraph justification for why a
-company is a good sales lead.
-
-RULES (these are non-negotiable):
-  1. Only mention facts present in the provided seed record. Do not invent locations,
-     product lines, certifications, employee counts, or any detail not listed.
-  2. Reference at least two specific fields from the record (e.g. product_focus, profile)
-     by quoting or closely paraphrasing them.
-  3. Keep it to 2-3 sentences. Tight, factual, useful to a salesperson.
-  4. Do not mention any company other than the one provided.
-
-If the record does not strongly support the business as a lead, say so honestly.
-"""
-
-JUSTIFICATION_RETRY_HINT = (
-    "\n\nIMPORTANT: A previous attempt mentioned facts not in the record. "
-    "Stick strictly to the fields shown."
-)
+scoring_prompt = ChatPromptTemplate([
+    ("system", SCORING_SYSTEM_PROMPT),
+    ("human", "Score this company and return only the JSON object.")
+])
 
