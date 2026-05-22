@@ -10,9 +10,9 @@ from pydantic_settings import BaseSettings, SettingsConfigDict
 
 
 class Settings(BaseSettings):
-    database_url: str = Annotated[str, Field(..., description="SQLAlchemy connection")]
-    groq_api_key: str = Annotated[str, Field(..., description="GROK API for LLM calls")]
-    llm_model: str = Field(default="qwen/qwen3-32b")
+    database_url: str = Annotated[str, Field(..., alias="DATABASE_URL")]
+    anthropic_api_key: str = Annotated[str, Field(..., alias="ANTHROPIC_API_KEY")]
+    llm_model: str = Field(default="claude-3-5-sonnet-20241022", alias="LLM_MODEL")
     app_env: str = Field(default="development")
     log_level: str = Field(default="INFO")
 

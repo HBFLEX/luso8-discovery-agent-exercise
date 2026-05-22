@@ -7,7 +7,7 @@ import json
 from pathlib import Path
 from typing import List, Dict, Any
 
-from langchain_groq import ChatGroq
+from langchain_anthropic import ChatAnthropic
 from langchain_core.output_parsers import PydanticOutputParser
 from langchain_core.runnables import RunnableConfig
 
@@ -59,8 +59,8 @@ def score_lead(state: Dict[str, Any], config: RunnableConfig) -> Dict[str, Any]:
     """
     Score each candidate.
     """
-    llm = ChatGroq(
-        api_key=settings.groq_api_key,
+    llm = ChatAnthropic(
+        api_key=settings.anthropic_api_key,
         model=settings.llm_model,
         temperature=0.0,
         max_tokens=500,
@@ -72,7 +72,7 @@ def score_lead(state: Dict[str, Any], config: RunnableConfig) -> Dict[str, Any]:
     scored_leads = []
     candidates = state.get("candidates", [])
 
-    print(f"🔥 Scoring {len(candidates)} candidates...")  # debug
+    print(f"Scoring {len(candidates)} candidates...")  # debug
 
     for i, company in enumerate(candidates):
         seed_record_str = json.dumps(company, indent=2, ensure_ascii=False)
@@ -94,10 +94,10 @@ def score_lead(state: Dict[str, Any], config: RunnableConfig) -> Dict[str, Any]:
                 "fit_score": round(result.fit_score, 2),
                 "justification": result.justification.strip(),
             })
-            print(f"✅ Scored {company['name']} → {result.fit_score}")
+            print(f"Scored {company['name']} → {result.fit_score}")
 
         except Exception as e:
-            print(f"❌ LLM failed for {company['name']}: {type(e).__name__} - {e}")
+            print(f"LLM failed for {company['name']}: {type(e).__name__} - {e}")
             # Fallback
             scored_leads.append({
                 "company_id": company["id"],
@@ -113,65 +113,6 @@ def score_lead(state: Dict[str, Any], config: RunnableConfig) -> Dict[str, Any]:
     state["scored_leads"] = scored_leads[:state.get("max_results", 10)]
     state["status"] = "scoring_complete"
     return state
-
-# def score_lead(state: Dict[str, Any], config: RunnableConfig) -> Dict[str, Any]:
-#     """
-#     Step 2: Score each candidate using structured output + strict prompt.
-#     This is where we prevent hallucinations.
-#     """
-#     llm = ChatGroq(
-#         api_key=settings.groq_api_key,
-#         model=settings.llm_model,
-#         temperature=0.0,
-#         max_tokens=500
-#     )
-#
-#     parser = PydanticOutputParser(pydantic_object=LeadScore)
-#     chain = scoring_prompt | llm | parser
-#
-#     scored_leads = []
-#
-#     for company in state.get("candidates", []):
-#         # format the seed record
-#         seed_record_str = json.dumps(company, indent=2, ensure_ascii=False)
-#
-#         try:
-#             result: LeadScore = chain.invoke({
-#                 "seed_record": seed_record_str,
-#                 "business_description": state["business_description"],
-#                 "target_market": state["target_market"],
-#                 "buyer_types": ", ".join(state["buyer_types"]),
-#             }, config=config)
-#
-#             scored_leads.append({
-#                 "company_id": result.company_id,
-#                 "name": company["name"],
-#                 "category": company["category"],
-#                 "country": company["country"],
-#                 "headquarters_city": company.get("headquarters_city", ""),
-#                 "fit_score": round(result.fit_score, 2),
-#                 "justification": result.justification.strip(),
-#             })
-#         except Exception as e:
-#             # Fallback score if model fails
-#             scored_leads.append({
-#                 "company_id": company["id"],
-#                 "name": company["name"],
-#                 "category": company["category"],
-#                 "country": company["country"],
-#                 "headquarters_city": company.get("headquarters_city", ""),
-#                 "fit_score": 0.2,
-#                 "justification": "Could not evaluate properly due to technical issue.",
-#             })
-#
-#     # Sort by fit_score descending
-#     scored_leads.sort(key=lambda x: x["fit_score"], reverse=True)
-#     # Take only the top N selected
-#     max_results = state.get("max_results", 10)
-#     state["scored_leads"] = scored_leads[:max_results]
-#     state["status"] = "scoring_complete"
-#
-#     return state
 
 
 __all__ = ["filter_candidates", "score_lead", "load_seed_data"]
