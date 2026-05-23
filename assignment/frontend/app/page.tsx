@@ -1,7 +1,6 @@
 'use client';
 
-import {FormEvent, useState} from "react";
-
+import { FormEvent, useState } from "react";
 
 type Lead = {
   id: string;
@@ -19,9 +18,9 @@ type JobStatus = {
   status: string;
   created_at: string;
   finished_at: string | null;
-}
+};
 
-export default function Home(){
+export default function Home() {
   const [businessDescription, setBusinessDescription] = useState<string>('');
   const [targetMarket, setTargetMarket] = useState<string>('ZM');
   const [buyerTypes, setBuyerTypes] = useState<string[]>(['distributor', 'supermarket', 'horeca']);
@@ -35,9 +34,9 @@ export default function Home(){
 
   const API_URL = 'http://localhost:8000/api';
 
-  const pollJobStatus = async (id: string)=> {
+  const pollJobStatus = async (id: string) => {
     const interval = setInterval(async () => {
-      try{
+      try {
         const res = await fetch(`${API_URL}/discovery/${id}`);
         const data: JobStatus = await res.json();
 
@@ -52,19 +51,19 @@ export default function Home(){
           setLeads(leadsData.leads);
           setLoading(false);
         }
-      }catch(error){
+      } catch (error) {
         console.error(error);
       }
-    }, 1500); // poll every 1.5 seconds
+    }, 1500);
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
     setLoading(true);
     setError(null);
-    setLeads([])
+    setLeads([]);
 
-    try{
+    try {
       const res = await fetch(`${API_URL}/discovery`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -76,20 +75,19 @@ export default function Home(){
         }),
       });
 
-      if(!res.ok) throw new Error('Failed to start discovery' + res.statusText);
+      if (!res.ok) throw new Error('Failed to start discovery: ' + res.statusText);
 
       const data: JobStatus = await res.json();
       setJobId(data.job_id);
       setStatus(data);
 
-      // start polling
       pollJobStatus(data.job_id);
-    }
-    catch(error: any){
-      setError(error.message || 'Something went wrong');
+    } catch (err: any) {
+      setError(err.message || 'Something went wrong');
       setLoading(false);
+      setJobId(null);
     }
-  }
+  };
 
   const buyerOptions = [
     'distributor', 'supermarket', 'horeca', 'wholesaler',
@@ -97,37 +95,47 @@ export default function Home(){
   ];
 
   return (
-    <div className="min-h-screen bg-gray-50 py-12 px-4">
-      <div className="max-w-4xl mx-auto">
-        <div className="text-center mb-10">
-          <h1 className="text-4xl font-bold text-gray-900">Luso8 Lead Discovery</h1>
-          <p className="text-gray-600 mt-2">Find qualified buyers across Africa</p>
+    <div className="min-h-screen bg-slate-50 py-12 px-4 sm:px-6 lg:px-8 font-sans">
+      <div className="max-w-3xl mx-auto space-y-8">
+
+        {/* Header */}
+        <div className="space-y-2">
+          <h1 className="text-3xl font-bold tracking-tight text-slate-900">Luso8 Lead Discovery</h1>
+          <p className="text-slate-500">Identify and qualify buyers across target African markets.</p>
         </div>
 
-        {/* Form State */}
+        {/* Error State */}
+        {error && (
+          <div className="rounded-md border border-red-200 bg-red-50 p-4">
+            <h3 className="text-sm font-medium text-red-800">Error</h3>
+            <div className="mt-2 text-sm text-red-700">{error}</div>
+          </div>
+        )}
+
+        {/* Input Form */}
         {!jobId && (
-          <form onSubmit={handleSubmit} className="bg-white shadow-xl rounded-2xl p-8">
-            <div className="space-y-6">
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1">
+          <div className="rounded-xl border border-slate-200 bg-white shadow-sm">
+            <form onSubmit={handleSubmit} className="p-6 sm:p-8 space-y-8">
+              <div className="space-y-2">
+                <label className="text-sm font-medium leading-none text-slate-900">
                   Business Description
                 </label>
                 <textarea
                   value={businessDescription}
                   onChange={(e) => setBusinessDescription(e.target.value)}
-                  placeholder="We produce packaged groundnut snacks for retail."
-                  className="w-full h-32 px-4 py-3 border border-gray-400 text-gray-500 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  placeholder="e.g., We produce packaged groundnut snacks for retail..."
+                  className="flex min-h-[120px] w-full rounded-md border border-slate-300 bg-white px-3 py-2 text-sm text-slate-900 shadow-sm placeholder:text-slate-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-900 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
                   required
                 />
               </div>
 
-              <div className="grid grid-cols-2 gap-6">
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1">Target Market</label>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div className="space-y-2">
+                  <label className="text-sm font-medium leading-none text-slate-900">Target Market</label>
                   <select
                     value={targetMarket}
                     onChange={(e) => setTargetMarket(e.target.value)}
-                    className="w-full px-4 py-3 border border-gray-300 text-gray-500 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    className="flex h-10 w-full items-center justify-between rounded-md border border-slate-300 bg-white px-3 py-2 text-sm text-slate-900 shadow-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-900 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
                   >
                     <option value="ZM">Zambia (ZM)</option>
                     <option value="KE">Kenya (KE)</option>
@@ -137,126 +145,138 @@ export default function Home(){
                   </select>
                 </div>
 
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1">Max Results</label>
+                <div className="space-y-2">
+                  <label className="text-sm font-medium leading-none text-slate-900">Max Results</label>
                   <input
                     type="number"
                     value={maxResults}
                     onChange={(e) => setMaxResults(Number(e.target.value))}
                     min="1"
                     max="50"
-                    className="w-full px-4 py-3 border border-gray-300 text-gray-500 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    className="flex h-10 w-full rounded-md border border-slate-300 bg-white px-3 py-2 text-sm text-slate-900 shadow-sm placeholder:text-slate-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-900 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
                   />
                 </div>
               </div>
 
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">Buyer Types</label>
+              <div className="space-y-3">
+                <label className="text-sm font-medium leading-none text-slate-900">Buyer Types</label>
                 <div className="flex flex-wrap gap-2">
-                  {buyerOptions.map((type) => (
-                    <button
-                      key={type}
-                      type="button"
-                      onClick={() => {
-                        setBuyerTypes((prev) =>
-                          prev.includes(type)
-                            ? prev.filter((t) => t !== type)
-                            : [...prev, type]
-                        );
-                      }}
-                      className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
-                        buyerTypes.includes(type)
-                          ? 'bg-blue-600 text-white'
-                          : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
-                      }`}
-                    >
-                      {type}
-                    </button>
-                  ))}
+                  {buyerOptions.map((type) => {
+                    const isSelected = buyerTypes.includes(type);
+                    return (
+                      <button
+                        key={type}
+                        type="button"
+                        onClick={() => {
+                          setBuyerTypes((prev) =>
+                            isSelected ? prev.filter((t) => t !== type) : [...prev, type]
+                          );
+                        }}
+                        className={`inline-flex items-center rounded-md border px-3 py-1.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-slate-900 focus:ring-offset-2 ${
+                          isSelected
+                            ? 'border-transparent bg-slate-900 text-slate-50 hover:bg-slate-900/90 shadow-sm'
+                            : 'border-slate-300 bg-white text-slate-700 hover:bg-slate-50'
+                        }`}
+                      >
+                        {type.replace('_', ' ')}
+                      </button>
+                    );
+                  })}
                 </div>
               </div>
 
               <button
                 type="submit"
                 disabled={loading}
-                className="w-full bg-blue-600 hover:bg-blue-700 disabled:bg-gray-400 text-white font-semibold py-4 rounded-2xl transition-colors text-lg"
+                className="inline-flex w-full items-center justify-center rounded-md bg-slate-900 px-8 py-3 text-sm font-medium text-slate-50 shadow transition-colors hover:bg-slate-900/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-900 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50"
               >
-                {loading ? 'Starting Discovery...' : 'Find Leads'}
+                {loading ? 'Initializing...' : 'Discover Leads'}
               </button>
-            </div>
-          </form>
+            </form>
+          </div>
         )}
 
-        {/* Pending State */}
+        {/* Loading / Polling State */}
         {jobId && status?.status !== 'done' && (
-          <div className="bg-white shadow-xl rounded-2xl p-12 text-center">
-            <div className="animate-spin w-12 h-12 border-4 border-blue-600 border-t-transparent rounded-full mx-auto mb-6"></div>
-            <h2 className="text-2xl font-semibold text-gray-800">Finding qualified leads...</h2>
-            <p className="text-gray-500 mt-3">This usually takes 20–40 seconds</p>
-            <p className="text-xs text-gray-400 mt-8">Job ID: {jobId}</p>
+          <div className="rounded-xl border border-slate-200 bg-white p-12 shadow-sm text-center">
+            <div className="mx-auto h-8 w-8 animate-spin rounded-full border-4 border-slate-200 border-t-slate-900 mb-6" />
+            <h2 className="text-lg font-semibold tracking-tight text-slate-900">Mining Data</h2>
+            <div className="mt-2 flex items-center justify-center gap-2 text-sm text-slate-500">
+              <span>Status:</span>
+              <span className="inline-flex items-center rounded-full border border-slate-200 bg-slate-100 px-2.5 py-0.5 text-xs font-semibold text-slate-900 capitalize">
+                {status?.status || 'connecting...'}
+              </span>
+            </div>
+            <p className="mt-6 text-xs text-slate-400 font-mono">ID: {jobId}</p>
           </div>
         )}
 
         {/* Results State */}
         {leads.length > 0 && (
-          <div className="bg-white shadow-xl rounded-2xl p-8">
-            <h2 className="text-2xl text-gray-600 font-bold mb-6 flex items-center gap-3">
-              <span>Your Qualified Leads ({leads.length})</span>
-            </h2>
-
-            <div className="space-y-6">
-              {leads.map((lead) => (
-                <div
-                  key={lead.id}
-                  className="border border-gray-200 rounded-2xl p-6 hover:border-blue-200 transition-colors"
-                >
-                  <div className="flex justify-between items-start">
-                    <div>
-                      <h3 className="font-semibold text-xl text-gray-900">{lead.name}</h3>
-                      <p className="text-gray-600">
-                        {lead.category} • {lead.country} • {lead.headquarters_city}
-                      </p>
-                    </div>
-                    <div className="text-right">
-                      <div className="text-3xl font-bold text-emerald-600">
-                        {(Number(lead.fit_score) * 100).toFixed(0)}%
-                      </div>
-                      <div className="text-xs text-gray-500">FIT SCORE</div>
-                    </div>
-                  </div>
-
-                  <div className="mt-5 bg-orange-600 border border-amber-100 rounded-xl p-5 text-sm leading-relaxed">
-                    {lead.justification}
-                  </div>
-
-                  <div className="text-xs text-gray-400 mt-4">Rank #{lead.rank}</div>
-                </div>
-              ))}
+          <div className="space-y-6">
+            <div className="flex items-center justify-between">
+              <h2 className="text-xl font-semibold tracking-tight text-slate-900">
+                Qualified Leads ({leads.length})
+              </h2>
+              <button
+                onClick={() => {
+                  setJobId(null);
+                  setLeads([]);
+                  setStatus(null);
+                }}
+                className="text-sm font-medium text-slate-600 hover:text-slate-900 underline underline-offset-4"
+              >
+                Start New Search
+              </button>
             </div>
 
-            <button
-              onClick={() => {
-                setJobId(null);
-                setLeads([]);
-                setStatus(null);
-                setBusinessDescription('');
-              }}
-              className="mt-10 w-full py-4 border text-gray-500 border-gray-50 rounded-2xl hover:bg-blue-500 font-medium"
-            >
-              Start New Search
-            </button>
-          </div>
-        )}
+            <div className="grid gap-4">
+              {leads.map((lead) => {
+                const score = Number(lead.fit_score) * 100;
+                return (
+                  <div
+                    key={lead.id}
+                    className="rounded-lg border border-slate-200 bg-white p-6 shadow-sm transition-all hover:shadow-md"
+                  >
+                    <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-4">
+                      <div className="space-y-1">
+                        <div className="flex items-center gap-2">
+                          <span className="inline-flex h-6 w-6 items-center justify-center rounded-full bg-slate-100 text-xs font-semibold text-slate-900">
+                            {lead.rank}
+                          </span>
+                          <h3 className="font-semibold text-slate-900 text-lg leading-none">
+                            {lead.name}
+                          </h3>
+                        </div>
+                        <p className="text-sm text-slate-500 pl-8">
+                          {lead.category} • {lead.headquarters_city}, {lead.country}
+                        </p>
+                      </div>
 
-        {/* Error */}
-        {error && (
-          <div className="bg-red-50 border border-red-200 text-red-700 p-6 rounded-2xl text-center">
-            {error}
+                      <div className="flex flex-col sm:items-end pl-8 sm:pl-0">
+                        <div className="flex items-baseline gap-1">
+                          <span className={`text-2xl font-bold tracking-tight ${score >= 80 ? 'text-slate-900' : 'text-slate-700'}`}>
+                            {score.toFixed(0)}%
+                          </span>
+                        </div>
+                        <span className="text-[10px] font-medium uppercase tracking-wider text-slate-500">
+                          Fit Score
+                        </span>
+                      </div>
+                    </div>
+
+                    <div className="mt-4 ml-0 sm:ml-8 rounded-md bg-slate-50 p-4 border border-slate-100">
+                      <p className="text-sm leading-relaxed text-slate-700">
+                        {lead.justification}
+                      </p>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
           </div>
         )}
       </div>
     </div>
   );
 }
-
-
