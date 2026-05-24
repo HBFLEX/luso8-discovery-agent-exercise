@@ -31,7 +31,7 @@ This project implements a complete AI-powered lead qualification system that hel
 ### Prerequisites
 
 - Docker and Docker Compose installed
-- The Anthropic API key provided by the team
+- The Anthropic API key
 
 ### 1. Setup
 
