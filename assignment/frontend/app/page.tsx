@@ -86,6 +86,7 @@ export default function Home() {
       setError(err.message || 'Something went wrong');
       setLoading(false);
       setJobId(null);
+      setStatus(null);
     }
   };
 
@@ -98,13 +99,11 @@ export default function Home() {
     <div className="min-h-screen bg-slate-50 py-12 px-4 sm:px-6 lg:px-8 font-sans">
       <div className="max-w-3xl mx-auto space-y-8">
 
-        {/* Header */}
         <div className="space-y-2">
           <h1 className="text-3xl font-bold tracking-tight text-slate-900">Luso8 Lead Discovery</h1>
           <p className="text-slate-500">Identify and qualify buyers across target African markets.</p>
         </div>
 
-        {/* Error State */}
         {error && (
           <div className="rounded-md border border-red-200 bg-red-50 p-4">
             <h3 className="text-sm font-medium text-red-800">Error</h3>
@@ -112,15 +111,15 @@ export default function Home() {
           </div>
         )}
 
-        {/* Input Form */}
-        {!jobId && (
+        {!loading && leads.length === 0 && (
           <div className="rounded-xl border border-slate-200 bg-white shadow-sm">
             <form onSubmit={handleSubmit} className="p-6 sm:p-8 space-y-8">
               <div className="space-y-2">
-                <label className="text-sm font-medium leading-none text-slate-900">
+                <label htmlFor="business-description" className="text-sm font-medium leading-none text-slate-900">
                   Business Description
                 </label>
                 <textarea
+                  id="business-description"
                   value={businessDescription}
                   onChange={(e) => setBusinessDescription(e.target.value)}
                   placeholder="e.g., We produce packaged groundnut snacks for retail..."
@@ -131,8 +130,9 @@ export default function Home() {
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 <div className="space-y-2">
-                  <label className="text-sm font-medium leading-none text-slate-900">Target Market</label>
+                  <label htmlFor="target-market" className="text-sm font-medium leading-none text-slate-900">Target Market</label>
                   <select
+                    id="target-market"
                     value={targetMarket}
                     onChange={(e) => setTargetMarket(e.target.value)}
                     className="flex h-10 w-full items-center justify-between rounded-md border border-slate-300 bg-white px-3 py-2 text-sm text-slate-900 shadow-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-900 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
@@ -141,13 +141,14 @@ export default function Home() {
                     <option value="KE">Kenya (KE)</option>
                     <option value="TZ">Tanzania (TZ)</option>
                     <option value="NG">Nigeria (NG)</option>
-                    <option value="ZA">South Africa (ZA)</option>
+                    <option value="ZA">South South Africa (ZA)</option>
                   </select>
                 </div>
 
                 <div className="space-y-2">
-                  <label className="text-sm font-medium leading-none text-slate-900">Max Results</label>
+                  <label htmlFor="max-results" className="text-sm font-medium leading-none text-slate-900">Max Results</label>
                   <input
+                    id="max-results"
                     type="number"
                     value={maxResults}
                     onChange={(e) => setMaxResults(Number(e.target.value))}
@@ -190,14 +191,13 @@ export default function Home() {
                 disabled={loading}
                 className="inline-flex w-full items-center justify-center rounded-md bg-slate-900 px-8 py-3 text-sm font-medium text-slate-50 shadow transition-colors hover:bg-slate-900/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-900 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50"
               >
-                {loading ? 'Initializing...' : 'Discover Leads'}
+                Discover Leads
               </button>
             </form>
           </div>
         )}
 
-        {/* Loading / Polling State */}
-        {jobId && status?.status !== 'done' && (
+        {loading && leads.length === 0 && (
           <div className="rounded-xl border border-slate-200 bg-white p-12 shadow-sm text-center">
             <div className="mx-auto h-8 w-8 animate-spin rounded-full border-4 border-slate-200 border-t-slate-900 mb-6" />
             <h2 className="text-lg font-semibold tracking-tight text-slate-900">Mining Data</h2>
@@ -207,11 +207,10 @@ export default function Home() {
                 {status?.status || 'connecting...'}
               </span>
             </div>
-            <p className="mt-6 text-xs text-slate-400 font-mono">ID: {jobId}</p>
+            {jobId && <p className="mt-6 text-xs text-slate-400 font-mono">ID: {jobId}</p>}
           </div>
         )}
 
-        {/* Results State */}
         {leads.length > 0 && (
           <div className="space-y-6">
             <div className="flex items-center justify-between">
@@ -223,6 +222,7 @@ export default function Home() {
                   setJobId(null);
                   setLeads([]);
                   setStatus(null);
+                  setLoading(false);
                 }}
                 className="text-sm font-medium text-slate-600 hover:text-slate-900 underline underline-offset-4"
               >
