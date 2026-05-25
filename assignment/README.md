@@ -8,10 +8,10 @@ This project implements a complete AI-powered lead qualification system that hel
 ## Features
 
 - FastAPI backend with LangGraph agent for lead discovery and scoring
-- Strict zero-hallucination enforcement — every justification references only real fields from the seed record
+- Strict zero-hallucination enforcement, every justification references only real fields from the seed record
 - PostgreSQL persistence for discovery jobs and leads with Alembic migrations
 - Next.js frontend with form submission, live polling, and results display
-- Fully Dockerized setup — everything runs with a single `docker compose up --build`
+- Fully Dockerized setup, everything runs with a single `docker compose up --build`
 - Clean, readable, and maintainable code structure
 
 ---
