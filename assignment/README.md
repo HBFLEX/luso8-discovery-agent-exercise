@@ -60,6 +60,55 @@ Once running:
 
 ---
 
+## Testing
+
+The project includes both **backend** and **frontend** test workflows that can be executed inside Docker.
+
+### Frontend Tests
+
+Run the Next.js / Vitest frontend test suite:
+
+```bash
+docker compose run --rm frontend-test
+```
+
+This runs:
+
+- Component tests
+- User interaction flow tests
+- Discovery submission → polling → results rendering validation
+
+---
+
+### Backend Tests
+
+Run the backend test suite from the server container:
+
+```bash
+docker compose run --rm backend-test
+```
+
+This validates:
+
+- API endpoints
+- Agent logic
+- Lead scoring workflow
+- Database interactions
+- Schema validation
+
+---
+
+### Run All Tests
+
+To execute frontend and backend tests together:
+
+```bash
+docker compose run --rm backend-test
+docker compose run --rm frontend-test
+```
+
+---
+
 ## Project Structure
 
 ```text
